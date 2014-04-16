@@ -1,0 +1,6 @@
+*.DS_Store
+/css/*
+/vendors/**/test
+/vendors/**/tests
+/vendors/**/src
+/node_modules/*
