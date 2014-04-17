@@ -1,0 +1,21 @@
+
+'TYPO3.Neos.NodeTypes:Page':
+  properties:
+    'layout':
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              'default':
+                label: 'Default'
+              'homePage':
+                label: 'Home page'
+    'subpageLayout':
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              'default':
+                label: 'Default'
+              'homePage':
+                label: 'Home page'

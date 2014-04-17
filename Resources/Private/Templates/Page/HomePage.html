@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<html>
+<head>
+	<f:section name="stylesheets">
+		<link rel="stylesheet" href="{f:uri.resource(path: 'css/app.css', package: 'M12.Site')}" media="all"/>
+	</f:section>
+	<f:section name="scripts">
+		<script src="{f:uri.resource(path: 'js/app.js', package: 'M12.Site')}"></script>
+	</f:section>
+</head>
+<body>
+<f:section name="body">
+	<nav class="menu">
+		{parts.menu -> f:format.raw()}
+	</nav>
+	<nav class="breadcrumb">
+		{parts.breadcrumb -> f:format.raw()}
+	</nav>
+	<h1>What the heck!</h1>
+	<div class="content">
+		{content.main -> f:format.raw()}
+	</div>
+</f:section>
+</body>
+</html>

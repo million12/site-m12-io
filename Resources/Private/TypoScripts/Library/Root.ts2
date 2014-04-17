@@ -25,6 +25,7 @@ page = Page {
 			menu = Menu
 			breadcrumb = Breadcrumb
 		}
+
 			// These are your content areas, you can define as many as you want, just name them and the nodePath.
 		content {
 			// Default content section
@@ -34,3 +35,12 @@ page = Page {
 		}
 	}
 }
+
+homePage < page
+homePage {
+	body {
+		templatePath = 'resource://M12.Site/Private/Templates/Page/HomePage.html'
+	}
+}
+
+default < page
