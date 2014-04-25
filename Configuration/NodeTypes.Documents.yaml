@@ -1,5 +1,10 @@
-
+#
+# Default Page
+#
 'TYPO3.Neos.NodeTypes:Page':
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
   properties:
     'layout':
       ui:
@@ -8,8 +13,8 @@
             values:
               'default':
                 label: 'Default'
-              'homePage':
-                label: 'Home page'
+              'landingPage':
+                label: 'Landing Page'
     'subpageLayout':
       ui:
         inspector:
@@ -17,5 +22,18 @@
             values:
               'default':
                 label: 'Default'
-              'homePage':
-                label: 'Home page'
+              'landingPage':
+                label: 'Landing Page'
+
+#
+# Landing Page with teaser
+#
+'TYPO3.Neos.NodeTypes:PageTeaser':
+  superTypes: ['TYPO3.Neos.NodeTypes:Page']
+  ui:
+    label: 'Landing Page'
+  childNodes:
+    teaser:
+      type: 'TYPO3.Neos:ContentCollection'
+    main:
+      type: 'TYPO3.Neos:ContentCollection'

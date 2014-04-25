@@ -3,24 +3,47 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 <html>
 <head>
-	<f:section name="stylesheets">
-		<link rel="stylesheet" href="{f:uri.resource(path: 'css/app.css', package: 'M12.Site')}" media="all"/>
+	<f:section name="metadata">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</f:section>
-	<f:section name="scripts">
-		<script src="{f:uri.resource(path: 'js/app.js', package: 'M12.Site')}"></script>
+
+	<f:section name="javascripts">
+		<script src="{f:uri.resource(path: 'Vendors/modernizr/modernizr.js', package: 'M12.Site')}"></script>
+	</f:section>
+
+	<f:section name="stylesheets">
+		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/app.css', package: 'M12.Site')}" media="all"/>
 	</f:section>
 </head>
 <body>
 <f:section name="body">
+	<f:if condition="{landingPage}">
+		<div class="main-header">
+			<div class="container">
+				{content.teaser -> f:format.raw()}
+			</div>
+		</div>
+	</f:if>
 	<nav class="menu">
 		{parts.menu -> f:format.raw()}
-	</nav>
-	<nav class="breadcrumb">
-		{parts.breadcrumb -> f:format.raw()}
 	</nav>
 	<div class="content">
 		{content.main -> f:format.raw()}
 	</div>
+	<footer role="navigation" class="navbar navbar-default">
+		<div class="panel panel-default">
+			<div class="panel-footer">
+				<div class="container">
+					{footer -> f:format.raw()}
+				</div>
+			</div>
+		</div>
+	</footer>
+</f:section>
+<f:section name="bodyScripts">
+	<script src="{f:uri.resource(path: 'Vendors/jquery/dist/jquery.min.js', package: 'M12.Site')}"></script>
+	<script src="{f:uri.resource(path: 'Vendors/foundation/js/foundation.min.js', package: 'M12.Site')}"></script>
+	<script src="{f:uri.resource(path: 'Scripts/app.js', package: 'M12.Site')}"></script>
 </f:section>
 </body>
 </html>

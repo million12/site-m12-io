@@ -1,0 +1,5 @@
+*.DS_Store
+/Resources/Public/Vendors/**/test
+/Resources/Public/Vendors/**/tests
+/Resources/Public/Vendors/**/src
+/Resources/Public/Vendors/modernizr/media

@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 
 		sass: {
 			options: {
-				includePaths: ['vendors/foundation/scss'],
+				includePaths: ['../Resources/Public/Vendors/foundation/scss'],
 				sourceComments: 'map'
 			},
 			dist: {
@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 					outputStyle: 'compressed'
 				},
 				files: {
-					'css/app.css': 'scss/app.scss'
+					'../Resources/Public/Styles/app.css': 'scss/app.scss'
 				}
 			}
 		},

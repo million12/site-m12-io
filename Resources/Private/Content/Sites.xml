@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<site nodeName="m12" type="TYPO3.Neos.NodeTypes:Page">
+	<site nodeName="m12" type="TYPO3.Neos.NodeTypes:PageTeaser">
 		<properties>
 			<name>M12.io</name>
 			<title><![CDATA[Home]]></title>
 			<state>1</state>
 			<siteResourcesPackageKey>M12.Site</siteResourcesPackageKey>
 		</properties>
+		<node type="TYPO3.Neos:ContentCollection" nodeName="teaser">
+			<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
+				<properties>
+					<text><![CDATA[<p>Teaser for M12.io</p>]]></text>
+				</properties>
+			</node>
+		</node>
 		<node type="TYPO3.Neos:ContentCollection" nodeName="main">
 			<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
 				<properties>
@@ -14,17 +21,13 @@
 				</properties>
 			</node>
 		</node>
-		<node type="TYPO3.Neos.NodeTypes:Page" nodeName="subpage">
+		<node type="TYPO3.Neos:ContentCollection" nodeName="footer" locale="">
+		</node>
+		<node type="TYPO3.Neos.NodeTypes:Page" nodeName="blog">
 			<properties>
-				<title>A sub page</title>
+				<title>Blog</title>
 			</properties>
-			<node type="TYPO3.Neos:ContentCollection" nodeName="main">
-				<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
-					<properties>
-						<text><![CDATA[<p>This is the first sub page</p>]]></text>
-					</properties>
-				</node>
-			</node>
+			<node type="TYPO3.Neos:ContentCollection" nodeName="main" />
 		</node>
 	</site>
 </root>

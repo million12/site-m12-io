@@ -1,45 +1,76 @@
+include: Prototypes/Page.ts2
 namespace: TypoScript=TYPO3.TypoScript
 
 /**
  * Root TypoScript template for the M12.io Site
  */
 page = Page {
+	@override.template = 'resource://M12.Site/Private/Templates/Page/Default.html'
+	@override.isDEV = ${Configuration.setting('TYPO3.Flow.core.context') == 'Development'}
+
 	head {
-		stylesheets = TypoScript:Template
-		stylesheets {
-			templatePath = 'resource://M12.Site/Private/Templates/Page/Default.html'
-			sectionName = 'stylesheets'
+		metadata = TypoScript:Template {
+			templatePath = ${template}
+			sectionName = 'metadata'
+			@position = 'start'
 		}
 
-		scripts = TypoScript:Template
-		scripts {
-			templatePath = 'resource://M12.Site/Private/Templates/Page/Default.html'
-			sectionName = 'scripts'
+		javascripts = TypoScript:Template {
+			templatePath = ${template}
+			sectionName = 'javascripts'
+		}
+
+		stylesheets = TypoScript:Template {
+			templatePath = ${template}
+			sectionName = 'stylesheets'
 		}
 	}
 
 	body {
-		templatePath = 'resource://M12.Site/Private/Templates/Page/Default.html'
+		templatePath = ${template}
 		sectionName = 'body'
+
 		parts {
-			menu = Menu
+			menu = M12.Foundation:TopBar {
+				attributes.class.sitenav = 'site-nav'
+			}
 			breadcrumb = Breadcrumb
 		}
 
-			// These are your content areas, you can define as many as you want, just name them and the nodePath.
+		// Content areas: you can define as many as you want, just name them and the nodePath.
 		content {
-			// Default content section
+			teaser = ContentCollection {
+				nodePath = 'teaser'
+				@cache {
+					mode = 'cached'
+				}
+			}
 			main = PrimaryContent {
 				nodePath = 'main'
 			}
 		}
+
+		// A shared footer which can be edited from all pages
+		// Note: needs to be created manually (eg. during initial import of Sites.xml)
+		footer = TYPO3.Neos:ContentCollection {
+			nodePath = ${q(site).children('footer').property('_path')}
+			collection = ${q(site).children('footer').children()}
+			@cache {
+				mode = 'cached'
+			}
+		}
+
+		javascripts.site = TypoScript:Template {
+			templatePath = ${template}
+			sectionName = 'bodyScripts'
+		}
 	}
 }
 
-homePage < page
-homePage {
+# Landing page with extra teaser
+landingPage < page {
 	body {
-		templatePath = 'resource://M12.Site/Private/Templates/Page/HomePage.html'
+		landingPage = ${true}
 	}
 }
 
