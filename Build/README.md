@@ -1,10 +1,16 @@
-Build scripts for m12.io
-========================
+Build scripts for m12.io website
+================================
 
-## How to
+## Requirements
 
-`bower install` - to install required front-end libraries in ../Resources/Public/Vendors
+You'll need to have the following items installed before continuing:
 
-`npm install` - to install required node.js dependencies (mainly for Grunt tasks)
+  * [Node.js](http://nodejs.org): installed
+  * [Gulp](http://gulpjs.com): Run `[sudo] npm install -g gulp`
+  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
 
-`grunt build`
+## How to build
+
+  * `bower install` - to install required front-end libraries in ../Resources/Public/Vendors
+  * `npm install` - to install gulp and its modules locally
+  * `gulp` - to build CSS/JS and whatever else is there
