@@ -1,0 +1,25 @@
+<f:if condition="{assets}">
+	<f:then>
+		<f:comment>
+			Render assets as list of data-asset-X attributes
+			with the 1st asset additionally in style tag, ie:
+			<div style="background-image='url()' data-asset-X="url-to-asset-X"></div>
+
+			Note: strange format to avoid extra whitespaces inside <div ...></div> element.
+
+			Note 2: extra commend at the end needed due to Fluid
+		</f:comment>
+		<div{attributes -> f:format.raw()}<f:for
+			each="{assets}" as="asset" iteration="i"><f:if
+				condition="{i.isFirst}"> style="background-image:url({f:uri.resource(resource: asset.resource)})"</f:if> data-asset-{i.index}="{f:uri.resource(resource: asset.resource)}"</f:for>><!-- assets list --></div><!-- assets list ends here -->
+	</f:then>
+	<f:else>
+		<f:security.ifAccess resource="TYPO3_Neos_Backend_GeneralAccess">
+			<f:if condition="{node.context.workspace.name} != 'live'">
+				<ul{attributes -> f:format.raw()}>
+					<li>Empty asset list</li>
+				</ul>
+			</f:if>
+		</f:security.ifAccess>
+	</f:else>
+</f:if>

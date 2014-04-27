@@ -1,0 +1,9 @@
+#
+# AssetList which renders assets as a style="background-image:..."
+# and data-asset-X attributes.
+#
+'M12.Site:AssetListBg':
+  superTypes: ['TYPO3.Neos.NodeTypes:AssetList']
+  ui:
+    label: 'Asset list (bg)'
+    icon: 'icon-folder-open-alt'
