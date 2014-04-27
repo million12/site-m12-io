@@ -2,6 +2,19 @@
     "name": "m12/site",
     "type": "typo3-flow-site",
     "description": "M12.io website",
+    "authors": [
+        {
+            "name": "Marcin Ryzycki",
+            "email": "marcin@ryzycki.com",
+            "homepage": "http://m12.io",
+            "role": "Back-end Developer"
+        },
+        {
+            "name": "Ashnita Bali",
+            "email": "ashnita01@gmail.com",
+            "role": "Front-end Developer"
+        }
+    ],
     "require": {
         "typo3/neos-nodetypes": "*",
         "m12/foundation": "*"
