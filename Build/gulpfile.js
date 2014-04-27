@@ -9,7 +9,8 @@ var plugins = require('gulp-load-plugins')({
 var destDir = '../Resources/Public';     // Destination directory
 var vendorsDir = destDir + '/Vendors';   // Vendors directory (e.g. with Foundation source)
 var sources = {                          // File sources
-	sass: './scss/*.scss'
+	sass: './scss/*.scss',
+	sassWatch: ['./scss/**/*']
 };
 
 
@@ -41,7 +42,7 @@ gulp.task('connect', function() {
 // Watch
 gulp.task('watch', ['connect', 'sass'], function () {
 	// Watch .scss files
-	gulp.watch(sources.sass, ['sass']);
+	gulp.watch(sources.sassWatch, ['sass']);
 });
 
 // Default Task
