@@ -1,44 +1,55 @@
+// The splash screen/home page is a <header> element (semantics, its the header of the web page)
 // header.splashScreen
 .splashScreen {
-  height: 100%;
-  width: 100%;
-  background-color: #555;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #FFF;
+	position: relative;
+	height: 100%;
+	min-height: 400px;
+	width: 100%;
+	color: #FFF;
 
-  > .m12-site-assetlistbg {
-    position: absolute;
-    top:0;
-    bottom:0;
-    width: 100%;
-  }
+	// The background image is set by the CMS inline
+	// In future, we'll write a JavaScript to randomly select an image, from a set of images, for background-image
+	.m12-site-assetlistbg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	    background-size: cover;
+	    background-color: #555; // set background color to show while the page is loading image
+	}
 }
 
-
-
+// This is a <div> element which has the logo as its background and a list of single line animated statements underneath.
 .animatedList {
-  position: absolute;
-  top:0; right:0; bottom:0; left:0;
-  width: 50%;
-  height: 40%;
-  margin: auto;
-  text-align: center;
-  background-image: image-url('logo-white.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding-top: 75px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;  // can be 100% as the text-align is center
+	height: 200px;
+	margin: auto;
+	text-align: center;
+	background-image: image-url('logo-white.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-top: 75px;
 
-  > ul {
-    height: 70px;
-    overflow: hidden;
+	// To show only one line of statement at a time, set the height to a value and the overflow to hidden.
+	ul {
+		height: 70px;
+		overflow: hidden;
+	}
 
-    >   li {
-      font-size: 36pt;
-      font-weight: 300;
-      line-height: 70px;
-      list-style-type: none;
-      transition: margin-top 0.3s ease-in-out;
-    }
-  }
+	//
+	li {
+		font-size: 36pt;
+		font-weight: 300;
+		text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px, rgba(255,255,255, 0.5) 0px 0px 20px;
+		line-height: 70px;
+		list-style-type: none;
+		transition: margin-top 0.4s ease-in-out; // transition-duration specifies how long the transition takes to complete
+											     // (margin-top is changed from JavaScript and the setInterval function
+											     // sets the time delay before changing the margin-top).
+	}
 }
