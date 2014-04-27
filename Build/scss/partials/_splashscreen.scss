@@ -1,0 +1,44 @@
+// header.splashScreen
+.splashScreen {
+  height: 100%;
+  width: 100%;
+  background-color: #555;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFF;
+
+  > .m12-site-assetlistbg {
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 100%;
+  }
+}
+
+
+
+.animatedList {
+  position: absolute;
+  top:0; right:0; bottom:0; left:0;
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  text-align: center;
+  background-image: image-url('logo-white.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+
+  > ul {
+    height: 70px;
+    overflow: hidden;
+
+    >   li {
+      font-size: 36pt;
+      font-weight: 300;
+      line-height: 70px;
+      list-style-type: none;
+      transition: margin-top 0.3s ease-in-out;
+    }
+  }
+}
