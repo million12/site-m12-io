@@ -18,8 +18,10 @@ gulp.task('sass', function() {
 		.pipe(plugins.plumber())
 		.pipe(plugins.sass({
 			includePaths: [vendorsDir + '/foundation/scss'],
+			imagePath: '/_Resources/Static/Packages/M12.Site/Images',
 			sourceComments: 'map',
-			outputStyle: 'nested'
+			outputStyle: 'nested',
+			errLogToConsole: true
 		}))
 		.pipe(plugins.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest(destDir + '/Styles'))
