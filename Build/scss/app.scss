@@ -40,8 +40,14 @@
 //   'foundation/components/offcanvas',
    'foundation/components/visibility';
 
+
+// m12.Site
 @import 'modules/utility';
+@import 'partials/typography';
 @import 'partials/splashscreen';
+
+// vendors
+@import 'open-sans.scss';
 
 // Dev: tests, experiments
 @import 'dev-test';

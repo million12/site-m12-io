@@ -18,7 +18,10 @@ gulp.task('sass', function() {
 	gulp.src(sources.sass)
 		.pipe(plugins.plumber())
 		.pipe(plugins.sass({
-			includePaths: [vendorsDir + '/foundation/scss'],
+			includePaths: [
+				vendorsDir + '/foundation/scss',
+				vendorsDir + '/open-sans-fontface'
+			],
 			imagePath: '/_Resources/Static/Packages/M12.Site/Images',
 			sourceComments: 'map',
 			outputStyle: 'nested',
