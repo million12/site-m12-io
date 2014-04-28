@@ -32,7 +32,7 @@ page = Page {
 
 		parts {
 			menu = M12.Foundation:TopBar {
-				attributes.class.sitenav = 'site-nav'
+				sectionAlign = 'right'
 			}
 			breadcrumb = Breadcrumb
 		}
