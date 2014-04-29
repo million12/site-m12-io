@@ -40,14 +40,15 @@
 //   'foundation/components/offcanvas',
    'foundation/components/visibility';
 
+// vendors
+@import 'open-sans.scss';
 
 // m12.Site
 @import 'modules/utility';
 @import 'partials/typography';
 @import 'partials/splashscreen';
 
-// vendors
-@import 'open-sans.scss';
-
+// Neos add-ons / fixes for back-end
+@import 'partials/neos-backend';
 // Dev: tests, experiments
 @import 'dev-test';
