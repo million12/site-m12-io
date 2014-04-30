@@ -1,5 +1,15 @@
-#neos-navigate-panel {
+// Intentionally make this selector over-specific so it takes priority over anything else.
+#neos-application.neos {
+	// Re-set font size for UL, which is set globally for whole body and takes priority.
 	ul {
-		font-size: rem-calc(14px) !important;
+		font-size: inherit !important;
+	}
+	#neos-navigate-panel {
+		#neos-node-tree {
+			height: 30%;
+		}
+		#neos-context-structure {
+			height: 70%;
+		}
 	}
 }
