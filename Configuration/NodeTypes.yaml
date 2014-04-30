@@ -7,3 +7,66 @@
   ui:
     label: 'Asset list (bg)'
     icon: 'icon-folder-open-alt'
+
+
+'M12.Site:Section':
+  superTypes: ['M12.Foundation:Container']
+  ui:
+    label: 'Section'
+    icon: 'icon-laptop'
+    group: 'm12'
+    inspector:
+      groups:
+        options:
+          label: 'Section options'
+          position: 1
+  childNodes:
+    content:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    headline:
+      type: string
+      defaultValue: '<h1>Enter headline here</h1>'
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'format': ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+          'link':
+            'a': TRUE
+# Inherited from M12.Foundation:Container
+# Override default value to 'section' tag
+    tagName:
+      defaultValue: 'section'
+    anchorName:
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Anchor / section name'
+        reloadIfChanged: FALSE
+        inspector:
+          group: 'options'
+          position: 10
+          editor: Content/Inspector/Editors/TextFieldEditor
+          editorOptions:
+            placeholder: 'None'
+    classBg:
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Background style'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'options'
+          position: 20
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            placeholder: 'Default'
+            values:
+              '':
+                label: ''
+              lighter:
+                label: 'lighter'
+              medium:
+                label: 'medium'
+              darker:
+                label: 'darker'

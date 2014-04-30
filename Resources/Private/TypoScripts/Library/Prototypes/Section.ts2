@@ -1,0 +1,6 @@
+prototype(M12.Site:Section) < prototype(M12.Foundation:Container) {
+	node = ${node}
+
+	attributes.class.nodeType = 'm12-section'
+	attributes.class.classBg = ${q(node).property('classBg') ? 'bg-'+q(node).property('classBg') : 'bg-default'}
+}

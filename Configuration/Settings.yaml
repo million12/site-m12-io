@@ -1,0 +1,7 @@
+TYPO3:
+  Neos:
+    nodeTypes:
+      groups:
+        m12:
+          position: 5
+          label: 'M12.io elements'
