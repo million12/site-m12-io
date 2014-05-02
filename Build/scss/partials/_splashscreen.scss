@@ -1,14 +1,118 @@
-// The splash screen/home page is a <header> element (semantics, its the header of the web page)
+// 01. --------------------------- BODY ---------------------------
+
+section {
+    padding: 4.375rem 0 6.375rem 0;
+
+    h1:after {
+        content: '';
+        border-bottom: 1px solid #c4c4c4;
+        display: block;
+        height: 1px;
+        margin: auto;
+        width: 100px;
+        text-align: center;
+    }
+}
+
+h1 {
+	color: #555;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h3 {
+	color: #555;
+}
+
+p {
+    letter-spacing: 0.5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+b {
+	font-weight: 600;
+}
+
+
+// 02. --------------------------- NAVIGATION ---------------------------
+
+.top-bar {
+    background: #fff;
+
+    .title-area .name h1 a {
+        background-image: image-url('logo-black.png'); // Put m12 logo as background image
+        background-size: 95px;                         // Scale the image to the anchors size
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 5px;
+
+        span {
+            visibility: hidden;
+        }
+    }
+
+    .toggle-topbar.menu-icon a
+    {
+    	color: #333;
+    }
+}
+
+// this probably doesn't need to be in a section ???
+.top-bar-section {
+    padding: 0;
+}
+
+
+// 03. --------------------------- SETTINGS OF MAIN SECTIONS ---------------------------
+
+
+.bg-medium {
+    background-color: #eee;
+}
+
+.bg-lighter {
+    background-color: #f5f5f5;
+}
+
+.bg-darker {
+    background-color: #f9f9f9;
+}
+
+.bg-default {
+
+}
+
+.bg-dark {
+    //background-color: #515151;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+footer {
+    //background-color: #2e2e2e;
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 3rem 0 3rem 0;
+    font-size: 1rem;
+}
+
+
+// 04.--------------------------- HOME/SPLASHSCREEN SECTION ---------------------------
+
 // header.splashScreen
 .splashScreen {
 	position: relative;
 	height: 100%;
 	min-height: 400px;
 	width: 100%;
-	color: #FFF;
+	color: #fff;
 
 	// The background image is set by the CMS inline
 	// In future, we'll write a JavaScript to randomly select an image, from a set of images, for background-image
+
 	.m12-site-assetlistbg {
 		position: absolute;
 		top: 0;
@@ -16,6 +120,23 @@
 		width: 100%;
 	    background-size: cover;
 	    background-color: #555; // set background color to show while the page is loading image
+
+	}
+
+	// style the button to appear at the center bottom of the splash screen
+	a.button {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		bottom: 5%;
+		left: 50%;
+		margin-left: -40px;
+		background: image-url('down.png') no-repeat;
+		transition: all 0.3s ease-in-out;
+		text-indent: -20rem;
+		overflow: hidden;
+				//border-radius: 3.5rem;
+        		//border: solid #fff;
 	}
 }
 
@@ -30,10 +151,13 @@
 	height: 200px;
 	margin: auto;
 	text-align: center;
-	background-image: image-url('logo-white.png');
-	background-position: center top;
+	background: image-url('logo-white.png'), rgba(0,0,0,0.3);
+	background-position: center 15%;
 	background-repeat: no-repeat;
-	padding-top: 75px;
+	padding-top: 105px;
+	border-top: rgba(255,255,255,0.7) double;
+	border-bottom: rgba(255,255,255,0.7) double;
+
 
 	// To show only one line of statement at a time, set the height to a value and the overflow to hidden.
 	ul {
@@ -43,13 +167,83 @@
 
 	//
 	li {
-		font-size: 36pt;
-		font-weight: 300;
+		//font-size: 36pt;
+		font-size: 3rem;
+		font-weight: normal;
 		text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px, rgba(255,255,255, 0.5) 0px 0px 20px;
 		line-height: 70px;
 		list-style-type: none;
-		transition: margin-top 0.4s ease-in-out; // transition-duration specifies how long the transition takes to complete
+		transition: margin-top 0.2s ease-in-out; // transition-duration specifies how long the transition takes to complete
 											     // (margin-top is changed from JavaScript and the setInterval function
 											     // sets the time delay before changing the margin-top).
 	}
+}
+
+
+// 05. --------------------------- ABOUT SECTION ---------------------------
+
+// 07. --------------------------- WHAT WE DO SECTION ---------------------------
+
+
+// 08. --------------------------- MEET US SECTION ---------------------------
+
+.bg-darker {
+    figure {
+    	margin: 0;   // don't actually need img in figure here.
+    				 // would be great to have title, button, and text together in one div
+    }
+
+	// need a space/gap between the two columns, I've taken the padding and margins
+	// so image can take up whole of div space for now
+    img {
+    	width: 100%;
+    }
+
+    .columns {
+    	padding: 0;
+    }
+
+    .text-center, text-left {
+    	background: #fff;
+    }
+}
+
+
+// 09. --------------------------- BEFORE FOOTER/OPEN SOURCE ---------------------------
+
+.bg-dark {
+    h1, h3 {
+        color: #fff;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    ul, p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.on-dark {
+    div:first-child {
+        border-right: dashed rgba(255,255,255,0.5);
+    }
+
+        div:nth-child(2) {
+        h3 {
+            padding-left: 10px;
+        }
+    }
+}
+
+
+// 10. --------------------------- FOOTER ---------------------------
+
+footer {
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 }

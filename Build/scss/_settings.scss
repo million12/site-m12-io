@@ -34,6 +34,7 @@
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
+$row-width: rem-calc(1152);
 // $total-columns: 12;
 
 // Global
@@ -41,6 +42,7 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
+$body-font-color: #ababab;
 $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -55,6 +57,7 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
+$primary-color: #00aed7;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -122,13 +125,17 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 // $header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
+$header-font-weight: 300;
+//$header-font-color: #2e484c;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
-
+$header-top-margin: rem-calc(30);
+$header-bottom-margin: rem-calc(30);
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
+$h1-font-size: rem-calc(53);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
@@ -150,6 +157,8 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1rem;
+$paragraph-font-weight: 300;
+$paragraph-font-size: rem-calc(20);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -175,6 +184,7 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 
 // We use these to style lists
 // $list-style-position: outside;
+// $list-style-position: inside;
 // $list-side-margin: 1.1rem;
 // $list-ordered-side-margin: 1.4rem;
 // $list-side-margin-no-bullet: 0;
@@ -1169,10 +1179,12 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 
 // Background color for the top bar
 // $topbar-bg-color: #333;
+$topbar-bg-color: #fff;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
+$topbar-height: 60px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1190,18 +1202,30 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
+
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
+$topbar-link-color: #333;
+$topbar-link-color-hover: $primary-color;
+$topbar-link-color-active: $primary-color;
+$topbar-link-color-active-hover: $primary-color;
+$topbar-link-font-size: rem-calc(11);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-hover: #272727;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+// $topbar-link-bg: #fff;
+$topbar-link-bg-hover: #fff;
+$topbar-link-bg-active: #fff;
+$topbar-link-bg-active-hover: #fff;
+
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
+$topbar-link-text-transform: uppercase;
 // $topbar-link-padding: $topbar-height / 3;
 
 // $topbar-button-font-size: 0.75rem;
