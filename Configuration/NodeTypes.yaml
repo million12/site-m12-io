@@ -37,6 +37,13 @@
 # Override default value to 'section' tag
     tagName:
       defaultValue: 'section'
+    hideHeadline:
+      type: boolean
+      ui:
+        label: 'Hide headline'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'options'
     anchorName:
       type: string
       defaultValue: ''
@@ -45,7 +52,6 @@
         reloadIfChanged: FALSE
         inspector:
           group: 'options'
-          position: 10
           editor: Content/Inspector/Editors/TextFieldEditor
           editorOptions:
             placeholder: 'None'
@@ -57,7 +63,6 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'options'
-          position: 20
           editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             placeholder: 'Default'
@@ -70,3 +75,5 @@
                 label: 'medium'
               darker:
                 label: 'darker'
+              dark:
+                label: 'dark'
