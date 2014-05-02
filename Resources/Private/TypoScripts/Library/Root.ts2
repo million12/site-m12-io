@@ -36,6 +36,7 @@ page = Page {
 		parts {
 			menu = M12.Foundation:TopBar {
 				sectionAlign = 'right'
+				wrapperClasses.isSticky = 'sticky'
 			}
 			breadcrumb = Breadcrumb
 		}
