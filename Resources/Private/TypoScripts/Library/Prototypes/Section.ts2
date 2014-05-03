@@ -1,6 +1,7 @@
-prototype(M12.Site:Section) < prototype(M12.Foundation:Container) {
-	node = ${node}
+prototype(M12.Foundation:Section) < prototype(M12.Foundation:Container) {
+	# For backward-compatibility reasons keep 'm12-section' class
+	attributes.class.nodeType = 'm12-foundation-section m12-section'
 
-	attributes.class.nodeType = 'm12-section'
-	attributes.class.classBg = ${q(node).property('classBg') ? 'bg-'+q(node).property('classBg') : 'bg-default'}
+	# Override default M12.Foundation:Section styles
+	attributes.class.classSectionStyle = ${q(node).property('classSectionStyle') ? 'bg-'+q(node).property('classSectionStyle') : 'bg-default'}
 }
