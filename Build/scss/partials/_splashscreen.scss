@@ -36,7 +36,6 @@ b {
 	font-weight: 600;
 }
 
-
 // 02. --------------------------- NAVIGATION ---------------------------
 
 .top-bar {
@@ -46,8 +45,7 @@ b {
         background-image: image-url('logo-black.png'); // Put m12 logo as background image
         background-size: 95px;                         // Scale the image to the anchors size
         background-repeat: no-repeat;
-        background-position: center center;
-        margin-left: 5px;
+        background-position: left center; // background-position left will keep the logo aligned to the left of the window when re-sized
 
         span {
             visibility: hidden;
@@ -63,11 +61,14 @@ b {
 // this probably doesn't need to be in a section ???
 .top-bar-section {
     padding: 0;
+
+    //ul li a {
+    //	color: #fff;
+    //}
 }
 
 
 // 03. --------------------------- SETTINGS OF MAIN SECTIONS ---------------------------
-
 
 .bg-medium {
     background-color: #eee;
@@ -86,13 +87,11 @@ b {
 }
 
 .bg-dark {
-    //background-color: #515151;
     background-color: #2e2e2e;
     color: #fff;
 }
 
 footer {
-    //background-color: #2e2e2e;
     background-color: #0f0f0f;
     color: #fff;
     padding: 3rem 0 3rem 0;
@@ -112,7 +111,6 @@ footer {
 
 	// The background image is set by the CMS inline
 	// In future, we'll write a JavaScript to randomly select an image, from a set of images, for background-image
-
 	.m12-site-assetlistbg {
 		position: absolute;
 		top: 0;
@@ -129,14 +127,24 @@ footer {
 		width: 80px;
 		height: 80px;
 		bottom: 5%;
-		left: 50%;
+        left: 50%;
 		margin-left: -40px;
 		background: image-url('down.png') no-repeat;
+		background-position: 0 -80px;
 		transition: all 0.3s ease-in-out;
 		text-indent: -20rem;
 		overflow: hidden;
-				//border-radius: 3.5rem;
-        		//border: solid #fff;
+		border-radius: 4.5rem;
+        border: solid rgba(255,255,255,0.7);
+        background-color: rgba(0,0,0,0.1);
+
+	}
+
+	a.button:hover {
+		background-position: 0 0;
+		border-radius: 2.5rem;
+		//border: solid rgba(255,255,255,0.5);
+		background-color: rgba(0,0,0,0.3);
 	}
 }
 
@@ -199,9 +207,9 @@ footer {
     	width: 100%;
     }
 
-    .columns {
-    	padding: 0;
-    }
+    //.columns {
+    //	padding: 0;
+    //}
 
     .text-center, text-left {
     	background: #fff;
