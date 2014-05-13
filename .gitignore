@@ -1,4 +1,5 @@
 *.DS_Store
+/Build/node_modules
 /Resources/Public/Vendors/**/test
 /Resources/Public/Vendors/**/tests
 /Resources/Public/Vendors/**/src
