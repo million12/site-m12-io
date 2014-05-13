@@ -9,6 +9,12 @@ page = Page {
 	@override.template = 'resource://M12.Site/Private/Templates/Page/Default.html'
 	@override.isDEV = ${Configuration.setting('TYPO3.Flow.core.context') == 'Development'}
 
+	# Are there any elements with activated magellan sticky nav?
+	# This variable is later on used on navigation components (TopBar, SubNav etc) to render
+	# appropriate markup.
+	#@override.magellanSupport = ${q(node).children('main').children('[activateMagellan=true]').count()}
+	@override.magellanSupport = ${true}
+
 	head {
 		metadata = TypoScript:Template {
 			templatePath = ${template}
@@ -30,11 +36,15 @@ page = Page {
 	body {
 		templatePath = ${template}
 		sectionName = 'body'
+		gridWrapper = ${true}
 
 		parts {
 			menu = M12.Foundation:TopBar {
+				entryLevel = 1
+				maximumLevels = 3
+				magellanSupport = true
 				sectionAlign = 'right'
-				wrapperClasses.isSticky = 'sticky'
+				extraAttributes.class.sticky = 'sticky'
 			}
 			breadcrumb = Breadcrumb
 		}
@@ -73,6 +83,7 @@ page = Page {
 landingPage < page {
 	body {
 		landingPage = ${true}
+		gridWrapper = ${false}
 	}
 }
 

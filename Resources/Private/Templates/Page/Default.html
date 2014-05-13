@@ -21,14 +21,23 @@
 		{content.teaser -> f:format.raw()}
 	</f:if>
 	{parts.menu -> f:format.raw()}
-	<main>
-		{content.main -> f:format.raw()}
-	</main>
-	<footer>
-		<div class="row">
-			{footer -> f:format.raw()}
-		</div>
-	</footer>
+
+	<f:if condition="{gridWrapper}">
+		<f:then>
+			<main class="row">
+				<div class="small-12 columns">
+					{content.main -> f:format.raw()}
+				</div>
+			</main>
+		</f:then>
+		<f:else>
+			<main>
+				{content.main -> f:format.raw()}
+			</main>
+		</f:else>
+	</f:if>
+
+	<footer>{footer -> f:format.raw()}</footer>
 </f:section>
 <f:section name="bodyScripts">
 	<script src="{f:uri.resource(path: 'Vendors/jquery/dist/jquery.min.js', package: 'M12.Site')}"></script>
