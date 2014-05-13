@@ -1,8 +1,6 @@
 namespace: TypoScript=TYPO3.TypoScript
 
 include: Prototypes/Page.ts2
-include: Prototypes/Section.ts2
-
 
 /**
  * Root TypoScript template for the M12.io Site

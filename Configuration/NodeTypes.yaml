@@ -8,10 +8,12 @@
     label: 'Asset list (bg)'
     icon: 'icon-folder-open-alt'
 
-
-'M12.Foundation:Section':
+#
+# Override 'customLook' property with M12 styles for Grid elements
+#
+'M12.Foundation:GridRowAbstract':
   properties:
-    classSectionStyle:
+    customLook:
       ui:
         inspector:
           editorOptions:
@@ -19,11 +21,11 @@
               style-1: ~
               style-2: ~
               style-3: ~
-              lighter:
-                label: 'lighter'
-              medium:
-                label: 'medium'
-              darker:
-                label: 'darker'
-              dark:
-                label: 'dark'
+              bg-lighter:
+                label: 'bg-lighter'
+              bg-medium:
+                label: 'bg-medium'
+              bg-darker:
+                label: 'bg-darker'
+              bg-dark:
+                label: 'bg-dark'
