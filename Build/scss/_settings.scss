@@ -40,11 +40,11 @@ $row-width: rem-calc(1152);
 // Global
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: #f5f5f5;
 // $body-font-color: #222;
-$body-font-color: #ababab;
-$body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
+$body-font-color: #666;
+$body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
@@ -1211,7 +1211,7 @@ $topbar-link-color: #333;
 $topbar-link-color-hover: $primary-color;
 $topbar-link-color-active: $primary-color;
 $topbar-link-color-active-hover: $primary-color;
-$topbar-link-font-size: rem-calc(11);
+$topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-hover: #272727;
