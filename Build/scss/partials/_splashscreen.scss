@@ -1,100 +1,4 @@
-// 01. --------------------------- BODY ---------------------------
-
-section {
-    padding: 3rem 0 4rem 0;
-
-    h1:after {
-        content: '';
-        border-bottom: 1px solid #c4c4c4;
-        display: block;
-        height: 1px;
-        margin: auto;
-        width: 100px;
-        text-align: center;
-    }
-}
-
-h1 {
-	color: #555;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-h3 {
-	color: #555;
-}
-
-p {
-    letter-spacing: 0.5px;
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
-ul {
-    list-style-type: none;
-}
-
-b {
-	font-weight: 600;
-}
-
-// 02. --------------------------- NAVIGATION ---------------------------
-
-.top-bar {
-    background: #fff;
-
-    .title-area .name h1 a {
-        background-image: image-url('logo-black.png'); // Put m12 logo as background image
-        background-size: 95px;                         // Scale the image to the anchors size
-        background-repeat: no-repeat;
-        background-position: left center; // background-position left will keep the logo aligned to the left of the window when re-sized
-
-        span {
-            visibility: hidden;
-        }
-    }
-
-    .toggle-topbar.menu-icon a
-    {
-    	color: #333;
-    }
-}
-
-// this probably doesn't need to be in a section ???
-.top-bar-section {
-    padding: 0;
-
-    //ul li a {
-    //	color: #fff;
-    //}
-}
-
-
-// 03. --------------------------- SETTINGS OF MAIN SECTIONS ---------------------------
-
-.bg-lighter {
-	background-color: #ffffff; // lighter than default $body-bg
-}
-.bg-medium {
-	background-color: #f9f9f9; // slightly darker than default $body-bg
-}
-.bg-darker {
-	background-color: #eee;    // darker than default $body-bg
-}
-.bg-dark {
-    background-color: #2e2e2e; // dark background (to use eg. above footer)
-    color: #fff;
-}
-
-footer {
-    padding: 1.2rem 0;
-    color: #999;
-    background-color: #111;
-}
-
-
-// 04.--------------------------- HOME/SPLASHSCREEN SECTION ---------------------------
+// 01.--------------------------- HOME/SPLASHSCREEN SECTION ---------------------------
 
 // header.splashScreen
 .splashScreen {
@@ -105,40 +9,65 @@ footer {
 	color: #fff;
 
 	// The background image is set by the CMS inline
-	// In future, we'll write a JavaScript to randomly select an image, from a set of images, for background-image
+	// In future, we'll write a JavaScript function to randomly select an image, from a set of images, for background-image
 	.m12-site-assetlistbg {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		width: 100%;
 	    background-size: cover;
-	    background-color: #111; // set background color to show while the page is loading image
+	    background-color: $splash-screen-bg-color; // set background color to show while the page is loading image
 	}
 
 	// style the button to appear at the center bottom of the splash screen
-	a.button {
+	.button {
+		$splash-button-position: 10px;
+		$splash-button-position-offset: 70px;
+		$splash-button-arrow-size: 36px;
+		$splash-button-circle-size: 80px;
+
 		position: absolute;
-		width: 80px;
-		height: 80px;
+		width: $splash-button-circle-size;
+		height: $splash-button-circle-size;
 		bottom: 5%;
-        left: 50%;
-		margin-left: -40px;
-		background: image-url('down.png') no-repeat;
-		background-position: 0 -80px;
-		transition: all 0.3s ease-in-out;
-		text-indent: -20rem;
+		left: 50%;
+		margin: 0 0 0 $splash-button-circle-size/2; // margin-bottom for .button is set to 1.25rem by Foundation, reset to 0,
+							 						// margin-left is -40px to horizontally align the absolutely positioned button
 		overflow: hidden;
-		border-radius: 4.5rem;
-        border: solid rgba(255,255,255,0.7);
-        background-color: rgba(0,0,0,0.1);
-
-	}
-
-	a.button:hover {
-		background-position: 0 0;
 		border-radius: 2.5rem;
-		//border: solid rgba(255,255,255,0.5);
-		background-color: rgba(0,0,0,0.3);
+		border: solid rgba(255,255,255,0.7);
+		background-color: rgba(0,0,0,0.1);
+		text-indent: -20rem;
+
+		&:before, &:after {
+			position: absolute;
+			display: inline-block;
+			width: $splash-button-arrow-size;
+			height: $splash-button-arrow-size;
+			top: $splash-button-position;
+			left: 50%;
+			margin-left: -$splash-button-arrow-size/2;
+			content: '';
+			border: solid #888;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+			transition: top 0.4s ease-in-out;
+		}
+		&:before {
+			top: $splash-button-position - $splash-button-position-offset;
+			border-color: #fff;
+			transition-duration: 0.2s;
+		}
+
+		&:hover {
+			background-color: rgba(0,0,0,0.3);
+			&:before {
+				top: $splash-button-position;
+			}
+			&:after {
+				top: $splash-button-position + $splash-button-position-offset;
+			}
+		}
 	}
 }
 
@@ -151,14 +80,15 @@ footer {
 	left: 0;
 	height: 200px;
 	margin: auto;
+	padding-top: 105px;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-left-width: 0;
+    border-right-width: 0;
 	text-align: center;
 	background: rgba(0,0,0,0.3) image-url('logo-white.png');
 	background-position: center 15%;
 	background-repeat: no-repeat;
-	padding-top: 105px;
-	border: 1px solid rgba(255,255,255,0.7);
-	border-left-width: 0;
-	border-right-width: 0;
+
 
 
 	// To show only one line of statement at a time, set the height to a value and the overflow to hidden.
@@ -169,7 +99,6 @@ footer {
 
 	//
 	li {
-		//font-size: 36pt;
 		font-size: 3rem;
 		font-weight: normal;
 		text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px, rgba(255,255,255, 0.5) 0px 0px 20px;
@@ -178,73 +107,5 @@ footer {
 		transition: margin-top 0.2s ease-in-out; // transition-duration specifies how long the transition takes to complete
 											     // (margin-top is changed from JavaScript and the setInterval function
 											     // sets the time delay before changing the margin-top).
-	}
-}
-
-
-// 05. --------------------------- ABOUT SECTION ---------------------------
-
-// 07. --------------------------- WHAT WE DO SECTION ---------------------------
-
-
-// 08. --------------------------- MEET US SECTION ---------------------------
-
-.bg-darker {
-    figure {
-    	margin: 0;   // don't actually need img in figure here.
-    				 // would be great to have title, button, and text together in one div
-    }
-
-	// need a space/gap between the two columns, I've taken the padding and margins
-	// so image can take up whole of div space for now
-    img {
-    	width: 100%;
-    }
-
-    //.columns {
-    //	padding: 0;
-    //}
-
-    .text-center, text-left {
-    	background: #fff;
-    }
-}
-
-
-// 09. --------------------------- BEFORE FOOTER/OPEN SOURCE ---------------------------
-
-.bg-dark {
-    h1, h3 {
-        color: #fff;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    ul, p {
-        font-size: 1rem;
-        font-weight: 300;
-    }
-}
-
-.on-dark {
-    div:first-child {
-        border-right: dashed rgba(255,255,255,0.5);
-    }
-
-        div:nth-child(2) {
-        h3 {
-            padding-left: 10px;
-        }
-    }
-}
-
-
-// 10. --------------------------- FOOTER ---------------------------
-
-footer {
-	p {
-		font-size: 0.8rem;
 	}
 }
