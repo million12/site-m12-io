@@ -33,6 +33,22 @@ gulp.task('sass', function() {
 	;
 });
 
+gulp.task('rubySass', function() {
+	gulp.src(sources.sass)
+		.pipe(plugins.plumber())
+		.pipe(plugins.rubySass({
+			loadPath: [
+				vendorsDir + '/foundation/scss',
+				vendorsDir + '/open-sans-fontface'
+			],
+			sourcemap: true
+		}))
+		.pipe(plugins.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+		.pipe(gulp.dest(destDir + '/Styles'))
+		.pipe(plugins.connect.reload())
+	;
+});
+
 // Connect Server
 gulp.task('connect', function() {
 	plugins.connect.server({
