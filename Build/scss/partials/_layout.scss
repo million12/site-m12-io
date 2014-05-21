@@ -1,0 +1,30 @@
+// layout structure of containers/boxes: sizes-width, height, margins, padding
+
+// 01. --------------------------- NAVIGATION ---------------------------
+
+.top-bar {
+	.title-area .name h1 a {
+		// background: color position size repeat origin clip attachment image;
+		background: image-url('logo-black.png') left center/95px no-repeat;
+
+		span {
+			visibility: hidden;
+		}
+	}
+}
+
+// this probably doesn't need to be in a section ???
+.top-bar-section {
+	padding: 0;
+}
+
+// 02. --------------------------- FOOTER ---------------------------
+footer {
+	padding: 1.2rem 0;
+	background-color: $footer-bg-color;
+	color: $footer-font-color;
+
+	p {
+		font-size: 0.8rem;
+	}
+}

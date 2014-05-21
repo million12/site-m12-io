@@ -1,0 +1,98 @@
+// Content - generic style and ....
+
+// 01. --------------------------- GENERIC STYLE ---------------------------
+
+.bg-lighter {
+	background-color: $bg-lighter-color; // lighter than default $body-bg
+}
+.bg-medium {
+	background-color: $bg-medium-color; // slightly darker than default $body-bg
+}
+.bg-darker {
+	background-color: $bg-darker-color;    // darker than default $body-bg
+}
+.bg-dark {
+	background-color: $bg-dark-color; // dark background (to use eg. above footer)
+	color: $dark-bg-font-color;
+}
+
+p {
+	letter-spacing: 0.5px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+b {
+	font-weight: 600;
+}
+
+// 02. --------------------------- ALL SECTIONS ---------------------------
+
+section {
+	padding: 3rem 0 4rem 0;
+
+	h1:after {
+		content: '';
+		border-bottom: 1px solid #c4c4c4;
+		display: block;
+		height: 1px;
+		margin: auto;
+		width: 100px;
+		text-align: center;
+	}
+}
+
+h1 {
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+
+// 03. --------------------------- MEET US SECTION ---------------------------
+
+.bg-darker {
+	figure {
+		margin: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	//.columns {
+	//	padding: 0;
+	//}
+
+	//.text-center, .text-left {
+	//	background: #fff;
+	//}
+}
+
+// 04. --------------------------- BEFORE FOOTER/OPEN SOURCE ---------------------------
+
+.bg-dark {
+	h1, h3 {
+		color: #fff;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	ul, p {
+		font-size: 1rem;
+	}
+}
+
+.on-dark {
+	div:nth-child(2) {
+		h3 {
+			padding-left: 10px;
+		}
+	}
+}
