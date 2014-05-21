@@ -31,7 +31,7 @@
 		height: $splash-button-circle-size;
 		bottom: 5%;
 		left: 50%;
-		margin: 0 0 0 $splash-button-circle-size/2; // margin-bottom for .button is set to 1.25rem by Foundation, reset to 0,
+		margin-left: -$splash-button-circle-size/2; // margin-bottom for .button is set to 1.25rem by Foundation, reset to 0,
 							 						// margin-left is -40px to horizontally align the absolutely positioned button
 		overflow: hidden;
 		border-radius: 2.5rem;
