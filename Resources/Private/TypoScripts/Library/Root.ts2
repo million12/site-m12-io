@@ -44,7 +44,8 @@ page = Page {
 				maximumLevels = 3
 				magellanSupport = true
 				sectionAlign = 'right'
-				extraAttributes.class.sticky = 'sticky'
+				# Sticky have to be OFF when magellan is ON
+#				extraAttributes.class.sticky = 'sticky'
 			}
 			breadcrumb = Breadcrumb
 		}
