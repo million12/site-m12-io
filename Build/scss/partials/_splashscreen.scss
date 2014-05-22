@@ -89,7 +89,17 @@
 	background-position: center 15%;
 	background-repeat: no-repeat;
 
+	@media #{$small-only} {
+		height: 150px;
+		padding-top: 70px;
+		background-size: 160px;  // width is 170px, height is auto
+	}
 
+	@media #{$medium-only} {
+		height: 180px;
+		padding-top: 90px;
+		background-size: 200px;
+	}
 
 	// To show only one line of statement at a time, set the height to a value and the overflow to hidden.
 	ul {
@@ -107,5 +117,11 @@
 		transition: margin-top 0.2s ease-in-out; // transition-duration specifies how long the transition takes to complete
 											     // (margin-top is changed from JavaScript and the setInterval function
 											     // sets the time delay before changing the margin-top).
+		@media #{$small-only} {
+			font-size: 1.2rem;
+		}
+		@media #{$medium-only} {
+			font-size: 2rem;
+		}
 	}
 }

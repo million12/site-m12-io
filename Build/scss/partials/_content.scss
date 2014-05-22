@@ -1,6 +1,13 @@
-// Content - generic style and ....
-
 // 01. --------------------------- GENERIC STYLE ---------------------------
+
+body {
+	@media #{$small-only} {
+		font-size: 80%;
+	}
+	@media #{$medium-only} {
+		font-size: 90%;
+	}
+}
 
 p {
 	letter-spacing: 0.5px;
@@ -11,6 +18,7 @@ p {
 
 ul {
 	list-style-type: none;
+	margin-left: 0;
 }
 
 b {
