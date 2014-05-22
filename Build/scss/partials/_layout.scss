@@ -3,10 +3,8 @@
 // 01. --------------------------- NAVIGATION ---------------------------
 
 .top-bar {
-	.title-area .name h1 a {
-		// background: color position size repeat origin clip attachment image;
-		background: left center/95px no-repeat image-url('logo-black.png');
-
+	.title-area .name a {
+		background: image-url('logo-black.png') left center/95px no-repeat;
 		span {
 			visibility: hidden;
 		}
