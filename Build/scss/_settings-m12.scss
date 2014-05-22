@@ -1,20 +1,18 @@
 // M12.IO SETTINGS
+$OpenSansPath: '../Vendors/open-sans-fontface/fonts';
 
 // COLORS
 // background colors
-$splash-screen-bg-color: #111;
-$bg-lighter-color: #ffffff;
-$bg-medium-color: #f9f9f9;
-$bg-darker-color: #eee;
-$bg-dark-color: #2e2e2e;
-$footer-bg-color: #111;
+$bg-color-lighter: #fff;
+$bg-color-medium: #f9f9f9;
+$bg-color-darker: #eee;
+$bg-color-dark: #2e2e2e; // slightly lighter than $bg-black-color (e.g. for pre-footer content)
+$bg-color-black: #111; // e.g. for footer background
 
 // font colors
-$dark-bg-font-color: #fff;
-$footer-font-color: #999;
+$font-color-white: #fff; // to use on dark bg
+$font-color-gray: #999; // to use on dark bg, but lighter
 
 // splashscreen colors
 $splashscreen-button-color: rgba(0,0,0,0.1);
 $splashscreen-button-hover-color: rgba(0,0,0,0.3);
-
-$OpenSansPath: '../Vendors/open-sans-fontface/fonts';

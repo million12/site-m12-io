@@ -25,20 +25,20 @@ b {
 	font-weight: 600;
 }
 
-.bg-lighter {
-	background-color: $bg-lighter-color; // lighter than default $body-bg
+.bg-lighter, .bg-white {
+	background-color: $bg-color-lighter; // lighter than default $body-bg
 }
 .bg-medium {
-	background-color: $bg-medium-color; // slightly darker than default $body-bg
+	background-color: $bg-color-medium; // slightly darker than default $body-bg
 }
 .bg-darker {
-	background-color: $bg-darker-color;    // darker than default $body-bg
+	background-color: $bg-color-darker;    // darker than default $body-bg
 }
 .bg-dark {
-	background-color: $bg-dark-color; // dark background (to use eg. above footer)
-	color: $dark-bg-font-color;
+	background-color: $bg-color-dark; // dark background (to use eg. above footer)
+	color: $font-color-white;
 	h1, h3 {
-		color: $dark-bg-font-color;
+		color: $font-color-white;
 	}
 }
 
