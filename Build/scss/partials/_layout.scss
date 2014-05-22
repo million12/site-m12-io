@@ -28,3 +28,37 @@ footer {
 		font-size: 0.8rem;
 	}
 }
+
+
+// ----------------- LANDING PAGE, MEET US SECTION ------------------
+
+.section-meet-us--columns {
+	@extend .bg-white;
+	position: relative; // so the divider is positioned relatively to this element, not the whole parent section
+	padding-bottom: $column-gutter/2;
+
+	// Divider between columns, with the background colour like the parent section
+	// positioned exactly in the center
+	&:before {
+		@extend .bg-darker; // inherit color from .bg-darker
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		width: $column-gutter;
+		margin-left: -$column-gutter/2;
+		display: block !important; // override Foundation :before styling
+	}
+
+	> .columns {
+		// add padding, so there's a space between them, exactly with the same with as the divider
+		&:first-child { padding-right: $column-gutter/2 }
+		&:last-child { padding-left: $column-gutter/2 }
+
+		// content inside
+		> .m12-foundation-container {
+			padding-left: $column-gutter/2;
+			padding-right: $column-gutter/2;
+		}
+	}
+}

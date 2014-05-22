@@ -67,9 +67,25 @@ section {
 
 // 03. --------------------------- MEET US SECTION ---------------------------
 
-.section-meet-us {
+.section-meet-us--columns {
+	font-size: $h5-font-size;
 
+	figure {
+		margin: 0;
+		img { width: 100% }
+	}
 
+	h3 {
+		margin: 1rem 0;
+	}
+	.button {
+		padding-top: rem-calc(10);
+		padding-bottom: rem-calc(10);
+		text-transform: uppercase;
+	}
+	p {
+		font-size: inherit;
+	}
 }
 
 // 04. --------------------------- BEFORE FOOTER/OPEN SOURCE ---------------------------
