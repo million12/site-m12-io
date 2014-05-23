@@ -3,6 +3,7 @@ $OpenSansPath: '../Vendors/open-sans-fontface/fonts';
 
 // COLORS
 // background colors
+$bg-color-white: #fff;
 $bg-color-lighter: #fff;
 $bg-color-medium: #f9f9f9;
 $bg-color-darker: #eee;
@@ -10,6 +11,7 @@ $bg-color-dark: #2e2e2e; // slightly lighter than $bg-black-color (e.g. for pre-
 $bg-color-black: #111; // e.g. for footer background
 
 // font colors
+$font-color-black: #333;
 $font-color-white: #fff; // to use on dark bg
 $font-color-gray: #999; // to use on dark bg, but lighter
 

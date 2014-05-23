@@ -25,7 +25,10 @@ b {
 	font-weight: 600;
 }
 
-.bg-lighter, .bg-white {
+.bg-white {
+	background-color: $bg-color-white;
+}
+.bg-lighter {
 	background-color: $bg-color-lighter; // lighter than default $body-bg
 }
 .bg-medium {

@@ -2,8 +2,8 @@
 // SASS structure follows guidelines from
 // http://thesassway.com/beginner/how-to-structure-a-sass-project
 //
+@import 'settings-m12'; // must be 1st, as we might use some variables from there in F. settings.
 @import 'settings';
-@import 'settings-m12';
 
 // Vendors:
 @import 'normalize';

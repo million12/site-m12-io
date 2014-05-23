@@ -9,11 +9,37 @@
 			visibility: hidden;
 		}
 	}
-}
 
-// this probably doesn't need to be in a section ???
-.top-bar-section {
-	padding: 0;
+	.top-bar-section {
+		padding: 0;
+		.has-dropdown {
+			> a {
+				padding-right: 20px !important;
+			}
+			.dropdown {
+				background-color: $bg-color-medium;
+				box-shadow: 2px 3px 15px -5px rgba(100,100,100,0.6);
+				li {
+					&:after {
+						content: '';
+						border-bottom: 1px solid $bg-color-darker;
+						position: absolute;
+						width: 90%;
+						left: 50%;
+						margin-left: -45%;
+					}
+					&:last-child:after { display:none }
+
+					a {
+						background-color: transparent;
+						&:after { // arrow for nested dropdown
+							top: 1.3rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // 02. --------------------------- FOOTER ---------------------------
