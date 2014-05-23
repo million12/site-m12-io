@@ -1,6 +1,6 @@
 // 01. --------------------------- GENERIC STYLE ---------------------------
 
-body {
+html {
 	@media #{$small-only} {
 		font-size: 80%;
 	}
