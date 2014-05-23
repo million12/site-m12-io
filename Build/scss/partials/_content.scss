@@ -50,10 +50,17 @@ b {
 
 section {
 	padding: 3rem 0 4rem 0;
+	@media #{$small-only} {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	}
 
 	h1 {
 		padding-bottom: 2rem;
 		text-align: center;
+		@media #{$small-only} {
+			padding-bottom: 1rem;
+		}
 
 		&:after {
 			content: '';
@@ -80,6 +87,9 @@ section {
 
 	h3 {
 		margin: 1rem 0;
+		@media #{$small-only} { // on small screen H3 is getting too small
+			font-size: $h3-font-size;
+		}
 	}
 	.button {
 		padding-top: rem-calc(10);
