@@ -70,7 +70,7 @@ footer {
 		// Divider between columns, with the background colour like the parent section
 		// positioned exactly in the center
 		&:before {
-			@extend .bg-darker; // inherit color from .bg-darker
+			background-color: $bg-color-darker;
 			position: absolute;
 			top: 0;
 			bottom: 0;
