@@ -69,8 +69,8 @@ page = Page {
 			sidebar = ContentCollection {
 				# Colect all sidebar children from current and parent pages, so in case sidebar
 				# is empty for current page, we render the 1st available sidear from parent page(s).
-				contentNodes = ${q(node).add(q(node).parents()).children('[_path $= sidebar]').children().first()}
-				nodePath = ${this.firstNode ? this.firstNode.property('_parentPath') : 'sidebar'}
+				sidebarNode = ${q(node).add(q(node).parents()).children('[_path $= sidebar]').children().first()}
+				nodePath = ${this.sidebarNode ? this.sidebarNode.property('_parentPath') : 'sidebar'}
 				@cache {
 					mode = 'cached'
 				}
