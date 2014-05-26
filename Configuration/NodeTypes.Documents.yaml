@@ -37,3 +37,17 @@
       type: 'TYPO3.Neos:ContentCollection'
     main:
       type: 'TYPO3.Neos:ContentCollection'
+
+#
+# Page with sidebar
+#
+'TYPO3.Neos.NodeTypes:PageSidebar':
+  superTypes: ['TYPO3.Neos.NodeTypes:Page']
+  ui:
+    label: 'Page with Sidebar'
+    icon: 'icon-columns'
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+    sidebar:
+      type: 'TYPO3.Neos:ContentCollection'
