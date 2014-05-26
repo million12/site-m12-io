@@ -36,7 +36,12 @@ page = Page {
 	body {
 		templatePath = ${template}
 		sectionName = 'body'
-		gridWrapper = ${true}
+
+		layout          = ${q(node).property('layout')}
+		isLandingPage   = ${this.layout == 'landingPage'}
+		hasGridWrapper  = ${this.isLandingPage ? false : true}
+		hasTeaser       = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageTeaser]')}
+		hasSidebar      = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageSidebar]')}
 
 		parts {
 			menu = M12.Foundation:TopBar {
@@ -61,13 +66,21 @@ page = Page {
 			main = PrimaryContent {
 				nodePath = 'main'
 			}
+			sidebar = ContentCollection {
+				# Colect all sidebar children from current and parent pages, so in case sidebar
+				# is empty for current page, we render the 1st available sidear from parent page(s).
+				contentNodes = ${q(node).add(q(node).parents()).children('[_path $= sidebar]').children().first()}
+				nodePath = ${this.firstNode ? this.firstNode.property('_parentPath') : 'sidebar'}
+				@cache {
+					mode = 'cached'
+				}
+			}
 		}
 
 		// A shared footer which can be edited from all pages
 		// Note: needs to be created manually (eg. during initial import of Sites.xml)
 		footer = TYPO3.Neos:ContentCollection {
 			nodePath = ${q(site).children('footer').property('_path')}
-			collection = ${q(site).children('footer').children()}
 			@cache {
 				mode = 'cached'
 			}
@@ -80,12 +93,5 @@ page = Page {
 	}
 }
 
-# Landing page with extra teaser
-landingPage < page {
-	body {
-		landingPage = ${true}
-		gridWrapper = ${false}
-	}
-}
-
+landingPage < page
 default < page

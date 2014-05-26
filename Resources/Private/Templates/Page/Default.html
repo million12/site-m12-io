@@ -17,23 +17,27 @@
 </head>
 <body>
 <f:section name="body">
-	<f:if condition="{landingPage}">
+	<f:if condition="{hasTeaser}">
 		{content.teaser -> f:format.raw()}
 	</f:if>
 	{parts.menu -> f:format.raw()}
 
-	<f:if condition="{gridWrapper}">
+	<f:if condition="{hasGridWrapper}">
 		<f:then>
 			<main class="row">
-				<div class="small-12 columns">
-					{content.main -> f:format.raw()}
-				</div>
+				<f:if condition="{hasSidebar}">
+					<f:then>
+						<div class="small-9 columns">{content.main -> f:format.raw()}</div>
+						<div class="small-3 columns">{content.sidebar -> f:format.raw()}</div>
+					</f:then>
+					<f:else>
+						<div class="small-12 columns">{content.main -> f:format.raw()}</div>
+					</f:else>
+				</f:if>
 			</main>
 		</f:then>
 		<f:else>
-			<main>
-				{content.main -> f:format.raw()}
-			</main>
+			<main>{content.main -> f:format.raw()}</main>
 		</f:else>
 	</f:if>
 
