@@ -1194,6 +1194,7 @@ $topbar-height: 60px;
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: $bg-color-medium;
 $topbar-dropdown-link-color: $font-color-black;
 // $topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-link-weight: normal;
@@ -1247,6 +1248,8 @@ $topbar-link-text-transform: uppercase;
 // $topbar-menu-icon-color-toggled: #888;
 $topbar-menu-link-color: #333;
 $topbar-menu-icon-color: #333;
+$topbar-menu-link-color-toggled: #333;
+$topbar-menu-icon-color-toggled: #333;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
