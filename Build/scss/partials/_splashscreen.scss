@@ -21,7 +21,7 @@
 
 	// style the button to appear at the center bottom of the splash screen
 	.button {
-		$splash-button-position: 10px;
+		$splash-button-position: 5px;
 		$splash-button-position-offset: 70px;
 		$splash-button-arrow-size: 36px;
 		$splash-button-circle-size: 80px;
@@ -46,11 +46,19 @@
 			height: $splash-button-arrow-size;
 			top: $splash-button-position;
 			left: 50%;
-			margin-left: -$splash-button-arrow-size/2;
-			content: '';
-			border: solid #888;
-			border-width: 0 2px 2px 0;
-			transform: rotate(45deg);
+			margin-left: -($splash-button-arrow-size/2 + 2);
+			@media #{$small-only} {
+				margin-left: -$splash-button-arrow-size/2;
+			}
+			content: '\f107';
+			font: {
+				family: 'FontAwesome';
+				size: 4rem;
+			}
+			text-indent: 0;
+			//border: solid #888;
+			//border-width: 0 2px 2px 0;
+			//transform: rotate(45deg);
 			transition: top 0.4s ease-in-out;
 		}
 		&:before {
