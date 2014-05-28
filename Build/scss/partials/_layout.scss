@@ -4,7 +4,20 @@
 
 .top-bar {
 	.title-area .name a {
-		background: image-url('logo-black.png') left center/95px no-repeat;
+		width: 95px;
+		background: image-url('logo-black.png') left center / 95px no-repeat;
+
+		// Make the logo size smaller for medium screen (don't need this for small screen as menu changes to toggle-menu)
+		@media #{$medium-only} {
+			width: 85px;
+			background-size: 85px;
+			background-position: left 25%;
+		}
+		@media #{$small-only} {
+			width: 85px;
+			background-size: 85px;
+		}
+		// Hide "M12.io"
 		span {
 			visibility: hidden;
 		}
@@ -35,6 +48,23 @@
 						&:after { // arrow for nested dropdown
 							top: 1.3rem;
 						}
+					}
+				}
+			}
+		}
+
+		@media #{$medium-only} {
+			ul.right {
+				> li {
+					> a {
+						padding: 0 10px;
+						font-size: 0.8rem;
+					}
+				}
+				// Reset the padding right for medium screen, do it only for the top level list item, that's why its specific to ul.right
+				> .has-dropdown {
+					> a {
+						padding-right: 10px !important;
 					}
 				}
 			}
