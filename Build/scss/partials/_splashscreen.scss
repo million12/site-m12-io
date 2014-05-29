@@ -23,7 +23,6 @@
 	.button {
 		$splash-button-position: 5px;
 		$splash-button-position-offset: 70px;
-		$splash-button-arrow-size: 36px;
 		$splash-button-circle-size: 80px;
 
 		position: absolute;
@@ -39,27 +38,29 @@
 		background-color: rgba(0,0,0,0.1);
 		text-indent: -20rem;
 
+		@media #{$small-only} {
+			width: 60px;
+			height: 60px;
+		}
 		&:before, &:after {
 			position: absolute;
-			display: inline-block;
-			width: $splash-button-arrow-size;
-			height: $splash-button-arrow-size;
 			top: $splash-button-position;
 			left: 50%;
-			margin-left: -($splash-button-arrow-size/2 + 2);
-			@media #{$small-only} {
-				margin-left: -$splash-button-arrow-size/2;
-			}
+			//margin-left: -$splash-button-arrow-size/2;
+			margin-left: -20px;
 			content: '\f107';
 			font: {
 				family: 'FontAwesome';
-				size: 4rem;
+				size: 66px;
 			}
 			text-indent: 0;
-			//border: solid #888;
-			//border-width: 0 2px 2px 0;
-			//transform: rotate(45deg);
 			transition: top 0.4s ease-in-out;
+
+			@media #{$small-only} {
+				top: 3px;
+				margin-left: -15px;
+				font-size: 50px;
+			}
 		}
 		&:before {
 			top: $splash-button-position - $splash-button-position-offset;
