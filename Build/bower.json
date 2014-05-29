@@ -1,7 +1,8 @@
 {
-  "name": "foundation-libsass-template",
-  "dependencies": {
-    "foundation": "zurb/bower-foundation",
-	"open-sans-fontface": "1.0.4"
-  }
+    "name": "foundation-libsass-template",
+    "dependencies": {
+        "foundation": "zurb/bower-foundation",
+        "open-sans-fontface": "~1.0",
+        "jquery.localScroll": "~1.3"
+    }
 }
