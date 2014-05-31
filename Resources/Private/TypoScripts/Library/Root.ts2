@@ -39,6 +39,7 @@ page = Page {
 
 		layout          = ${q(node).property('layout')}
 		isLandingPage   = ${this.layout == 'landingPage'}
+		isBlogPage      = ${q(node).is('[instanceof M12.Blog:Post]')}
 		hasGridWrapper  = ${this.isLandingPage ? false : true}
 		hasTeaser       = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageTeaser]')}
 		hasSidebar      = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageSidebar]')}

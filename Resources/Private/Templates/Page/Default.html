@@ -25,10 +25,10 @@
 	<f:if condition="{hasGridWrapper}">
 		<f:then>
 			<main class="row">
-				<f:if condition="{hasSidebar}">
+				<f:if condition="{hasSidebar} OR {isBlogPage}">
 					<f:then>
-						<div class="small-9 columns">{content.main -> f:format.raw()}</div>
-						<div class="small-3 columns">{content.sidebar -> f:format.raw()}</div>
+						<div class="small-12 medium-8 large-9 columns">{content.main -> f:format.raw()}</div>
+						<div class="small-12 medium-4 large-3 columns">{content.sidebar -> f:format.raw()}</div>
 					</f:then>
 					<f:else>
 						<div class="small-12 columns">{content.main -> f:format.raw()}</div>

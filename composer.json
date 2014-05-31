@@ -17,7 +17,8 @@
     ],
     "require": {
         "typo3/neos-nodetypes": "*",
-        "m12/neos-foundation": "*"
+        "m12/neos-foundation": "*",
+        "m12/neos-blog": "*"
     },
     "autoload": {
         "psr-0": {
