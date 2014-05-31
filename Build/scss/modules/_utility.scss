@@ -1,0 +1,17 @@
+@mixin divider($width, $divider-color: $line-color, $skip-last-child: true) {
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: $width;
+		display: block;
+		left: 50%;
+		margin-left: -$width/2;
+		z-index: 10;  // the next element is positioned relatively so need to set a high z-index to make border visible
+		border-bottom: 1px solid $divider-color;
+	}
+	//if $skip-last-child is true don't show the last divider
+	@if $skip-last-child == true {
+		&:last-child:after { display:none }
+	}
+}

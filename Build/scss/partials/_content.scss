@@ -55,21 +55,12 @@ section {
 		padding-bottom: 2rem;
 	}
 
-	h1 {
-		padding-bottom: 2rem;
+	header {
 		text-align: center;
-		@media #{$small-only} {
-			padding-bottom: 1rem;
-		}
-
-		&:after {
-			content: '';
-			border-bottom: 1px solid #c4c4c4;
-			display: block;
-			height: 1px;
-			margin: auto;
-			width: 100px;
-			text-align: center;
+		h1 {
+			position: relative;
+			display: inline-block;  // inline-block so that the underline(divider) can be sized in relation to h1 width
+			@include divider(80%, $line-color, false);
 		}
 	}
 }
