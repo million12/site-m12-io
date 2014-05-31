@@ -24,12 +24,13 @@ gulp.task('sass', function() {
 			],
 			imagePath: '/_Resources/Static/Packages/M12.Site/Images',
 			sourceComments: 'map',
-			outputStyle: 'nested',
+			sourceMap: true,
+//			outputStyle: 'nested',
 			errLogToConsole: true
 		}))
 		.pipe(plugins.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest(destDir + '/Styles'))
-		.pipe(plugins.connect.reload())
+//		.pipe(plugins.connect.reload())
 	;
 });
 
@@ -59,7 +60,7 @@ gulp.task('connect', function() {
 });
 
 // Watch
-gulp.task('watch', ['connect', 'sass'], function () {
+gulp.task('watch', ['sass'], function () {
 	// Watch .scss files
 	gulp.watch(sources.sassWatch, ['sass']);
 });
