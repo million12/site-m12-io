@@ -94,9 +94,8 @@
     border-left-width: 0;
     border-right-width: 0;
 	text-align: center;
-	background: rgba(0,0,0,0.3) image-url('logo-white.png');
-	background-position: center 15%;
-	background-repeat: no-repeat;
+	// background color position size repeat clip origin attachment image
+	background: rgba(0,0,0,0.3) center 15% no-repeat image-url('logo-white.png');
 
 	@media #{$small-only} {
 		height: 130px;
