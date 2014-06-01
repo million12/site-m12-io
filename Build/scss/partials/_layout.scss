@@ -3,17 +3,13 @@
 // 01. --------------------------- NAVIGATION ---------------------------
 
 .top-bar {
+	// Logo Styles
 	.title-area .name a {
 		width: 95px;
 		background: image-url('logo-black.png') left center / 95px no-repeat;
 
-		// Make the logo size smaller for medium screen (don't need this for small screen as menu changes to toggle-menu)
-		@media #{$medium-only} {
-			width: 85px;
-			background-size: 85px;
-			background-position: left 25%;
-		}
-		@media #{$small-only} {
+		// Make the logo size smaller for small and medium screens
+		@media #{$small-only}, #{$medium-only} {
 			width: 85px;
 			background-size: 85px;
 		}
@@ -23,25 +19,67 @@
 		}
 	}
 
+	// Menu Styles
 	.top-bar-section {
 		padding: 0;
 		.has-dropdown {
 			> a {
-				padding-right: 20px !important;
+				padding-right: 20px !important; // override Foundations padding-right which is too big (40px)
+				// Use FontAwesome icon for the arrow for dropdown lists, instead of Foundations styles
+				// Arrow for top level list is fa-angle-down
+				&:after {
+					content: $fa-var-angle-down;
+					position: absolute;
+					display: block;
+					top: 50%;
+					right: -16px;
+					width: auto;
+					height: auto;
+					margin-top: -7px;
+					border: none;
+					line-height: 1.2;
+					color: scale-color($topbar-link-color, $lightness: 75%); // set the color to a lighter shade
+					font: {
+						family: $font-family-fontawesome;
+						size: 12px;
+					}
+					// Arrow for small screen is fa-angle-right
+					@media #{$small-only} {
+						content: $fa-var-angle-right;
+						margin-top: -8px;
+						right: 0;
+					}
+				}
+				// Set the color for hover
+				&:hover:after {
+					color: $primary-color;
+				}
 			}
 			.dropdown {
 				background-color: $bg-color-medium;
 				box-shadow: 2px 3px 15px -5px rgba(100,100,100,0.6);
 				li {
-					@include divider(90%, $bg-color-darker, true); // divider for the list items
+					// use mixin to create divider for the list items - divider(width,bg-color,skip-last-child)
+					@include divider(90%, $bg-color-darker, true);
 					@media #{$small-only} { @include divider(96%, $bg-color-darker, true); }
 					a {
 						background-color: transparent;
-						&:after { // arrow for nested dropdown
-							top: 1.3rem;
+					}
+					// Arrow for nested dropdown list (specificity is high in order to override Foundation's style)
+					&.has-dropdown {
+						> a {
+							&:after {
+								content: $fa-var-angle-right;
+								top: 50%;
+								margin-top: -7px;
+								right: -8px;
+								color: scale-color($topbar-link-color, $lightness: 50%); // a bit darker shade than toplevel
+							}
+							&:hover:after {
+								color: $primary-color;
+							}
 						}
 					}
-
 				}
 			}
 		}
@@ -54,7 +92,7 @@
 						font-size: 0.8rem;
 					}
 				}
-				// Reset the padding right for medium screen, do it only for the top level list item, that's why its specific to ul.right
+				// Reset the padding-right for medium screen, for the top level list item, that's why its specific to ul.right
 				> .has-dropdown {
 					> a {
 						padding-right: 10px !important;
@@ -66,12 +104,6 @@
 		@media #{$small-only} {
 			li {
 				@include divider(96%, $bg-color-darker, true);
-			}
-
-			.has-dropdown {
-				a:after {
-					border-left-color: rgba(0,0,0,0.4);
-				}
 			}
 		}
 	}
