@@ -15,10 +15,14 @@
             "role": "Front-end Developer"
         }
     ],
+    "repositories": [
+        { "type": "git", "url": "https://github.com/million12/M12.Neos.NodeType.CodeSnippet.git" }
+    ],
     "require": {
         "typo3/neos-nodetypes": "*",
         "m12/neos-foundation": "*",
-        "m12/neos-blog": "*"
+        "m12/neos-blog": "*",
+        "m12/neos-nodetype-codesnippet": "dev-master"
     },
     "autoload": {
         "psr-0": {
