@@ -2,8 +2,9 @@ $(document).foundation();
 
 $(document).ready(function() {
 	M12.Site.AnimationFunctions.animateSplashScreen();
+
 	// Smooth scrolling
-	$('.top-bar').localScroll({
+	$('.top-bar, .splashScreen').localScroll({
 		target:'body',
 		duration:'150',
 		ease:'swing'
