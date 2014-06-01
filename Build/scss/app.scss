@@ -44,8 +44,8 @@
 //   'foundation/components/type',
 //   'foundation/components/offcanvas',
 //   'foundation/components/visibility';
-@import 'open-sans.scss';
-
+@import 'open-sans-fontface/open-sans.scss';
+@import 'Font-Awesome/scss/_variables.scss';
 // m12.Site
 @import 'modules/utility';
 @import 'partials/layout';

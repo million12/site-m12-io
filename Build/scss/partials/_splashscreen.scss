@@ -48,9 +48,9 @@
 			left: 50%;
 			//margin-left: -$splash-button-arrow-size/2;
 			margin-left: -20px;
-			content: '\f107';
+			content: $fa-var-angle-down;
 			font: {
-				family: 'FontAwesome';
+				family: $font-family-fontawesome;
 				size: 66px;
 			}
 			text-indent: 0;

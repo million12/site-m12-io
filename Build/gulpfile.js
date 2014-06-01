@@ -19,6 +19,7 @@ gulp.task('sass', function() {
 		.pipe(plugins.plumber())
 		.pipe(plugins.sass({
 			includePaths: [
+				vendorsDir,
 				vendorsDir + '/foundation/scss',
 				vendorsDir + '/open-sans-fontface'
 			],
@@ -39,6 +40,7 @@ gulp.task('rubySass', function() {
 		.pipe(plugins.plumber())
 		.pipe(plugins.rubySass({
 			loadPath: [
+				vendorsDir,
 				vendorsDir + '/foundation/scss',
 				vendorsDir + '/open-sans-fontface'
 			],
