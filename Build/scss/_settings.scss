@@ -131,16 +131,22 @@ $header-font-weight: 300;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
-$header-top-margin: 2rem;
-$header-bottom-margin: 2rem;
+$header-top-margin: 1rem;
+$header-bottom-margin: 1rem;
+$header-line-height: 1.2;
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
-$h1-font-size: rem-calc(53);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
+$h1-font-size: rem-calc(48);
+$h2-font-size: rem-calc(35);
+$h3-font-size: rem-calc(25);
+$h4-font-size: rem-calc(18);
+$h5-font-size: rem-calc(14);
+$h6-font-size: rem-calc(14);
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
@@ -158,7 +164,7 @@ $h1-font-size: rem-calc(53);
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1rem;
 $paragraph-font-weight: 300;
-$paragraph-font-size: rem-calc(20);
+$paragraph-font-size: rem-calc(18);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -170,6 +176,9 @@ $paragraph-font-size: rem-calc(20);
 // $code-color: scale-color($alert-color, $lightness: -27%);
 // $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
 // $code-font-weight: bold;
+$code-color: $body-font-color;
+$code-font-family: monospace;
+$code-font-weight: normal;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;

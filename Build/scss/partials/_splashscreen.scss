@@ -21,7 +21,7 @@
 
 	// style the button to appear at the center bottom of the splash screen
 	.button {
-		$splash-button-position: 5px;
+		$splash-button-position: 3px;
 		$splash-button-position-offset: 70px;
 		$splash-button-circle-size: 80px;
 
@@ -34,7 +34,7 @@
 							 						// margin-left is -40px to horizontally align the absolutely positioned button
 		overflow: hidden;
 		border-radius: 40px;
-		border: solid rgba(255,255,255,0.7);
+		border: 5px solid rgb(255,255,255);
 		background-color: rgba(0,0,0,0.1);
 		text-indent: -20rem;
 
@@ -57,15 +57,15 @@
 			transition: top 0.4s ease-in-out;
 
 			@media #{$small-only} {
-				top: 3px;
-				margin-left: -15px;
+				top: 0px;
+				margin-left: -16px;
 				font-size: 50px;
 			}
 		}
 		&:before {
 			top: $splash-button-position - $splash-button-position-offset;
 			border-color: #fff;
-			transition-duration: 0.2s;
+			//transition-duration: 0.2s;
 		}
 
 		&:hover {

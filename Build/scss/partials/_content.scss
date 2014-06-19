@@ -9,8 +9,26 @@ html {
 	}
 }
 
+// TYPOGRAPY
+header{
+	text-align: center;
+	h1 {
+		position: relative;
+		display: inline-block;  // inline-block so that the underline(divider) can be sized in relation to h1 width
+		margin-top: $h1-top-margin;
+		margin-bottom: $h1-bottom-margin;
+		line-height: $h1-line-height;
+		@include divider(80%, $line-color, false);
+	}
+}
+
+h5 {
+	font-weight: $h5-font-weight;
+}
+
 p {
-	letter-spacing: 0.5px;
+	font-weight: inherit;
+	letter-spacing: 0.3px;
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -25,6 +43,7 @@ b {
 	font-weight: 600;
 }
 
+// COLORS
 .bg-white {
 	background-color: $bg-color-white;
 }
@@ -45,65 +64,50 @@ b {
 	}
 }
 
+//  --------------------------- CODE SNIPPET ---------------------------
+.m12-neos-nodetype-codesnippet-codesnippet {
+	margin: 15px 0;
+	border: 1px solid $border-color;
+	border-radius: 3px;
+	font-weight: normal;
+	color: #555;
 
-// 02. --------------------------- ALL SECTIONS ---------------------------
-
-section {
-	padding: 3rem 0 4rem 0;
-	@media #{$small-only} {
-		padding-top: 1rem;
-		padding-bottom: 2rem;
-	}
-
-	header {
-		text-align: center;
-		h1 {
-			position: relative;
-			display: inline-block;  // inline-block so that the underline(divider) can be sized in relation to h1 width
-			@include divider(80%, $line-color, false);
-		}
-	}
-}
-
-
-// 03. --------------------------- MEET US SECTION ---------------------------
-
-.section-meet-us--columns {
-	font-size: $h5-font-size;
-
-	figure {
+	h5 {
 		margin: 0;
-		img { width: 100% }
+		padding: 7px 10px;
+		border-bottom:thin solid $border-color;
+		background: $bg-color-darker;
+		text-shadow: 1px 1px 0 #fff;
+		font-size: rem-calc(12px);
+		font-weight: 600;
 	}
-
-	h3 {
-		margin: 1rem 0;
-		@media #{$small-only} { // on small screen H3 is getting too small
-			font-size: $h3-font-size;
-		}
-	}
-	.button {
-		padding-top: rem-calc(10);
-		padding-bottom: rem-calc(10);
-		text-transform: uppercase;
-	}
-	p {
-		font-size: inherit;
+	pre {
+		padding: 7px 10px;
+		background: $bg-color-white;
 	}
 }
 
-// 04. --------------------------- BEFORE FOOTER/OPEN SOURCE ---------------------------
-
-.section-os {
-	h3 {
-		font-size: 1.2rem;
+//  --------------------------- TABLE ---------------------------
+table {
+	width: 100%;
+	//border-radius: 3px;
+	tr {
+		&:first-child {
+			font-weight: 600;
+			text-shadow: 1px 1px 0 #fff;
+			border-bottom: thin solid $border-color;
+		}
+		&:nth-child(odd) {
+			background-color: $bg-color-darker;
+		}
+		&:nth-child(even) {
+			background-color: $bg-color-medium;
+		}
 	}
+}
 
-	ul, p {
-		font-size: 1rem;
-	}
-
-	ul {
-		margin-left: 0;
-	}
+//  --------------------------- FIGURE/IMAGE ---------------------------
+figure {
+	margin: 0 0 1rem 0;
+	border: thin solid $border-color;
 }

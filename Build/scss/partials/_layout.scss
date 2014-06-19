@@ -32,7 +32,7 @@
 					position: absolute;
 					display: block;
 					top: 50%;
-					right: -16px;
+					right: -12px;
 					width: auto;
 					height: auto;
 					margin-top: -7px;
@@ -48,6 +48,9 @@
 						content: $fa-var-angle-right;
 						margin-top: -8px;
 						right: 0;
+					}
+					@media #{$medium-only} {
+						right: -21px;
 					}
 				}
 				// Set the color for hover
@@ -109,19 +112,7 @@
 	}
 }
 
-// 02. --------------------------- FOOTER ---------------------------
-footer {
-	padding: 1.2rem 0;
-	background-color: $bg-color-black;
-	color: $font-color-gray;
-
-	p {
-		font-size: 0.8rem;
-	}
-}
-
-
-// ----------------- LANDING PAGE, MEET US SECTION ------------------
+// 02. ----------------- MEET US SECTION ------------------
 
 .section-meet-us--columns {
 	// content inside
@@ -162,3 +153,15 @@ footer {
 		}
 	}
 }
+
+// 03. --------------------------- FOOTER ---------------------------
+footer {
+	padding: 1.2rem 0;
+	background-color: $bg-color-black;
+	color: $font-color-gray;
+
+	p {
+		font-size: 0.8rem;
+	}
+}
+

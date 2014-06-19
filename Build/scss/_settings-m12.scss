@@ -1,6 +1,30 @@
 // M12.IO SETTINGS
 $OpenSansPath: '../Vendors/open-sans-fontface/fonts';
 
+// TYPOGRAPHY
+// font size -- is set in _settings.scss by Foundation
+
+// font weight
+$h5-font-weight: 400;
+// line heights
+$h1-line-height: 1.4;
+$h2-line-height: 1.25;
+$h3-line-height: 1.25;
+$h4-line-height: 1.25;
+$h5-line-height: 1.25;
+
+// margins
+$h1-top-margin: 2rem;
+$h1-bottom-margin: 2rem;
+$h2-top-margin: 1rem;
+$h2-bottom-margin: 1rem;
+$h3-top-margin: 1rem;
+$h3-bottom-margin: 1rem;
+$h4-top-margin: 1rem;
+$h4-bottom-margin: 1rem;
+$h5-top-margin: 1rem;
+$h5-bottom-margin: 1rem;
+
 // COLORS
 // background colors
 $bg-color-white: #fff;
@@ -9,6 +33,7 @@ $bg-color-medium: #f9f9f9;
 $bg-color-darker: #eee;
 $bg-color-dark: #2e2e2e; // slightly lighter than $bg-black-color (e.g. for pre-footer content)
 $bg-color-black: #111; // e.g. for footer background
+$bg-color-tag: #888;
 
 // font colors
 $font-color-black: #333;
@@ -16,7 +41,8 @@ $font-color-white: #fff; // to use on dark bg
 $font-color-gray: #999; // to use on dark bg, but lighter
 $font-family-fontawesome: 'FontAwesome';
 
-$line-color: #c4c4c4; // for underlining headings or for table lines, etc
+$line-color: rgba(#c4c4c4,0.5); // for underlining headings or for table lines, etc
+$border-color: #ddd;
 
 // splashscreen colors
 $splashscreen-button-color: rgba(0,0,0,0.1);

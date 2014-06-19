@@ -1,0 +1,70 @@
+// 01. --------------------------- ALL SECTIONS IN HOMEPAGE ---------------------------
+.homePage {
+	section {
+		padding: 3rem 0 4rem 0;
+		@media #{$small-only} {
+			padding-top: 1rem;
+			padding-bottom: 2rem;
+		}
+	}
+}
+
+
+// 02. --------------------------- MEET US SECTION ---------------------------
+
+.section-meet-us--columns {
+	//font-size: $h5-font-size;
+	font-size: $h4-font-size;
+
+	figure {
+		margin: 0;
+		img { width: 100% }
+	}
+
+	h3 {
+		margin: 1rem 0;
+		@media #{$small-only} { // on small screen H3 is getting too small
+			font-size: $h3-font-size;
+		}
+	}
+	.button {
+		padding-top: rem-calc(10);
+		padding-bottom: rem-calc(10);
+		text-transform: uppercase;
+	}
+	p {
+		font-size: inherit;
+	}
+}
+
+// 03. --------------------------- FROM OUR BLOG ---------------------------
+
+.homePage {
+	.blog-post-item {
+		margin: 2rem 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:after {
+			display: none;
+		}
+		.read-more {
+			display: none;
+		}
+	}
+}
+// 04. --------------------------- BEFORE FOOTER/OPEN SOURCE ---------------------------
+
+.section-os {
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	ul, p {
+		font-size: 1rem;
+	}
+
+	ul {
+		margin-left: 0;
+	}
+}
