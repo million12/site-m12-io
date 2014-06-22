@@ -11,6 +11,9 @@ html {
 
 body > main {
 	padding-bottom: 3rem;
+	@media #{$small-only} {
+		padding-bottom: 0;
+	}
 }
 
 // TYPOGRAPY

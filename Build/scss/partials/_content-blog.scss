@@ -27,7 +27,7 @@
 		margin-top: -1rem;
 	}
 }
-
+// byline and tags are floated next to each other width 40%, 59%
 .byline {
 	float: left;
 	width: 40%;
@@ -42,7 +42,7 @@
 	}
 	@media #{$medium-only} {
 		.author {
-			display: block;
+			display: block; // display the by line on a separate line to the date to prevent text wrapping around part way
 		}
 	}
 }
@@ -60,6 +60,9 @@
 		text-align: left;
 		margin-top: 10px;
 	}
+	@media #{$medium-only} {
+		margin-top: 5px
+	}
 
 	.tag {
 		background: $tag-bg-color-dark;
@@ -74,13 +77,37 @@
 	margin-bottom: 1rem;
 }
 
+// put a FontAwesome angle-right arrow next to "Read more >", animate the arrow
 .read-more {
+	position: relative;
 	font-size: $h5-font-size;
+	width: 80px; // give a width and display inline-block to allow overflow to be set to hidden
+	display: inline-block;
+	overflow: hidden;
 
-	&:after {
+	&:before, &:after {
+		position: absolute;
+		top: 1px;
+		left: 88%;
 		content: $fa-var-angle-right;
 		font-family: FontAwesome;
-		padding: 4px;
+		overflow: hidden;
+		opacity: 1;
+		transition: all 0.2s ease-in-out; // animates left and opacity
+	}
+	&:before {
+		left: 60%;
+		opacity: 0; // need need to do this as the arrow is not in its own container
+	}
+	&:hover {
+		&:before {
+			left: 88%;
+			opacity: 1;
+		}
+		&:after {
+			left: 120%;
+			opacity: 0;
+		}
 	}
 }
 
@@ -103,12 +130,13 @@
 
 //  --------------------------- BLOG POST COMMENTS ---------------------------
 .disqusWrapper {
-	margin: 3rem 0;
+	margin: 3rem 0 0 0;
 }
 
 //  --------------------------- BLOG POST SIDEBAR ---------------------------
 .sidebar {
-	margin: 2rem 0 3rem 0;
+	margin: 2rem 0 0 0;
+	background-color: $bg-color-white;
 
 	// RSS link
 	.rss-button {
@@ -121,7 +149,6 @@
 		opacity: 0.5; // reduce opacity so the rss icon is not so prominent over rest of content
 		z-index: 10;  //
 		&:hover {
-			//color: $rss-icon-color;
 			opacity: 1;
 		}
 		.fa {
@@ -154,5 +181,3 @@
 		}
 	}
 }
-
-//  --------------------------- BLOG POST SIDEBAR ---------------------------
