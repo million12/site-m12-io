@@ -1,0 +1,18 @@
+// SIDEBAR TYPOGRAPHY
+.sidebar {
+	h1 {
+		font-size: $sidebar-h1-font-size;
+		position: relative;
+		@include divider(100%, $line-color, false);
+		&:after {
+			margin-top: 3px;
+		}
+	}
+	h2 {
+		font-size: $sidebar-h2-font-size;
+		font-weight: 400;
+	}
+	p, ul {
+		font-size: $sidebar-paragraph-font-size;
+	}
+}

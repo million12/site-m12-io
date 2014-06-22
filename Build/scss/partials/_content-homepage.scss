@@ -1,11 +1,14 @@
 // 01. --------------------------- ALL SECTIONS IN HOMEPAGE ---------------------------
-.homePage {
+.home-page {
 	section {
 		padding: 3rem 0 4rem 0;
 		@media #{$small-only} {
 			padding-top: 1rem;
 			padding-bottom: 2rem;
 		}
+	}
+	& > main {
+		padding-bottom: 0;
 	}
 }
 
@@ -39,7 +42,7 @@
 
 // 03. --------------------------- FROM OUR BLOG ---------------------------
 
-.homePage {
+.home-page {
 	.blog-post-item {
 		margin: 2rem 0;
 		&:last-child {
@@ -62,9 +65,5 @@
 
 	ul, p {
 		font-size: 1rem;
-	}
-
-	ul {
-		margin-left: 0;
 	}
 }

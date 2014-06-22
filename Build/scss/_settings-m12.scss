@@ -1,8 +1,23 @@
 // M12.IO SETTINGS
 $OpenSansPath: '../Vendors/open-sans-fontface/fonts';
 
+// import Foundation's functions which allows the use of rem-calc
+@import "foundation/functions";
+
 // TYPOGRAPHY
 // font size -- is set in _settings.scss by Foundation
+//$h1-font-size: rem-calc(48);
+//$h2-font-size: rem-calc(35);
+//$h3-font-size: rem-calc(25);
+//$h4-font-size: rem-calc(18);
+//$h5-font-size: rem-calc(14);
+//$h6-font-size: rem-calc(14);
+//$paragraph-font-size: rem-calc(18);
+
+// sidebar heading font size
+$sidebar-h1-font-size: rem-calc(25);
+$sidebar-h2-font-size: 1rem;
+$sidebar-paragraph-font-size: 1rem;
 
 // font weight
 $h5-font-weight: 400;
@@ -33,7 +48,8 @@ $bg-color-medium: #f9f9f9;
 $bg-color-darker: #eee;
 $bg-color-dark: #2e2e2e; // slightly lighter than $bg-black-color (e.g. for pre-footer content)
 $bg-color-black: #111; // e.g. for footer background
-$bg-color-tag: #888;
+$tag-bg-color-dark: #888;
+$tag-bg-color-light: #e7e7e7;
 
 // font colors
 $font-color-black: #333;
@@ -41,8 +57,12 @@ $font-color-white: #fff; // to use on dark bg
 $font-color-gray: #999; // to use on dark bg, but lighter
 $font-family-fontawesome: 'FontAwesome';
 
+// border, divider colors
 $line-color: rgba(#c4c4c4,0.5); // for underlining headings or for table lines, etc
 $border-color: #ddd;
+
+// icon colors
+$rss-icon-color: #fa9b39;
 
 // splashscreen colors
 $splashscreen-button-color: rgba(0,0,0,0.1);

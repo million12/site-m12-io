@@ -1,10 +1,23 @@
-//  --------------------------- BLOG POST ---------------------------
+//  --------------------------- BLOG POST HOMEPAGE ---------------------------
+.blog-index-page {
+	.hide-on-blog-index-page, .blog-posts-latest {
+		display: none;
+	}
+}
+.main-column {
+	padding-right: 3rem;
+}
+//  --------------------------- BLOG POST ITEM ---------------------------
 
 .blog-post-item {
 	position: relative;
-	margin: 5rem 0;
-	&:first-child { margin-top: 0;}
+	margin-bottom: 5rem;
+	//&:first-child { margin-top: 0;}
 	@include divider($width: 200px, $skip-last-child: false);
+	&:after {
+		// put the divider vertically centered between the posts
+		margin-top: 2rem;
+	}
 }
 
 .blog-post-meta {
@@ -21,17 +34,35 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	color: lighten($header-font-color, 30%);
+
+	@media #{$small-only} {
+		float: none;
+		width: 100%;
+		margin-top: -10px;
+	}
+	@media #{$medium-only} {
+		.author {
+			display: block;
+		}
+	}
 }
 
 .tags {
 	float: right;
 	width: 59%;
 	text-align: right;
-	margin-top: -2px;
+	margin-top: -5px;
 	margin-bottom: 0;
+	white-space: nowrap;
+	@media #{$small-only} {
+		float: none;
+		width: 100%;
+		text-align: left;
+		margin-top: 10px;
+	}
 
 	.tag {
-		background: $bg-color-tag;
+		background: $tag-bg-color-dark;
 		color: #fff;
 		padding: 3px 8px;
 		font-size: 10px;
@@ -66,35 +97,43 @@
 		}
 	}
 	.blog-post-synopsis {
-		//position: relative;
-		//margin-bottom: 3rem;
 		font-weight: normal;
-		//display: inline-block;
-		//@include divider($width: 100%, $skip-last-child: false, $bottom: -1.5rem);
 	}
 }
 
 //  --------------------------- BLOG POST COMMENTS ---------------------------
 .disqusWrapper {
-	margin-top: $paragraph-margin-bottom;
+	margin: 3rem 0;
 }
 
 //  --------------------------- BLOG POST SIDEBAR ---------------------------
 .sidebar {
-	margin: 2rem 0;
+	margin: 2rem 0 3rem 0;
+
 	// RSS link
-	.button {
+	.rss-button {
 		position: absolute; // positioned relative to the sidebar
-		right: 0;
-		background-color: $body-bg; // show the icon without background, set background color to body background
-		color: $anchor-font-color;
-		//transition: color 300ms ease-out;
+		right: 16px;
+		top:2px;
+		margin-top: 1.25rem;
+		padding: 0; // take the default padding out that are usually set for buttons
+		background-color: transparent; // show the icon without background
+		opacity: 0.5; // reduce opacity so the rss icon is not so prominent over rest of content
+		z-index: 10;  //
+		&:hover {
+			//color: $rss-icon-color;
+			opacity: 1;
+		}
+		.fa {
+			margin-left: 4px;
+			font-size: 1.5rem;
+		}
 	}
 
 	.blog-post-item {
-		margin: 2rem 0; // reduce the top and bottom margins for blog post items
+		margin: 0; // don't need the margins for sidebar blog-post-item, margins are set on heading and blog-post-meta (tag)
 		h2 {
-			font-size: rem-calc(20px); // reduce title font size
+			margin-bottom: 0.5rem; // reduce space between the heading and tag
 		}
 		.byline, .blog-post-synopsis, .read-more, &:after { // only display title and tags
 			display: none;
@@ -102,16 +141,18 @@
 		// tags, don't need to float to right, increase width, left align, lighten background color
 		.tags {
 			float: none;
-			width: 80%;
+			width: 100%;
+			margin-top: -2px; // adjust margin-top to give enough space between article heading and tag
 			text-align: left;
 			.tag { // add a margin bottom for the tags (display, inline-block), reduce padding right
 				display: inline-block;
 				margin-bottom: 2px;
 				padding: 3px 5px;
-				background: $bg-color-darker;
+				background: $tag-bg-color-light;
 				color: $body-font-color;
 			}
 		}
 	}
-
 }
+
+//  --------------------------- BLOG POST SIDEBAR ---------------------------

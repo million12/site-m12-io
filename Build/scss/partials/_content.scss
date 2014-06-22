@@ -9,6 +9,10 @@ html {
 	}
 }
 
+body > main {
+	padding-bottom: 3rem;
+}
+
 // TYPOGRAPY
 header{
 	text-align: center;
@@ -32,11 +36,6 @@ p {
 	&:last-child {
 		margin-bottom: 0;
 	}
-}
-
-ul {
-	list-style-type: none;
-	margin-left: 0;
 }
 
 b {
@@ -106,8 +105,23 @@ table {
 	}
 }
 
-//  --------------------------- FIGURE/IMAGE ---------------------------
+//  --------------------------- FIGURE ---------------------------
 figure {
 	margin: 0 0 1rem 0;
+	//border: thin solid $border-color;
+}
+
+//  --------------------------- IMAGE ---------------------------
+img {
 	border: thin solid $border-color;
+}
+
+//  --------------------------- PAGINATION ---------------------------
+ul.pagination {
+	margin-left: 0;
+	text-align: center;
+	li {
+		float: none;
+		display: inline-block;
+	}
 }
