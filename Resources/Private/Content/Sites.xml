@@ -1,33 +1,1029 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<site nodeName="m12" type="TYPO3.Neos.NodeTypes:PageTeaser">
-		<properties>
-			<name>M12.io</name>
-			<title><![CDATA[Home]]></title>
-			<state>1</state>
-			<siteResourcesPackageKey>M12.Site</siteResourcesPackageKey>
-		</properties>
-		<node type="TYPO3.Neos:ContentCollection" nodeName="teaser">
-			<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
-				<properties>
-					<text><![CDATA[<p>Teaser for M12.io</p>]]></text>
-				</properties>
-			</node>
-		</node>
-		<node type="TYPO3.Neos:ContentCollection" nodeName="main">
-			<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
-				<properties>
-					<text><![CDATA[<p>This is the homepage of M12.io</p>]]></text>
-				</properties>
-			</node>
-		</node>
-		<node type="TYPO3.Neos:ContentCollection" nodeName="footer" locale="">
-		</node>
-		<node type="TYPO3.Neos.NodeTypes:Page" nodeName="blog">
-			<properties>
-				<title>Blog</title>
-			</properties>
-			<node type="TYPO3.Neos:ContentCollection" nodeName="main" />
-		</node>
-	</site>
+ <site identifier="bf628f2e-ed35-0897-5c58-bd3fd7f541d4" type="TYPO3.Neos.NodeTypes:PageTeaser" nodeName="m12">
+  <properties>
+   <title>M12.io</title>
+   <layout>landingPage</layout>
+   <subpageLayout>default</subpageLayout>
+   <customCssClass>home-page</customCssClass>
+   <name>M12.io</name>
+   <state>1</state>
+   <siteResourcesPackageKey>M12.Site</siteResourcesPackageKey>
+  </properties>
+  <node identifier="43a2ad4b-4979-c84f-deb9-44fe4b6e8643" type="TYPO3.Neos:ContentCollection" nodeName="teaser">
+   <node identifier="026e7090-3695-3152-10a0-07afa0c0a308" type="M12.Foundation:Container" nodeName="node535c4ad8557db">
+    <properties>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <customCssClass>splashScreen</customCssClass>
+     <magellanSupport __type="boolean">1</magellanSupport>
+     <fragmentId>top</fragmentId>
+    </properties>
+    <node identifier="838b61de-2d27-ff8a-4c00-96e71c7a6be9" type="TYPO3.Neos:ContentCollection" nodeName="content">
+     <node identifier="65f28e3c-f1c9-73f7-0ee0-bf1114304f79" type="M12.Site:AssetListBg" nodeName="node535d187b9465b">
+      <properties>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <assets __type="array">
+        <image __classname="TYPO3\Media\Domain\Model\Image" __identifier="e5de8857-3a7e-8c24-fd5c-fd40a433eafb">
+         <properties>
+          <width>2000</width>
+          <height>1394</height>
+          <type>2</type>
+          <title>splash-warsaw.jpg</title>
+         </properties>
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="9378fb2e-5bef-102f-6083-37f2eea93803">
+          <filename>splash-warsaw.jpg</filename>
+          <hash>c02a969a3cad06c231fc8f18bb17838d8a0b09d9</hash>
+         </resource>
+        </image>
+       </assets>
+      </properties>
+     </node>
+     <node identifier="3f4217fd-f079-65c6-158d-bb0d420b03a9" type="TYPO3.Neos.NodeTypes:Text" nodeName="node537d3660140f8">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>Enter text here</p>]]></text>
+      </properties>
+     </node>
+     <node identifier="a8f8d245-ba83-9d2a-c437-02a5b4c5ade5" type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
+      <properties>
+       <text><![CDATA[<ul><li>We are Web Apps Developers<br/></li><li>Passionate About Building Great Products</li><li>Passionate About Web Technologies</li><li>Passionate About User eXperience</li><li>We Love Automation and Testing<br/></li><li>We Love Good Code</li></ul>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <customCssClass>animatedList</customCssClass>
+      </properties>
+     </node>
+     <node identifier="0bc24b65-334e-1bd1-d88e-a6529e35d598" type="M12.Foundation:Button" nodeName="node53628b963e216">
+      <properties>
+       <label>See What We Do</label>
+       <classSize>small</classSize>
+       <htmlHref>#about</htmlHref>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <classIsDisabled __type="boolean">0</classIsDisabled>
+       <classIsExpanded __type="boolean">0</classIsExpanded>
+      </properties>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node identifier="8d1ce08a-1b97-1d34-2235-c4ec7d33e8f4" type="TYPO3.Neos:ContentCollection" nodeName="main">
+   <node identifier="2a15dca7-3299-d410-705c-9878d66d5020" type="M12.Foundation:GridRow1Col" nodeName="node53712414795c7">
+    <properties>
+     <customCssClass>section-about</customCssClass>
+     <customLook>bg-darker</customLook>
+     <customTagName>section</customTagName>
+     <fragmentId>about</fragmentId>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <magellanSupport __type="boolean">1</magellanSupport>
+     <gridExtraWrapper __type="boolean">1</gridExtraWrapper>
+     <classCollapse __type="boolean">0</classCollapse>
+    </properties>
+    <node identifier="15e28bef-8cf4-e8ce-cbd3-cd66ace3fd52" type="M12.Foundation:Column" nodeName="col1">
+     <properties>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-12</classSmallSize>
+     </properties>
+     <node identifier="06b0837c-99e3-1ddd-2d6b-4472da7183ad" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="c38625ec-07a3-1542-28c1-4210fa980f2e" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5371247d99b66">
+       <properties>
+        <customTagName>header</customTagName>
+        <title><![CDATA[<h1>About us</h1>]]></title>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+      <node identifier="12bfbdea-b67d-f72d-2629-421feacd0b49" type="TYPO3.Neos.NodeTypes:Text" nodeName="node53601f51ba0b6">
+       <properties>
+        <text><![CDATA[<p>We are two brothers, who - after years of working separately on different challenging web projects, in different locations - decided to join their efforts and skills to do something they really enjoying: their own products. Originally from Poland, currently we are based in Reading/London, UK.<br/></p>]]></text>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node identifier="0f0fa11d-2e59-f4bc-7a0f-de0f18d7c02a" type="M12.Foundation:GridRow1Col" nodeName="node53712e98b6197">
+    <properties>
+     <customCssClass>section-what-we-do</customCssClass>
+     <customLook>bg-lighter</customLook>
+     <customTagName>section</customTagName>
+     <fragmentId>what-we-do</fragmentId>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <magellanSupport __type="boolean">1</magellanSupport>
+     <gridExtraWrapper __type="boolean">1</gridExtraWrapper>
+     <classCollapse __type="boolean">0</classCollapse>
+    </properties>
+    <node identifier="1c5f4448-83c8-af05-38d7-3d53a2dfaedd" type="M12.Foundation:Column" nodeName="col1">
+     <properties>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-12</classSmallSize>
+     </properties>
+     <node identifier="70393289-e5e7-18a3-91cf-925463a15367" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="d0850667-01b4-bb7c-8104-a27f50957468" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node53712eb831723">
+       <properties>
+        <customTagName>header</customTagName>
+        <title><![CDATA[<h1>What do we do</h1>]]></title>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+      <node identifier="067f822d-4fc0-d3c0-2df4-90f440822378" type="TYPO3.Neos.NodeTypes:Text" nodeName="node536133f538acd">
+       <properties>
+        <text><![CDATA[<p><b>We are launching Typostrap</b> - online rapid prototyping tool backed by modern web content management system (WCMS). We believe it is absolutely phenomenal to have prototyping tool backed with power and flexibility of WCM system.</p><p><b>Typostrap</b> is based on <a href="http://foundation.zurb.com/">Foundation</a> and revolutionary <a href="http://neos.typo3.org/">TYPO3 Neos</a>: with it you can quickly make multi-page site prototype, sketch complex application and - with possibility to add your own domain, custom CSS and JavaScript - actually ship it, without even visiting your development department!<br/></p>]]></text>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+        <customUserAttributes>data-sfkjashdf=asdfa
+laskjdfkajlkasjdhfkahd</customUserAttributes>
+       </properties>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node identifier="0147869b-2c1b-ff39-a533-d25d8dd24a79" type="M12.Foundation:GridRow1Col" nodeName="node53712f7134e24">
+    <properties>
+     <customCssClass>section-meet-us</customCssClass>
+     <customLook>bg-darker</customLook>
+     <customTagName>section</customTagName>
+     <fragmentId>meet-us</fragmentId>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <magellanSupport __type="boolean">1</magellanSupport>
+     <gridExtraWrapper __type="boolean">1</gridExtraWrapper>
+     <classCollapse __type="boolean">0</classCollapse>
+    </properties>
+    <node identifier="4114e4c7-7f63-9768-3c04-8c92c9b7edc2" type="M12.Foundation:Column" nodeName="col1">
+     <properties>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-12</classSmallSize>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+      <magellanSupport __type="boolean">0</magellanSupport>
+     </properties>
+     <node identifier="6f2fa168-6c3a-e20f-24b8-0d6ea3e97ff3" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="37d09c15-8325-3458-1ccb-4429e6e450b0" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5371303ba46e6">
+       <properties>
+        <customTagName>header</customTagName>
+        <title><![CDATA[<h1>Meet us</h1>]]></title>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+      <node identifier="ad5a615a-6be3-29a2-cae7-aff17c0d99e0" type="M12.Foundation:GridRow2Col" nodeName="node53712f478e475">
+       <properties>
+        <customCssClass>section-meet-us--columns</customCssClass>
+        <customTagName>div</customTagName>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+        <magellanSupport __type="boolean">0</magellanSupport>
+        <gridExtraWrapper __type="boolean">0</gridExtraWrapper>
+        <classCollapse __type="boolean">1</classCollapse>
+       </properties>
+       <node identifier="b81e7ffa-020c-589b-0e51-b6bbdd203784" type="M12.Foundation:Column" nodeName="col1">
+        <properties>
+         <classTextAlign>text-center</classTextAlign>
+         <customTagName>div</customTagName>
+         <classSmallSize>small-12</classSmallSize>
+         <classMediumSize>medium-6</classMediumSize>
+         <classHide __type="boolean">0</classHide>
+         <classClearfix __type="boolean">0</classClearfix>
+         <magellanSupport __type="boolean">0</magellanSupport>
+        </properties>
+        <node identifier="3a886c42-15c4-831c-1a20-bfbc67a9c49a" type="TYPO3.Neos:ContentCollection" nodeName="column">
+         <node identifier="1f8107f9-2bf2-9a07-14c4-7d4e6c934af3" type="TYPO3.Neos.NodeTypes:Image" nodeName="node535e973697138">
+          <properties>
+           <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+           <classHide __type="boolean">0</classHide>
+           <classClearfix __type="boolean">0</classClearfix>
+           <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+            <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";d:97.280000000000001136868377216160297393798828125;}s:4:"size";a:2:{s:5:"width";i:1280;s:6:"height";d:821.759999999999990905052982270717620849609375;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:546;s:6:"height";i:350;}}}}]]></processingInstructions>
+            <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="5f43f3fe-584d-6e49-40ee-ef8f45897a7b">
+             <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="f58bbee1-554f-023d-3f5c-371345586397">
+              <filename>IMG_0216.jpg</filename>
+              <hash>85d1eea995528d0eb26af4a5ca3c44cdb0928a05</hash>
+             </resource>
+            </originalImage>
+           </image>
+           <alternativeText>Marcin Ryzycki</alternativeText>
+           <hasCaption __type="boolean">0</hasCaption>
+          </properties>
+         </node>
+         <node identifier="8c21ee32-aaa6-317b-e450-9b37b28ab26e" type="M12.Foundation:Container" nodeName="node537288efeb1b2">
+          <properties>
+           <customTagName>div</customTagName>
+           <classHide __type="boolean">0</classHide>
+           <classClearfix __type="boolean">0</classClearfix>
+           <magellanSupport __type="boolean">0</magellanSupport>
+          </properties>
+          <node identifier="89dc76d5-285a-f941-736a-adbede6675e4" type="TYPO3.Neos:ContentCollection" nodeName="content">
+           <node identifier="c65d118a-3e30-8fde-3d76-6441c09c04f7" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node537133bc8e01c">
+            <properties>
+             <customTagName>div</customTagName>
+             <title><![CDATA[<h3>Marcin Ryzycki</h3>]]></title>
+             <classHide __type="boolean">0</classHide>
+             <classClearfix __type="boolean">0</classClearfix>
+            </properties>
+           </node>
+           <node identifier="529d5243-6d47-be01-d8f5-0c4cb489084a" type="M12.Foundation:Button" nodeName="node535ebb9fe0ac7">
+            <properties>
+             <label>Server-side client</label>
+             <classSize>small</classSize>
+             <classHide __type="boolean">0</classHide>
+             <classClearfix __type="boolean">0</classClearfix>
+             <classIsDisabled __type="boolean">0</classIsDisabled>
+             <classIsExpanded __type="boolean">0</classIsExpanded>
+             <magellanSupport __type="boolean">0</magellanSupport>
+             <renderAnchor __type="boolean">0</renderAnchor>
+             <dropdownHoverable __type="boolean">0</dropdownHoverable>
+            </properties>
+           </node>
+           <node identifier="bdfa5b0e-3ffc-6739-4eed-1e304cd5ce07" type="TYPO3.Neos.NodeTypes:Text" nodeName="node535e99f72a571">
+            <properties>
+             <classTextAlign>text-left</classTextAlign>
+             <text><![CDATA[<p>Flirts with everything around web-development, incl. DevOps, front-end development, business and marketing side. Loves simple aesthetic design, great UX, superb performance and white wine. Currently at <a href="http://megabuyte.com/">Megabuyte</a>. </p>]]></text>
+             <classHide __type="boolean">0</classHide>
+             <classClearfix __type="boolean">0</classClearfix>
+            </properties>
+           </node>
+          </node>
+         </node>
+        </node>
+       </node>
+       <node identifier="2366da5b-6031-c170-b51a-d18fb3317a6c" type="M12.Foundation:ColumnEnd" nodeName="col2">
+        <properties>
+         <classTextAlign>text-center</classTextAlign>
+         <customTagName>div</customTagName>
+         <classSmallSize>small-12</classSmallSize>
+         <classMediumSize>medium-6</classMediumSize>
+         <classHide __type="boolean">0</classHide>
+         <classClearfix __type="boolean">0</classClearfix>
+         <magellanSupport __type="boolean">0</magellanSupport>
+         <classEndColumn __type="boolean">0</classEndColumn>
+        </properties>
+        <node identifier="b3dff7bf-324b-fe62-98ab-58449488b310" type="TYPO3.Neos:ContentCollection" nodeName="column">
+         <node identifier="5a79ed64-d769-b692-9a6d-7498185178be" type="TYPO3.Neos.NodeTypes:Image" nodeName="node535e97aab7e68">
+          <properties>
+           <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+           <classHide __type="boolean">0</classHide>
+           <classClearfix __type="boolean">0</classClearfix>
+           <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+            <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";d:53.75999999999999801048033987171947956085205078125;}s:4:"size";a:2:{s:5:"width";i:720;s:6:"height";d:462.71999999999997044142219237983226776123046875;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:546;s:6:"height";i:350;}}}}]]></processingInstructions>
+            <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="ea1b60e4-2fe8-0c99-d7a0-acf714131fcb">
+             <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="0998a4c6-5e8b-4e57-8a0e-5f00259a4524">
+              <filename>sam2.jpg</filename>
+              <hash>b20c04d31304828a8269e2041a9ac3e144f031b7</hash>
+             </resource>
+            </originalImage>
+           </image>
+           <alternativeText>Samuel Ryzycki</alternativeText>
+           <hasCaption __type="boolean">0</hasCaption>
+          </properties>
+         </node>
+         <node identifier="70e52fb3-4d7c-19e2-91fc-66a20519700e" type="M12.Foundation:Container" nodeName="node5372893ba9ac6">
+          <properties>
+           <customTagName>div</customTagName>
+           <classHide __type="boolean">0</classHide>
+           <classClearfix __type="boolean">0</classClearfix>
+           <magellanSupport __type="boolean">0</magellanSupport>
+          </properties>
+          <node identifier="f4b5d1d1-abac-0a6e-a625-47865767f6ec" type="TYPO3.Neos:ContentCollection" nodeName="content">
+           <node identifier="016df738-b946-4f34-8cfd-ada071a1fb97" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node535ebc5c7418c">
+            <properties>
+             <title><![CDATA[<h3>Samuel Ryzycki<br/></h3>]]></title>
+             <classHide __type="boolean">0</classHide>
+             <classClearfix __type="boolean">0</classClearfix>
+            </properties>
+           </node>
+           <node identifier="b64ac71f-9073-aea0-4b65-2a3d06e09da1" type="M12.Foundation:Button" nodeName="node535ebc731aced">
+            <properties>
+             <label>Front-end head</label>
+             <classSize>small</classSize>
+             <classHide __type="boolean">0</classHide>
+             <classClearfix __type="boolean">0</classClearfix>
+             <classIsDisabled __type="boolean">0</classIsDisabled>
+             <classIsExpanded __type="boolean">0</classIsExpanded>
+             <magellanSupport __type="boolean">0</magellanSupport>
+             <renderAnchor __type="boolean">0</renderAnchor>
+             <dropdownHoverable __type="boolean">0</dropdownHoverable>
+            </properties>
+           </node>
+           <node identifier="620b822a-285a-8069-3cd7-08c8bcc3b244" type="TYPO3.Neos.NodeTypes:Text" nodeName="node535e9afe80209">
+            <properties>
+             <classTextAlign>text-left</classTextAlign>
+             <text><![CDATA[<p>Absolutely taken by modern web technologies' possibilities and is not afraid to play with them. Passionate about automation, well structured, performant code, ideally written in AngularJS. Likes adrenaline and never refuses to go for a drinks on Friday night. Currently at <a href="http://www.tomandco.co.uk/">Tom &amp; Co Ltd.</a> <br/></p>]]></text>
+             <classHide __type="boolean">0</classHide>
+             <classClearfix __type="boolean">0</classClearfix>
+            </properties>
+           </node>
+          </node>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node identifier="ff3a5d5c-7c72-fc11-3e38-d26b83751aca" type="M12.Foundation:GridRow1Col" nodeName="node53a234e740ee0">
+    <properties>
+     <customLook>bg-lighter</customLook>
+     <customTagName>section</customTagName>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <magellanSupport __type="boolean">0</magellanSupport>
+     <gridExtraWrapper __type="boolean">1</gridExtraWrapper>
+     <classCollapse __type="boolean">0</classCollapse>
+    </properties>
+    <node identifier="df0fd2bc-120f-bc3f-d5a3-102899b62076" type="M12.Foundation:Column" nodeName="col1">
+     <properties>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-12</classSmallSize>
+     </properties>
+     <node identifier="c8c2ced8-cea4-1b00-c16a-3d46cc231b7a" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="99a5c248-4b0d-2a59-d6e2-7d9376e97642" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node53a2351673c69">
+       <properties>
+        <customTagName>header</customTagName>
+        <title><![CDATA[<h1>From our blog</h1>]]></title>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+      <node identifier="3c3e92ab-59eb-3b41-dce5-c2b0ae5dd84c" type="M12.Plugin.Blog:PostPlugin" nodeName="node53a234f3565a5">
+       <properties>
+        <mode>latest</mode>
+        <limit>3</limit>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+        <postsSourceNode __type="reference">
+         <node identifier="b915bfe6-e160-973e-0bca-df0674c2730a"/>
+        </postsSourceNode>
+       </properties>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node identifier="eeaab317-0dbe-df4b-e31a-3bb77c9ff435" type="M12.Foundation:GridRow1Col" nodeName="node53713418b9bee">
+    <properties>
+     <customCssClass>section-contact</customCssClass>
+     <customTagName>section</customTagName>
+     <fragmentId>contact</fragmentId>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <magellanSupport __type="boolean">1</magellanSupport>
+     <gridExtraWrapper __type="boolean">1</gridExtraWrapper>
+     <classCollapse __type="boolean">0</classCollapse>
+    </properties>
+    <node identifier="9c3b8b16-c321-9ead-656e-60a14a03c96c" type="M12.Foundation:Column" nodeName="col1">
+     <properties>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-12</classSmallSize>
+     </properties>
+     <node identifier="67447059-29f9-b51e-fdf9-04df1f191516" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="92a53dec-56ea-d2d6-53dc-301bfb62b21f" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5371342fd482b">
+       <properties>
+        <customTagName>header</customTagName>
+        <title><![CDATA[<h1>Contact</h1>]]></title>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+      <node identifier="6cfe314c-54ce-2769-90b6-81482932b0b2" type="TYPO3.Neos.NodeTypes:Text" nodeName="node53613510b441b">
+       <properties>
+        <text><![CDATA[<p>We are based in London and Reading, UK. If you wish to contact us, just give as a shout at <a href="mailto:info@m12.io">info@m12.io</a>.</p>]]></text>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node identifier="2a21bc04-d7cf-efde-5af9-1138b4cbdfbc" type="M12.Foundation:GridRow1Col" nodeName="node5371347fd4bc5">
+    <properties>
+     <customCssClass>section-os</customCssClass>
+     <customLook>bg-dark</customLook>
+     <customTagName>section</customTagName>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <magellanSupport __type="boolean">0</magellanSupport>
+     <gridExtraWrapper __type="boolean">1</gridExtraWrapper>
+     <classCollapse __type="boolean">0</classCollapse>
+    </properties>
+    <node identifier="d0206393-af58-27de-8bbb-1a595831307c" type="M12.Foundation:Column" nodeName="col1">
+     <properties>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-12</classSmallSize>
+     </properties>
+     <node identifier="5f86b39b-f69b-00d3-7846-ae59a6ee6c04" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="64e5da1d-a30e-d253-3aaa-2a48b09c71ee" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node537134c20df72">
+       <properties>
+        <customTagName>header</customTagName>
+        <title><![CDATA[<h1>Open Source</h1>]]></title>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+      <node identifier="366c46e0-2230-2310-1ded-d35ef41aaa5f" type="M12.Foundation:GridRow2Col" nodeName="node537134b040315">
+       <properties>
+        <customTagName>div</customTagName>
+       </properties>
+       <node identifier="5eb19f75-e522-9aca-b26a-78e647c3effd" type="M12.Foundation:Column" nodeName="col1">
+        <properties>
+         <customTagName>div</customTagName>
+         <classSmallSize>small-12</classSmallSize>
+         <classMediumSize>medium-6</classMediumSize>
+         <classHide __type="boolean">0</classHide>
+         <classClearfix __type="boolean">0</classClearfix>
+         <magellanSupport __type="boolean">0</magellanSupport>
+        </properties>
+        <node identifier="26e4dc92-54d0-c85f-ae05-e7491d976b6f" type="TYPO3.Neos:ContentCollection" nodeName="column">
+         <node identifier="809d1288-150b-9ab0-1d65-81bc79fbc3d8" type="TYPO3.Neos.NodeTypes:Text" nodeName="node53615d9f2cfb9">
+          <properties>
+           <text><![CDATA[<h3>M12.Foundation</h3><p>Do you sometimes think how cool it would be to have all Bootstrap/Foundation/ All Zurb Foundation components available in TYPO3 Neos. Build your o TYPO3 Neos plugin implementing (almost) all Zurb Foundation components. We used it to build Typostrap product. </p>]]></text>
+           <classHide __type="boolean">0</classHide>
+           <classClearfix __type="boolean">0</classClearfix>
+          </properties>
+         </node>
+        </node>
+       </node>
+       <node identifier="d2111df9-4457-7e14-d174-44f65a72d847" type="M12.Foundation:ColumnEnd" nodeName="col2">
+        <properties>
+         <customTagName>div</customTagName>
+         <classSmallSize>small-12</classSmallSize>
+         <classMediumSize>medium-6</classMediumSize>
+         <classHide __type="boolean">0</classHide>
+         <classClearfix __type="boolean">0</classClearfix>
+         <magellanSupport __type="boolean">0</magellanSupport>
+         <classEndColumn __type="boolean">0</classEndColumn>
+        </properties>
+        <node identifier="513f9b19-ca90-65b7-a1cc-9279e42e9489" type="TYPO3.Neos:ContentCollection" nodeName="column">
+         <node identifier="6fb7d861-a678-6c3d-7626-28b9f5424caa" type="TYPO3.Neos.NodeTypes:Text" nodeName="node53615ec868c44">
+          <properties>
+           <text><![CDATA[<h3>Other projects</h3><ul><li><a href="https://github.com/ryzy/vc-lemp-server">vc-lemp-server</a> - Vagrant + Chef + LEMP stack</li><li><a href="https://github.com/ryzy/vc-typo3-neos">vc-typo3-neos</a> - Vagrant environment for TYPO3 Neos. Have Neos up&amp;running in no time!</li></ul>]]></text>
+           <classHide __type="boolean">0</classHide>
+           <classClearfix __type="boolean">0</classClearfix>
+          </properties>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node identifier="cd342956-9165-fd39-d7e7-58aae922970f" type="TYPO3.Neos:ContentCollection" nodeName="footer">
+   <node identifier="cbc5bade-9f36-489a-650d-4cc3fa8f15ee" type="M12.Foundation:GridRow2Col" nodeName="node537137149dd0f">
+    <properties>
+     <customTagName>div</customTagName>
+     <classHide __type="boolean">0</classHide>
+     <classClearfix __type="boolean">0</classClearfix>
+     <magellanSupport __type="boolean">0</magellanSupport>
+     <gridExtraWrapper __type="boolean">0</gridExtraWrapper>
+     <classCollapse __type="boolean">0</classCollapse>
+    </properties>
+    <node identifier="28be705e-6879-3495-0023-1e321ac80011" type="M12.Foundation:Column" nodeName="col1">
+     <properties>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-4</classSmallSize>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+      <magellanSupport __type="boolean">0</magellanSupport>
+     </properties>
+     <node identifier="25108815-c18b-d0c3-def9-8a83f0409481" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="63ddc05f-fb44-061d-364e-4d00bc7b5994" type="TYPO3.Neos.NodeTypes:Text" nodeName="node535eb64d26169">
+       <properties>
+        <text><![CDATA[<p>© 2014 by M12<br/></p>]]></text>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+     </node>
+    </node>
+    <node identifier="93277b3a-ccbf-d493-6238-9b4512e14a9b" type="M12.Foundation:Column" nodeName="col2">
+     <properties>
+      <classTextAlign>text-right</classTextAlign>
+      <customTagName>div</customTagName>
+      <classSmallSize>small-8</classSmallSize>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+      <magellanSupport __type="boolean">0</magellanSupport>
+     </properties>
+     <node identifier="0ce3bddc-b567-f330-5ec6-c59239dafb11" type="TYPO3.Neos:ContentCollection" nodeName="column">
+      <node identifier="f3057730-bd25-5309-af17-0d784c64fb22" type="TYPO3.Neos.NodeTypes:Text" nodeName="node535eb605a76ba">
+       <properties>
+        <text><![CDATA[<p>M12 Ltd is registered in England, number 7654321.<br/></p>]]></text>
+        <classHide __type="boolean">0</classHide>
+        <classClearfix __type="boolean">0</classClearfix>
+       </properties>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+  <node identifier="b19c64dc-a66f-6708-1ac8-ccc5a0db12d1" type="TYPO3.Neos:Shortcut" nodeName="home">
+   <properties>
+    <targetMode>parentNode</targetMode>
+    <title>Home</title>
+    <targetNode __type="reference"/>
+    <fragmentId>top</fragmentId>
+   </properties>
+  </node>
+  <node identifier="7af10f94-e7bd-795d-6a06-02d9b90ccd4e" type="TYPO3.Neos:Shortcut" nodeName="about">
+   <properties>
+    <title>About</title>
+    <targetMode>parentNode</targetMode>
+    <targetNode __type="reference"/>
+    <fragmentId>about</fragmentId>
+   </properties>
+   <node identifier="45269bc0-495c-619e-3722-64326517cd7e" type="TYPO3.Neos:ContentCollection" nodeName="main"/>
+  </node>
+  <node identifier="a441b566-ba8d-3f09-87aa-e60eb7f27585" type="TYPO3.Neos:Shortcut" nodeName="what-we-do">
+   <properties>
+    <title>What we do</title>
+    <targetMode>parentNode</targetMode>
+    <targetNode __type="reference"/>
+    <fragmentId>what-we-do</fragmentId>
+   </properties>
+   <node identifier="0e20be6f-298a-5e50-8398-7e267232db8d" type="TYPO3.Neos:ContentCollection" nodeName="main"/>
+  </node>
+  <node identifier="5002589f-854a-dd59-7270-80d4dcf084f9" type="TYPO3.Neos:Shortcut" nodeName="meet-us">
+   <properties>
+    <title>Met us</title>
+    <targetMode>parentNode</targetMode>
+    <targetNode __type="reference"/>
+    <fragmentId>meet-us</fragmentId>
+   </properties>
+   <node identifier="ed7cac96-2c22-e962-5f33-37dedf79ddda" type="TYPO3.Neos:ContentCollection" nodeName="main"/>
+  </node>
+  <node identifier="47e64ec8-338b-5f04-415a-4a4474fbac6e" type="TYPO3.Neos:Shortcut" nodeName="contact">
+   <properties>
+    <targetMode>parentNode</targetMode>
+    <title>Contact</title>
+    <targetNode __type="reference"/>
+    <fragmentId>contact</fragmentId>
+   </properties>
+  </node>
+  <node identifier="b915bfe6-e160-973e-0bca-df0674c2730a" type="TYPO3.Neos.NodeTypes:PageSidebar" nodeName="blog">
+   <properties>
+    <customCssClass>blog-index-page</customCssClass>
+    <title>Blog</title>
+   </properties>
+   <node identifier="37f57775-4e2a-1a04-51fa-61abc0944362" type="TYPO3.Neos:ContentCollection" nodeName="main">
+    <node identifier="6dbc2a03-9d60-7754-3a1b-a350366382c1" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5388c601a4394">
+     <properties>
+      <customTagName>header</customTagName>
+      <title><![CDATA[<h1>Blog</h1>]]></title>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+     </properties>
+    </node>
+    <node identifier="6950ae60-936c-e212-b54d-d9cafcf32b3d" type="M12.Plugin.Blog:PostPlugin" nodeName="node539f6680c93be">
+     <properties>
+      <mode>index</mode>
+      <limit>5</limit>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+      <postsSourceNode __type="reference"/>
+     </properties>
+    </node>
+   </node>
+   <node identifier="401aae34-8baa-3a66-e77e-8b04cab80ced" type="TYPO3.Neos:ContentCollection" nodeName="sidebar">
+    <node identifier="3338cbd7-bb30-a8bb-289e-f012b4f4da53" type="M12.Foundation:Button" nodeName="node53a215d2e310b">
+     <properties>
+      <customCssClass>rss-button</customCssClass>
+      <htmlHref>/blog.rss.xml</htmlHref>
+      <htmlTargetBlank>_blank</htmlTargetBlank>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+      <magellanSupport __type="boolean">0</magellanSupport>
+      <faName>rss-square</faName>
+      <faSpin __type="boolean">0</faSpin>
+      <faFixedWidth __type="boolean">0</faFixedWidth>
+      <faRightAlign __type="boolean">1</faRightAlign>
+      <renderAnchor __type="boolean">1</renderAnchor>
+      <classIsDisabled __type="boolean">0</classIsDisabled>
+      <classIsExpanded __type="boolean">0</classIsExpanded>
+      <dropdownHoverable __type="boolean">0</dropdownHoverable>
+      <isButtonSplit __type="boolean">0</isButtonSplit>
+      <isButtonDropdown __type="boolean">0</isButtonDropdown>
+     </properties>
+    </node>
+    <node identifier="d961aaeb-1204-3892-93c9-e8ae6b873955" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node53837479dbe0c">
+     <properties>
+      <customCssClass>hide-on-blog-index-page</customCssClass>
+      <customTagName>div</customTagName>
+      <title><![CDATA[<h1>Latest news</h1>]]></title>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+     </properties>
+    </node>
+    <node identifier="88330471-dd64-b67a-64c3-c98038cf4dfb" type="M12.Plugin.Blog:PostPlugin" nodeName="node539f65e8ee3d3">
+     <properties>
+      <mode>latest</mode>
+      <limit>5</limit>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+      <postsSourceNode __type="reference">
+       <node identifier="b915bfe6-e160-973e-0bca-df0674c2730a"/>
+      </postsSourceNode>
+     </properties>
+    </node>
+    <node identifier="62db6084-d5b9-8ea0-3f67-27b1698288fc" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node53a59bd2c08d8">
+     <properties>
+      <customTagName>div</customTagName>
+      <title><![CDATA[<h1>About</h1>]]></title>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+     </properties>
+    </node>
+    <node identifier="7788aef0-489a-396d-8f3b-e9e675f10c34" type="TYPO3.Neos.NodeTypes:Text" nodeName="node53a59bde2d958">
+     <properties>
+      <customTagName>div</customTagName>
+      <text><![CDATA[<p>We're thrilled about what is happening in CMS world, especially in TYPO3 Neos, we'll be writing mostly about these things, including DevOps matters related to it.</p><p>And since we are heavily involved in Drupal-based projects, we sometimes will write about it too, compare them, find out where one can fit better then other etc.</p>]]></text>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+     </properties>
+    </node>
+    <node identifier="b0cae9bd-b030-bcea-9344-1b5e3631bac0" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node53a59de942f87">
+     <properties>
+      <customTagName>div</customTagName>
+      <title><![CDATA[<h1>TYPO3 Neos resources</h1>]]></title>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+     </properties>
+    </node>
+    <node identifier="4f7c807e-7ab2-5a3f-c61a-042c35147686" type="TYPO3.Neos.NodeTypes:Text" nodeName="node53a59f5214819">
+     <properties>
+      <customTagName>div</customTagName>
+      <text><![CDATA[<ul><li><a href="http://neos.typo3.org/">neos.typo3.org</a></li><li><a href="http://learn-neos.com/">learn-neos.com</a><br/></li></ul>]]></text>
+      <classHide __type="boolean">0</classHide>
+      <classClearfix __type="boolean">0</classClearfix>
+     </properties>
+    </node>
+   </node>
+   <node identifier="81682624-6ee9-491f-cd57-a6285d4c0994" type="M12.Plugin.Blog:Post" nodeName="compile-neos-css-with-sourcemaps">
+    <properties>
+     <title>TYPO3 Neos: how to re-compile back-end CSS with sourcemaps</title>
+     <author>Marcin Ryzycki</author>
+     <datePublished __type="object" __classname="DateTime">
+      <dateTime>2014-02-27T00:00:00+00:00</dateTime>
+     </datePublished>
+     <tags>neos-tips</tags>
+    </properties>
+    <node identifier="a899673d-d68d-2c40-e2f2-a3c13bdc91f8" type="TYPO3.Neos:ContentCollection" nodeName="synopsis">
+     <node identifier="aa31a5a7-36df-9c93-7723-e409da14d63b" type="TYPO3.Neos.NodeTypes:Text" nodeName="node538a0b327ae59">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>If you developing things for TYPO3 Neos back-end, it's useful to have its CSS with sourcemaps available.</p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+    </node>
+    <node identifier="1aacbed1-b8f4-467f-4b4b-ddfc703d8662" type="TYPO3.Neos:ContentCollection" nodeName="main">
+     <node identifier="783599c5-ceed-e112-b38e-b975ca452f78" type="TYPO3.Neos.NodeTypes:Text" nodeName="node538a0b61a9e66">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>Neos back-end styles are located at <b>Packages/Application/TYPO3.Neos/Resources/Private/Styles</b> - and from there you call <b>compas compile</b>.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="e6a97fa5-a97d-a3bf-88ba-7c94bc7561f1" type="M12.Neos.NodeType.CodeSnippet:CodeSnippet" nodeName="node538b2ddc5bf64">
+      <properties>
+       <title>Environment:</title>
+       <showTitle __type="boolean">1</showTitle>
+       <source>ruby 2.0.0p353</source>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="03528e8c-afd8-2316-4b09-24e7d4007c26" type="M12.Neos.NodeType.CodeSnippet:CodeSnippet" nodeName="node538b36e7bf382">
+      <properties>
+       <showTitle __type="boolean">1</showTitle>
+       <title>Required gems:</title>
+       <source>sass 3.3.0.rc.5 # currently latest --pre
+compass-sourcemaps 0.12.4 # currently latest -pre</source>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="bf6008c8-4fca-e40d-e82e-08cae253b3db" type="TYPO3.Neos.NodeTypes:Text" nodeName="node538b380346d42">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>Add following line to <b>config.rb</b>:</p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="dba7726e-97a1-c15c-3a5f-9a510f7445f4" type="M12.Neos.NodeType.CodeSnippet:CodeSnippet" nodeName="node538b371ba2137">
+      <properties>
+       <showTitle __type="boolean">1</showTitle>
+       <title>Code:</title>
+       <source><![CDATA[sass_options = { :sourcemap => true }]]></source>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="89c9eb0f-d52c-6bd4-fdfa-960f7788c66f" type="TYPO3.Neos.NodeTypes:Text" nodeName="node538b385037832">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>And you're ready to go!</p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="9eddd191-a814-756b-b6b2-e948515ce84d" type="M12.Neos.NodeType.CodeSnippet:CodeSnippet" nodeName="node538b382740e5f">
+      <properties>
+       <showTitle __type="boolean">1</showTitle>
+       <title>Shell:</title>
+       <source>$ cd NEOS_ROOT/Packages/Application/TYPO3.Neos/Resources/Private/Styles
+$ compass compile</source>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+    </node>
+   </node>
+   <node identifier="98067132-123e-22ee-1c22-a31beb1396a8" type="M12.Plugin.Blog:Post" nodeName="typo3-vs-drupal-stats">
+    <properties>
+     <title>TYPO3 vs Drupal stats</title>
+     <author>Marcin Ryzycki</author>
+     <datePublished __type="object" __classname="DateTime">
+      <dateTime>2014-01-14T00:00:00+00:00</dateTime>
+     </datePublished>
+     <tags>typo3, drupal, typo3-neos</tags>
+    </properties>
+    <node identifier="dec1459e-b66a-0fe2-4e5b-be38ff7d6a6f" type="TYPO3.Neos:ContentCollection" nodeName="synopsis">
+     <node identifier="bd9090bf-3d1f-e141-a70d-741378cea109" type="TYPO3.Neos.NodeTypes:Text" nodeName="node5389f40a9a15e">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>Year 2014 is going to be busy both in <a href="http://drupal.org/">Drupal</a> and <a href="http://typo3.org/">TYPO3 CMS</a> camps. TYPO3 has just released completely new flagship <a href="http://neos.typo3.org/">TYPO3 Neos</a>, beautifully designed and written from the scratch, with content-first approach, focused on author and developer experience (if you haven’t try it yet, you must do!). From Drupal camp, on the horizon we have <a href="https://drupal.org/">Drupal 8</a> (currently alpha) which promises to be revolutionary too. After a nearly 3-years-long affair with Drupal I’m coming back to TYPO3 world (the <em>why</em> is a topic for separate and rather a long post) - therefore it was interesting to look at current stats and trends regarding these two.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+    </node>
+    <node identifier="756427f6-cc35-1b5b-dfed-b36bd0b92901" type="TYPO3.Neos:ContentCollection" nodeName="main">
+     <node identifier="e5923418-cafe-be1f-8361-aacd54779c70" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f4816a0c7">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h2>Active / live websites<br/></h2>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="7cf01d8c-c881-906d-5595-2d26a83e5989" type="TYPO3.Neos.NodeTypes:Text" nodeName="node5389f4641324e">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<table><tbody><tr><td>TYPO3 CMS</td><td>Drupal</td><td>source</td></tr><tr><td>365k / 0.2%</td><td>707k / 0.4%</td><td><a href="http://builtwith.com/">builtWith.com</a> (Total)</td></tr><tr><td>19k / 1%</td><td>46k / 2.4%</td><td><a href="http://builtwith.com/">builtWith.com</a> (Top Sites)</td></tr><tr><td>4 / &lt;0.1%</td><td>387 / 3.9%</td><td>Quantcast Top 10k</td></tr></tbody></table><p> As you can see, TYPO3 has roughly 50% of what Drupal acquired so far, when it comes to totals. And this is fine - we do not compete here with Wordpress (12m 6.3%) or Joomla (2.7m 1.4%). It’s like with Jaguar cars: they are never going to beat Opel/Vauxhall quantitatively because they aim for something different. What worries me is that TYPO3 has such a small presence in top 10k websites - which in bystander's mind might rise a question ‘Is TYPO3 really that Jaguar’? I believe the one to blame for that achievement is <a href="http://www.acquia.com/">Acquia</a> - Private Equity backed (<a href="http://www.crunchbase.com/company/acquia">M</a>) company behind Drupal, co-founded by its creator, which does great marketing for it, supports enterprise clients who use Drupal, offers dedicated hosting, consultation, software, processes and so on. I was using some of these products and they’re truly impressive. TYPO3 doesn’t have such a back up.</p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="f0b512ef-e092-b775-960c-247c70feb57c" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f5927c902">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h2>Interest trends<br/></h2>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="7ec73c49-1dc4-3b26-93f1-abcd5f4b3650" type="TYPO3.Neos.NodeTypes:Text" nodeName="node5389f5a5502d8">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>Next I looked at <a href="http://www.google.co.uk/trends/explore#q=drupal%2C%20typo3%2C%20typo3&amp;cmpt=q">Google Trends</a> to see interest trends around these two. Note: I put TYPO3 twice just to get orange colour for TYPO3 which is its brand colour ;-)<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="3d9bf701-a5e4-ecde-0a40-21e32e05d185" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f6384e227">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h3>Worldwide<br/></h3>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="0f53d9e8-0bd5-a4ad-e916-0e6fd038f07a" type="TYPO3.Neos.NodeTypes:TextWithImage" nodeName="node5389f5c830f84">
+      <properties>
+       <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>It doesn’t look best for TYPO3: shortly after Acquia was founded, TYPO3 lost the lead. But it’s also interesting that overall trend is downside, for both of them.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+        <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:801;s:6:"height";i:463;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:801;s:6:"height";i:462;}}}}]]></processingInstructions>
+        <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="f6cdbeab-836c-31ca-5eaf-c65b38688912">
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="d47fcd76-5ecb-c0c1-f491-2b6d28a5f336">
+          <filename>ad23704e8125152b475dc2d8f9edd11a.png</filename>
+          <hash>1e4d979afd58141c70380b69be8db0c3d432912f</hash>
+         </resource>
+        </originalImage>
+       </image>
+       <hasCaption __type="boolean">0</hasCaption>
+      </properties>
+     </node>
+     <node identifier="cf08ade3-353a-75b0-e014-8e01b69e48da" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f6b0d0ec5">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h3>Germany<br/></h3>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="aebb362f-5838-6b14-da86-a66c4b45ae4b" type="TYPO3.Neos.NodeTypes:TextWithImage" nodeName="node5389f6ba97277">
+      <properties>
+       <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>Germany is a country-mother for TYPO3, where TYPO3 has the biggest presence. While it makes me happy, I’m also a bit unsettled when I see that the gap between them is getting smaller.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+        <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:803;s:6:"height";i:459;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:803;s:6:"height";i:459;}}}}]]></processingInstructions>
+        <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="688e5562-91e7-c260-150c-743a6982200c">
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="776c7a43-1ad5-1dce-7ebb-496893039928">
+          <filename>typo3 germany.png</filename>
+          <hash>4ab5a33c6213cc867d238eff8a74e2c942028e8a</hash>
+         </resource>
+        </originalImage>
+       </image>
+       <hasCaption __type="boolean">0</hasCaption>
+      </properties>
+     </node>
+     <node identifier="f86b3198-cfbf-c7a8-d48f-6336372774e3" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f71cd14b9">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h3>UK</h3>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="f5f53563-ca95-08fd-eb92-d8f051e97fba" type="TYPO3.Neos.NodeTypes:TextWithImage" nodeName="node5389f72b52b64">
+      <properties>
+       <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+       <customTagName>div</customTagName>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+        <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:801;s:6:"height";i:528;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:801;s:6:"height";i:528;}}}}]]></processingInstructions>
+        <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="a510390c-d05c-2985-2843-994d2fe18128">
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="eadc0825-9b57-b165-b0ce-e811a07ca350">
+          <filename>typo3 uk.png</filename>
+          <hash>d98ee60ff4451ded60b464f8e27f47bd772ff94c</hash>
+         </resource>
+        </originalImage>
+       </image>
+       <hasCaption __type="boolean">0</hasCaption>
+      </properties>
+     </node>
+     <node identifier="2483c351-23e8-83ee-12b5-f3ddaa276d11" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f7686a8d3">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h3>USA</h3>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="5c36afa2-2dc1-d86d-2f45-1f18261388eb" type="TYPO3.Neos.NodeTypes:TextWithImage" nodeName="node5389f79185957">
+      <properties>
+       <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>As you can see, UK and USA are places where TYPO3 doesn’t have much presence - and these are most mature market for it! Although I was pretty sure in US it looks better… but apparently I was mistaken.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+        <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:799;s:6:"height";i:523;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:799;s:6:"height";i:522;}}}}]]></processingInstructions>
+        <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="a05bab8f-4a2d-555b-cdcd-969057b25604">
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="bdb5f225-2d36-fa66-79d5-a22d40a34c47">
+          <filename>typo3 us.png</filename>
+          <hash>043f782b6e046ee5f04b47edca5ac489cc4cf1aa</hash>
+         </resource>
+        </originalImage>
+       </image>
+       <hasCaption __type="boolean">0</hasCaption>
+      </properties>
+     </node>
+     <node identifier="5bc54aea-e3d9-65d7-398a-0f425ff8d098" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f7b3b4553">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h3>Asia</h3>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="ed32c160-3406-f00d-3e8a-954118fadd8e" type="TYPO3.Neos.NodeTypes:Image" nodeName="node5389f7c51ab7b">
+      <properties>
+       <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+        <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:800;s:6:"height";i:527;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:800;s:6:"height";i:526;}}}}]]></processingInstructions>
+        <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="b2b54d5b-ae69-3d7a-8d44-d6eabf9dc741">
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="59cc8f83-826a-a327-b619-1a487403c784">
+          <filename>typo3 india.png</filename>
+          <hash>b724e60071ec797f666678049f19193c8ce988a2</hash>
+         </resource>
+        </originalImage>
+       </image>
+       <hasCaption __type="boolean">0</hasCaption>
+      </properties>
+     </node>
+     <node identifier="e2e4fe87-7710-1c59-f598-9b53ae0c5d13" type="TYPO3.Neos.NodeTypes:TextWithImage" nodeName="node5389f7cbcc929">
+      <properties>
+       <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>Very interesting spike in China and opposite trend in India.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+        <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:798;s:6:"height";i:525;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:798;s:6:"height";i:525;}}}}]]></processingInstructions>
+        <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="68e90437-9c5c-6efe-113c-88cee17327c5">
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="6b1bd130-4266-1913-5aac-469af83aad9b">
+          <filename>typo3 china.png</filename>
+          <hash>09fd406afaa97fa3991690dc61c3a8836923dd39</hash>
+         </resource>
+        </originalImage>
+       </image>
+       <hasCaption __type="boolean">0</hasCaption>
+      </properties>
+     </node>
+     <node identifier="f5e7728f-9705-8b71-6e4c-9ad6ce3d31cd" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f7f7b35a4">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h3>Poland</h3>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="f14f1915-8bec-23dc-f190-78d9eb6c0e3f" type="TYPO3.Neos.NodeTypes:TextWithImage" nodeName="node5389f80c14bc8">
+      <properties>
+       <caption><![CDATA[<p>Enter caption here</p>]]></caption>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>This one is quite surprising. When I left Poland ~3y ago (which is also the moment when I switched to Drupal), I was pretty sure that there’s no Drupal presence at all and it felt that the TYPO3 community is quite strong. Now I’m not sure.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+       <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
+        <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:801;s:6:"height";i:526;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:801;s:6:"height";i:525;}}}}]]></processingInstructions>
+        <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image" __identifier="44b2a905-cd24-172b-0c27-a4663fc39b9a">
+         <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="2a12ea96-1ee9-79ca-5334-77abac626714">
+          <filename>typo3 poland.png</filename>
+          <hash>73da3b8435501edced9d46f9e040fbec2f2d1846</hash>
+         </resource>
+        </originalImage>
+       </image>
+       <hasCaption __type="boolean">0</hasCaption>
+      </properties>
+     </node>
+     <node identifier="5709f000-ead0-c557-e3f7-64d69421c923" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node5389f82412566">
+      <properties>
+       <customTagName>div</customTagName>
+       <title><![CDATA[<h2>Summary</h2>]]></title>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+     <node identifier="6a928c26-9995-7b20-981a-54cd2b0f2fb2" type="TYPO3.Neos.NodeTypes:Text" nodeName="node5389f830a1599">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>TYPO3 and Drupal target roughly the same market. But TYPO3 has a lot to catch up to be as equally recognisable and popular as Drupal. It needs a’la<em>TYPO3IA</em> to respond to <em>Acquia</em> strong marketing. It needs more advertising, it needs solutions like dedicated hosting, it needs companies who would offer support to enterprise customers. It needs PaaS and SaaS products based on TYPO3 which would popularise it (vs. e.g. <a href="http://www.drupalgardens.com/">Drupal Gardens</a>). It needs talks and presence on conferences. And it has to be in English - some of us doesn’t speak German.</p><p>If my crystal orb is right, at least some of these we’re going to see happening in 2014 and following years. With new TYPO3 CMS 6.x (continuation of 4.x), completely new TYPO3 Neos - notabene both based on the same <a href="http://flow.typo3.org/">TYPO3 Flow</a> v.2 framework - we’re in a good shape to change above numbers. And I’m ready to set my hand to the plough and help a little bit with that.</p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+    </node>
+   </node>
+   <node identifier="4e78025b-783d-b5c7-fb8c-94723f11f42f" type="M12.Plugin.Blog:Post" nodeName="vagrant-with-typo3-flow-neos">
+    <properties>
+     <title>I did Vagrant setup with TYPO3 Flow/Neos</title>
+     <author>Marcin Ryzycki</author>
+     <datePublished __type="object" __classname="DateTime">
+      <dateTime>2014-01-11T00:00:00+00:00</dateTime>
+     </datePublished>
+     <tags>dev-ops, typo3, typo3-neos, typo3-flow</tags>
+    </properties>
+    <node identifier="3b3ac850-6d50-b4bc-a5c9-715ebfe0e64b" type="TYPO3.Neos:ContentCollection" nodeName="synopsis">
+     <node identifier="0ffa69b4-d48b-39b8-d44b-99b53f67dffc" type="TYPO3.Neos.NodeTypes:Text" nodeName="node5389eecb3a2e2">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>I've commited TYPO3 Neos and TYPO3 Flow virtual machine setup based on Vagrant.<br/></p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+    </node>
+    <node identifier="3f3b2031-41c8-0bc8-836f-7a660ce4cc23" type="TYPO3.Neos:ContentCollection" nodeName="main">
+     <node identifier="ca415590-a962-d0d4-c08a-625148801edf" type="TYPO3.Neos.NodeTypes:Text" nodeName="node5389eeebb777b">
+      <properties>
+       <customTagName>div</customTagName>
+       <text><![CDATA[<p>I know that plenty of guys are using Vagrant for development. My intention was to have TYPO3 Flow/Neos setup, up &amp; running in no time, even for 1st-timers (both with Flow/Neos and/or Vagrant).</p><p>It has Nginx / PHP-FPM / MySQL / phpMyAdmin plus all necessary tuning (e.g. memory_limit for PHP, client_max_body_size for Nginx, Opcode for PHP, MySQL optimisation including correct character-set and collaton settings, etc etc) - so Flow/Neos can run smoothly and fast. I also did that trick with not using Vagrant's synced_folder (IMO it's bit slow, even when type:nfs), so instead resources from VM are exported/mounted to host filesystem, not the other way.</p><p>I plan to maintain it as I'm extremely excited about Neos and I'm starting my first project(s) based on it (no prior experience with Neos/Flow, just TYPO3 4.x).</p><p>Have a try - any suggestions more then welcomed: <a href="https://github.com/ryzy/vc-typo3">https://github.com/ryzy/vc-typo3</a></p><p>There's nice README, so just follow the instructions from there.</p>]]></text>
+       <classHide __type="boolean">0</classHide>
+       <classClearfix __type="boolean">0</classClearfix>
+      </properties>
+     </node>
+    </node>
+   </node>
+  </node>
+ </site>
 </root>
