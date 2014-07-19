@@ -1,4 +1,12 @@
-//  --------------------------- BLOG POST HOMEPAGE ---------------------------
+// Styles for Blog Content:
+// 01. BLOG POST HOMEPAGE
+// 02. BLOG POST ITEM
+// 03. BLOG POST ARTICLE
+// 04. BLOG POST COMMENTS
+// 05. BLOG POST SIDEBAR
+
+
+// 01. --------------------------- BLOG POST HOMEPAGE ---------------------------
 .blog-index-page {
 	.hide-on-blog-index-page, .blog-posts-latest {
 		display: none;
@@ -7,7 +15,7 @@
 .main-column {
 	padding-right: 3rem;
 }
-//  --------------------------- BLOG POST ITEM ---------------------------
+// 02. --------------------------- BLOG POST ITEM ---------------------------
 
 .blog-post-item {
 	position: relative;
@@ -111,7 +119,7 @@
 	}
 }
 
-//  --------------------------- BLOG POST ARTICLE ---------------------------
+// 03. --------------------------- BLOG POST ARTICLE ---------------------------
 .blog-post {
 	header {
 		text-align: left;
@@ -128,12 +136,12 @@
 	}
 }
 
-//  --------------------------- BLOG POST COMMENTS ---------------------------
+// 04. --------------------------- BLOG POST COMMENTS ---------------------------
 .disqusWrapper {
 	margin: 3rem 0 0 0;
 }
 
-//  --------------------------- BLOG POST SIDEBAR ---------------------------
+// 05. --------------------------- BLOG POST SIDEBAR ---------------------------
 .sidebar {
 	margin: 2rem 0 0 0;
 	background-color: $bg-color-white;

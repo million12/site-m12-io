@@ -1,3 +1,14 @@
+// Styles for Generic Site Content:
+// 01. GENERIC
+// 02. TYPOGRAPY
+// 03. COLORS
+// 04. CODE SNIPPET
+// 05. TABLE
+// 06. FIGURE
+// 07. IMAGE
+// 08. PAGINATION
+
+
 // 01. --------------------------- GENERIC STYLE ---------------------------
 
 html {
@@ -16,7 +27,7 @@ body > main {
 	}
 }
 
-// TYPOGRAPY
+// 02. --------------------------- TYPOGRAPY ---------------------------
 header{
 	text-align: center;
 	h1 {
@@ -45,7 +56,7 @@ b {
 	font-weight: 600;
 }
 
-// COLORS
+// 03. --------------------------- COLORS ---------------------------
 .bg-white {
 	background-color: $bg-color-white;
 }
@@ -66,7 +77,7 @@ b {
 	}
 }
 
-//  --------------------------- CODE SNIPPET ---------------------------
+// 04. --------------------------- CODE SNIPPET ---------------------------
 .m12-neos-nodetype-codesnippet-codesnippet {
 	margin: 15px 0;
 	border: 1px solid $border-color;
@@ -89,7 +100,7 @@ b {
 	}
 }
 
-//  --------------------------- TABLE ---------------------------
+// 05. --------------------------- TABLE ---------------------------
 table {
 	width: 100%;
 	//border-radius: 3px;
@@ -108,18 +119,18 @@ table {
 	}
 }
 
-//  --------------------------- FIGURE ---------------------------
+// 06. --------------------------- FIGURE ---------------------------
 figure {
 	margin: 0 0 1rem 0;
 	//border: thin solid $border-color;
 }
 
-//  --------------------------- IMAGE ---------------------------
+// 07. --------------------------- IMAGE ---------------------------
 img {
 	border: thin solid $border-color;
 }
 
-//  --------------------------- PAGINATION ---------------------------
+// 08. --------------------------- PAGINATION ---------------------------
 ul.pagination {
 	margin-left: 0;
 	text-align: center;
