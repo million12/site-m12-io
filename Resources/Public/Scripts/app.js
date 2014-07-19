@@ -1,29 +1,25 @@
 $(document).foundation();
 
-$(document).ready(function() {
-	// Animations
-	M12.Site.Animation.init();
-	// Smooth scrolling
-	M12.Site.Scrolling.init();
-});
-
 /**
  * M12 Namespace
  */
-var M12 = function() {
+var M12 = (function() {
+	'use strict';
 	return {};
-}();
+})();
 
 /**
  * M12.Site Namespace
  * @returns {Object}.<string, function>:Animation, Scrolling
  */
-M12.Site = function() {
+M12.Site = (function() {
+	'use strict';
+
 	/**
 	 * Animation Module
 	 * @return {Object.<string, function>}
- 	 */
-	var Animation = function() {
+	 */
+	var Animation = (function() {
 
 		var init = function() {
 			animateSplashScreen();
@@ -52,21 +48,23 @@ M12.Site = function() {
 				if (currentItem === numberItems) {
 					first.css('margin-top', '0px');
 					currentItem = 1;
-				} else currentItem++;
+				} else {
+					currentItem++;
+				}
 			}, 3000);
 		};
 
 		// Public function
 		return {
 			init: init
-		}
-	}();
+		};
+	})();
 
 	/**
 	 * Scrolling Module
 	 * @return {object.<string, function>}
 	 */
-	var Scrolling = function() {
+	var Scrolling = (function() {
 		var init = function() {
 			initSmoothScrolling();
 		};
@@ -88,13 +86,21 @@ M12.Site = function() {
 		// Public function
 		return {
 			init: init
-		}
-	}();
+		};
+	})();
 
 	// Return the Modules within M12.Site
 	return {
 		Animation: Animation,
 		Scrolling: Scrolling
 	};
-}();
+})();
+
+$(document).ready(function() {
+	'use strict';
+	// Animations
+	M12.Site.Animation.init();
+	// Smooth scrolling
+	M12.Site.Scrolling.init();
+});
 
