@@ -2,14 +2,14 @@
   "name": "foundation-libsass-template",
   "version": "0.0.1",
   "devDependencies": {
-    "node-sass": "^0.8.6",
-    "gulp": "^3.6.2",
-    "gulp-plumber": "^0.6.1",
-    "gulp-sass": "^0.7.1",
-    "gulp-ruby-sass": "^0.5.0",
-    "gulp-util": "^2.2.14",
-    "gulp-load-plugins": "^0.5.0",
+    "node-sass": "0.8.6",
+    "gulp": "3.8.6",
+    "gulp-plumber": "0.6.1",
+    "gulp-sass": "0.7.1",
+    "gulp-ruby-sass": "0.5.0",
+    "gulp-util": "2.2.14",
+    "gulp-load-plugins": "0.5.0",
     "gulp-autoprefixer": "0.0.6",
-    "gulp-connect": "^2.0.5"
+    "gulp-connect": "2.0.5"
   }
 }
