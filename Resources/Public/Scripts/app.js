@@ -1,5 +1,3 @@
-$(document).foundation();
-
 /**
  * M12 Namespace
  */
@@ -96,6 +94,9 @@ M12.Site = (function() {
 	};
 })();
 
+// Invoke Zurb Foundation
+$(document).foundation();
+
 $(document).ready(function() {
 	'use strict';
 	// Animations
@@ -103,4 +104,3 @@ $(document).ready(function() {
 	// Smooth scrolling
 	M12.Site.Scrolling.init();
 });
-
