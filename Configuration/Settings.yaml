@@ -1,7 +1,29 @@
+
 TYPO3:
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        dbname: typo3_neos_m12_dev
+        user: typo3_neos_m12
+        password: password
+        host: 127.0.0.1
   Neos:
-    nodeTypes:
-      groups:
-        m12:
-          position: 5
-          label: 'M12.io elements'
+    userInterface:
+      loadMinifiedJavascript: TRUE
+
+#
+# M12 blog settings
+#
+M12:
+  Plugin:
+    Blog:
+      disqus:
+        enabled: TRUE
+        shortname: 'ryzycki-blog'
+      feed:
+        uri: '/blog.rss.xml'
+        postsLimit: 20
+        title: 'M12.io blog'
+        description: 'Blog about TYPO3 Neos, Drupal, dev ops and other things that matter'
+        defaultAuthor: 'Marcin Ryzycki'

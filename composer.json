@@ -1,32 +1,52 @@
 {
-    "name": "m12/m12-io-site",
-    "type": "typo3-flow-site",
-    "description": "M12.io website",
+    "name": "m12/site-typostrap-io",
+    "description": "M12.io complete website",
+    "license": "GPL-3.0+",
     "authors": [
+        {
+            "name": "Ashnita Bali",
+            "email": "ashnita01@gmail.com",
+            "role": "Front-end Developer"
+        },
         {
             "name": "Marcin Ryzycki",
             "email": "marcin@m12.io",
             "homepage": "http://m12.io",
             "role": "Back-end Developer"
-        },
-        {
-            "name": "Ashnita Bali",
-            "email": "ashnita01@gmail.com",
-            "role": "Front-end Developer"
         }
     ],
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin"
+    },
     "repositories": [
-        { "type": "git", "url": "https://github.com/million12/Neos.NodeType.CodeSnippet.git" }
+        {
+            "type": "git",
+            "url": "https://github.com/million12/Neos.NodeType.CodeSnippet.git"
+        }
     ],
     "require": {
-        "typo3/neos-nodetypes": "*",
-        "m12/neos-foundation": "*",
-        "m12/neos-plugin-blog": "*",
-        "m12/neos-nodetype-codesnippet": "dev-master"
+        "typo3/neos": "1.1.2",
+        "typo3/neos-nodetypes": "1.1.2",
+        "typo3/neos-kickstarter": "1.1.2",
+        "m12/m12-io-site": "dev-master",
+        "robertlemke/rss": "dev-master"
     },
-    "autoload": {
-        "psr-0": {
-            "M12\\Site": "Classes"
-        }
+    "require-dev": {
+        "typo3/buildessentials": "2.2.*",
+        "mikey179/vfsstream": "1.2.*",
+        "phpunit/phpunit": "4.0.*",
+        "flowpack/behat": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "suggest": {
+        "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
+    },
+    "scripts": {
+        "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update": "TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install": "TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
     }
 }
+
