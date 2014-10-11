@@ -1,0 +1,53 @@
+dbdata:
+  image: busybox:latest
+  command: echo dbdata
+  volumes:
+    - /data/site-m12-io/var/lib/mysql:/var/lib/mysql
+
+db:
+  image: tutum/mariadb:latest
+  ports:
+    - 3306
+  volumes_from:
+    - dbdata
+  environment:
+    MARIADB_PASS: super-secret-db-password-123
+
+webdata:
+  image: busybox:latest
+  command: echo webdata
+  volumes:
+    - /data
+
+web:
+  image: million12/site-m12-io
+  ports:
+    - '8080:80'
+  links:
+    - db:db
+  volumes_from:
+    - webdata
+  volumes:
+    - /run/user/site-m12-io:/run/user
+  environment:
+    NEOS_APP_NAME: 'm12'
+    NEOS_APP_VHOST_NAMES: 'm12.io dev.m12.io test.m12.io'
+    NEOS_APP_DB_NAME: 't3n_m12_io'
+    NEOS_APP_USER_NAME: 'admin'
+    NEOS_APP_USER_PASS: 'password'
+    NEOS_APP_USER_FNAME: 'M12'
+    NEOS_APP_USER_LNAME: 'IO'
+    NEOS_APP_SITE_PACKAGE: 'M12.Site'
+    NEOS_APP_FORCE_SITE_REIMPORT: false
+    NEOS_APP_FORCE_PULL: false
+
+ssh:
+  image: million12/php-app-ssh
+  ports:
+    - '5678:22'
+  links:
+    - db:db
+  volumes_from:
+    - webdata
+  environment:
+    IMPORT_GITHUB_PUB_KEYS: ryzy
