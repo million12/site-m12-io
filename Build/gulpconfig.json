@@ -1,0 +1,36 @@
+{
+    "vendorsDir": "BowerComponents",
+    "source": {
+        "styles": "../Packages/Sites/M12.Site/Resources/Private/Styles/**/",
+        "vendorScripts": [],
+        "scripts": [
+            "BowerComponents/jquery.scrollTo/jquery.scrollTo.js",
+            "BowerComponents/jquery.localScroll/jquery.localScroll.js",
+            "../Packages/Sites/M12.Site/Resources/Private/Scripts/App.js"
+        ],
+        "fonts": [
+            "BowerComponents/fontawesome/fonts/*.*",
+            "BowerComponents/open-sans-fontface/fonts/**/*"
+        ],
+        "includePaths": [
+            "BowerComponents",
+            "BowerComponents/foundation/scss",
+            "BowerComponents/fontawesome/scss"
+        ]
+    },
+    "dest": {
+        "styles": "../Packages/Sites/M12.Site/Resources/Public/Styles",
+        "scripts": "../Packages/Sites/M12.Site/Resources/Public/Scripts",
+        "images": "/_Resources/Static/Packages/M12.Site/Images",
+        "fonts": "../Packages/Sites/M12.Site/Resources/Public/Fonts"
+    },
+    "watch": {
+        "styles": "../Packages/Sites/M12.Site/Resources/Private/Styles/**/*",
+        "scripts": "../Packages/Sites/M12.Site/Resources/Private/Scripts/**/*"
+    },
+    "clear": [
+        "../Packages/Sites/M12.Site/Resources/Public/Styles/*",
+        "../Packages/Sites/M12.Site/Resources/Public/Scripts/*",
+        "../Packages/Sites/M12.Site/Resources/Public/Fonts/*"
+    ]
+}

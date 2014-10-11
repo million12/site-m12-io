@@ -38,3 +38,4 @@ Build/Resources/Java/selenium-server-standalone*
 .idea/
 .vagrant/
 node_modules/
+BowerComponents/

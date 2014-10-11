@@ -1,73 +1,87 @@
-// Include gulp
+/* jshint strict: false */
+
+var args = require('yargs').argv;
 var gulp = require('gulp');
-// Include Our Plugins
-var plugins = require('gulp-load-plugins')({
-	camelize: true
-});
+var $ = require('gulp-load-plugins')({ camelize:true });
+var config = require('./gulpconfig.json');
 
-// Variables
-var destDir = '../Resources/Public';     // Destination directory
-var vendorsDir = destDir + '/Vendors';   // Vendors directory (e.g. with Foundation source)
-var sources = {                          // File sources
-	sass: './scss/*.scss',
-	sassWatch: ['./scss/**/*']
-};
-
-
-gulp.task('sass', function() {
-	gulp.src(sources.sass)
-		.pipe(plugins.plumber())
-		.pipe(plugins.sass({
-			includePaths: [
-				vendorsDir,
-				vendorsDir + '/foundation/scss',
-				vendorsDir + '/open-sans-fontface'
-			],
-			imagePath: '/_Resources/Static/Packages/M12.Site/Images',
-			sourceComments: 'map',
-			sourceMap: true,
-//			outputStyle: 'nested',
-			errLogToConsole: true
-		}))
-		.pipe(plugins.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(gulp.dest(destDir + '/Styles'))
-//		.pipe(plugins.connect.reload())
-	;
-});
-
-gulp.task('rubySass', function() {
-	gulp.src(sources.sass)
-		.pipe(plugins.plumber())
-		.pipe(plugins.rubySass({
-			loadPath: [
-				vendorsDir,
-				vendorsDir + '/foundation/scss',
-				vendorsDir + '/open-sans-fontface'
-			],
-			sourcemap: true
-		}))
-		.pipe(plugins.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(gulp.dest(destDir + '/Styles'))
-		.pipe(plugins.connect.reload())
-	;
-});
+var isProduction = /prod/i.test(args.env);
 
 // Connect Server
 gulp.task('connect', function() {
-	plugins.connect.server({
+	$.connect.server({
 		root: __dirname,
 		port: 9000,
 		livereload: false
 	});
 });
 
+gulp.task('styles', function() {
+	gulp.src(config.source.styles)
+		.pipe($.plumber())
+		.pipe($.sass({
+			includePaths: config.source.includePaths,
+			imagePath: config.dest.images,
+			sourceComments: 'map',
+			sourceMap: isProduction === false,
+			errLogToConsole: true
+		}))
+		.pipe($.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+		.pipe($.if(isProduction,
+			$.csso() // only minify/compress on Production
+		))
+		.pipe(gulp.dest(config.dest.styles))
+		.pipe($.size({ showFiles:true }))
+		.pipe($.size({ gzip:true }))
+	;
+});
+
+gulp.task('scripts', function() {
+	var scripts = config.source.vendorScripts.concat(config.source.scripts);
+	return gulp.src(scripts)
+		.pipe($.if(isProduction,
+			$.uglify({ mangle: false }) // only minify/uglify on Production
+		))
+		.pipe($.concat('App.js'))
+		.pipe(gulp.dest(config.dest.scripts))
+		.pipe($.size({ showFiles:true }))
+		.pipe($.size({ gzip:true }))
+	;
+});
+
+gulp.task('scripts-hinting', function() {
+	return gulp.src(config.source.scripts)
+		.pipe($.jshint('../.jshintrc'))
+		.pipe($.jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('assets', ['clear'], function() {
+	// fonts
+	return gulp.src(config.source.fonts)
+		.pipe(gulp.dest(config.dest.fonts))
+	;
+});
+
+gulp.task('clear', function () {
+	return gulp.src(config.clear, { read:false })
+		.pipe($.rimraf({ force:true }))
+	;
+});
+
+gulp.task('build', [
+	'assets',
+	'styles',
+	'scripts-hinting',
+	'scripts'
+]);
+
 // Watch
-gulp.task('watch', ['sass'], function () {
+gulp.task('watch', function () {
 	// Watch .scss files
-	gulp.watch(sources.sassWatch, ['sass']);
+	gulp.watch(config.watch.styles, ['styles']);
+	// Watch .js files
+	gulp.watch(config.watch.scripts, ['scripts-hinting', 'scripts']);
 });
 
 // Default Task
-gulp.task('default', [
-	'sass'
-]);
+gulp.task('default', ['build']);

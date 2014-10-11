@@ -16,4 +16,7 @@ prototype(TYPO3.Neos:Page) {
 			dir = 'ltr'
 		}
 	}
+
+	# Remove Font Awesome added by M12.Foundation plugin
+	head.stylesheets.@process.fontAwesome >
 }

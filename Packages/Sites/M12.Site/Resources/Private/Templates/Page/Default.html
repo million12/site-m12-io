@@ -5,14 +5,14 @@
 <head>
 	<f:section name="metadata">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="dns-prefetch" href="http://cdnjs.cloudflare.com">
+	</f:section>
+	
+	<f:section name="stylesheets">
+		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/App.css', package: 'M12.Site')}" media="all"/>
 	</f:section>
 
 	<f:section name="javascripts">
-		<script src="{f:uri.resource(path: 'Vendors/modernizr/modernizr.js', package: 'M12.Site')}"></script>
-	</f:section>
-
-	<f:section name="stylesheets">
-		<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/app.css', package: 'M12.Site')}" media="all"/>
 	</f:section>
 </head>
 <body>
@@ -53,11 +53,9 @@
 		ga('create', 'UA-5427883-1', 'm12.io');
 		ga('send', 'pageview');
 	</script>
-	<script src="{f:uri.resource(path: 'Vendors/jquery/dist/jquery.min.js', package: 'M12.Site')}"></script>
-	<script src="{f:uri.resource(path: 'Vendors/foundation/js/foundation.min.js', package: 'M12.Site')}"></script>
-	<script src="{f:uri.resource(path: 'Vendors/jquery.scrollTo/jquery.scrollTo.min.js', package: 'M12.Site')}"></script>
-	<script src="{f:uri.resource(path: 'Vendors/jquery.localScroll/jquery.localScroll.min.js', package: 'M12.Site')}"></script>
-	<script src="{f:uri.resource(path: 'Scripts/app.js', package: 'M12.Site')}"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation.min.js"></script>
+	<script src="{f:uri.resource(path: 'Scripts/App.js', package: 'M12.Site')}"></script>
 </f:section>
 </body>
 </html>
