@@ -20,17 +20,15 @@
         "bin-dir": "bin"
     },
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/million12/Neos.NodeType.CodeSnippet.git"
-        }
+        { "type": "git", "url": "https://github.com/million12/Neos.NodeType.CodeSnippet.git" }
     ],
     "require": {
         "typo3/neos": "1.1.2",
         "typo3/neos-nodetypes": "1.1.2",
         "typo3/neos-kickstarter": "1.1.2",
-        "m12/m12-io-site": "dev-master",
-        "robertlemke/rss": "dev-master"
+        "m12/neos-foundation": "*",
+        "m12/neos-plugin-blog": "*",
+        "m12/neos-nodetype-codesnippet": "dev-master"
     },
     "require-dev": {
         "typo3/buildessentials": "2.2.*",
@@ -49,4 +47,3 @@
         "post-package-install": "TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
     }
 }
-

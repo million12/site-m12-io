@@ -4,10 +4,10 @@ TYPO3:
     persistence:
       backendOptions:
         driver: pdo_mysql
-        dbname: typo3_neos_m12_dev
-        user: typo3_neos_m12
-        password: password
-        host: 127.0.0.1
+        dbname: t3n_m12_io
+        user: admin
+        password: super-secret-db-password-123
+        host: 172.17.1.68
   Neos:
     userInterface:
       loadMinifiedJavascript: TRUE

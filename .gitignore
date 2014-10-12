@@ -9,9 +9,11 @@
 /Configuration/**/*.example
 /Configuration/PackageStates.php
 /Configuration/README
+/Configuration/Production/IncludeCachedConfigurations.php
 /Data/
 /Packages/Application/Flowpack.*
 /Packages/Application/TYPO3.*
+/Packages/Application/M12.*
 /Packages/Framework/TYPO3.*
 /Packages/Libraries/
 /Packages/Plugins/M12.Foundation/

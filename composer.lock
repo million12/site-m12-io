@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8eabeb03c5318a315eb7015259f5fdd6",
+    "hash": "8415f1d7d9b00882d1b9d337faefffd3",
     "packages": [
         {
             "name": "composer/installers",
@@ -364,7 +364,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -748,49 +748,6 @@
             "time": "2014-06-16 20:53:48"
         },
         {
-            "name": "m12/m12-io-site",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/million12/M12.Site.git",
-                "reference": "4cfeb174fee2579c71b805cf7f43cdb60a8e3e22"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/million12/M12.Site/zipball/4cfeb174fee2579c71b805cf7f43cdb60a8e3e22",
-                "reference": "4cfeb174fee2579c71b805cf7f43cdb60a8e3e22",
-                "shasum": ""
-            },
-            "require": {
-                "m12/neos-foundation": "*",
-                "m12/neos-nodetype-codesnippet": "dev-master",
-                "m12/neos-plugin-blog": "*",
-                "typo3/neos-nodetypes": "*"
-            },
-            "type": "typo3-flow-site",
-            "autoload": {
-                "psr-0": {
-                    "M12\\Site": "Classes"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Marcin Ryzycki",
-                    "email": "marcin@m12.io",
-                    "homepage": "http://m12.io",
-                    "role": "Back-end Developer"
-                },
-                {
-                    "name": "Ashnita Bali",
-                    "email": "ashnita01@gmail.com",
-                    "role": "Front-end Developer"
-                }
-            ],
-            "description": "M12.io website",
-            "time": "2014-07-20 00:22:37"
-        },
-        {
             "name": "m12/neos-foundation",
             "version": "dev-master",
             "source": {
@@ -888,7 +845,7 @@
                     "name": "Marcin Ryzycki",
                     "email": "marcin@m12.io",
                     "homepage": "http://m12.io",
-                    "role": "Developer"
+                    "role": "Back-end Developer"
                 }
             ],
             "description": "Simple blog for TYPO3 Neos",
@@ -2187,20 +2144,13 @@
             "time": "2014-03-26 10:31:47"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "m12/m12-io-site": 20,
-        "robertlemke/rss": 20,
+        "m12/neos-nodetype-codesnippet": 20,
         "flowpack/behat": 20
     },
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "platform": [],
+    "platform-dev": []
 }
