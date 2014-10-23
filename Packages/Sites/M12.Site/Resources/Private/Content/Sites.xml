@@ -2,7 +2,7 @@
 <root>
  <site identifier="bf628f2e-ed35-0897-5c58-bd3fd7f541d4" type="TYPO3.Neos.NodeTypes:PageTeaser" nodeName="m12">
   <properties>
-   <title>M12.io</title>
+   <title>MILLION12 - web applications, TYPO3 Neos, DevOps</title>
    <layout>landingPage</layout>
    <subpageLayout>default</subpageLayout>
    <customCssClass>home-page</customCssClass>
@@ -42,10 +42,13 @@
      </node>
      <node identifier="a8f8d245-ba83-9d2a-c437-02a5b4c5ade5" type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
       <properties>
-       <text><![CDATA[<ul><li>We are Web Apps Developers<br/></li><li>Passionate About Building Great Products</li><li>Passionate About Web Technologies</li><li>Passionate About User eXperience</li><li>We Love Automation and Testing<br/></li><li>We Love Good Code</li></ul>]]></text>
+       <text><![CDATA[<ul><li>We are Web Apps Developers<br/></li><li>Passionate About Building Great Products</li><li>Passionate About Web Technologies</li><li>Passionate About User eXperience</li><li>We Love Automation, Testing and DevOps<br/></li><li>We Love Good Code</li></ul>]]></text>
        <classHide __type="boolean">0</classHide>
        <classClearfix __type="boolean">0</classClearfix>
        <customCssClass>animatedList</customCssClass>
+       <faSpin __type="boolean">0</faSpin>
+       <faFixedWidth __type="boolean">0</faFixedWidth>
+       <faRightAlign __type="boolean">0</faRightAlign>
       </properties>
      </node>
      <node identifier="0bc24b65-334e-1bd1-d88e-a6529e35d598" type="M12.Foundation:Button" nodeName="node53628b963e216">

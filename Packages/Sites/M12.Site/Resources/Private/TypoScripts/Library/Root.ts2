@@ -16,6 +16,8 @@ page = Page {
 	@override.magellanSupport = ${true}
 
 	head {
+		titleTag.content = ${q(node).property('title') + ' - ' + q(site).property('title')}
+		
 		metadata = TypoScript:Template {
 			templatePath = ${template}
 			sectionName = 'metadata'
@@ -94,5 +96,8 @@ page = Page {
 	}
 }
 
-landingPage < page
+landingPage < page {
+	head.titleTag.content = ${q(node).property('title')}
+}
+
 default < page
