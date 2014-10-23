@@ -9,6 +9,7 @@
 	// Logo Styles
 	.title-area .name a {
 		width: 95px;
+		height: $topbar-height;
 		background: image-url('logo-black.png') left center / 95px no-repeat;
 
 		// Make the logo size smaller for small and medium screens
@@ -16,7 +17,7 @@
 			width: 85px;
 			background-size: 85px;
 		}
-		// Hide "M12.io"
+		// Hide text inside logo button
 		span {
 			visibility: hidden;
 		}

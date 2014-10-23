@@ -22,8 +22,7 @@
 // 02. --------------------------- MEET US SECTION ---------------------------
 
 .section-meet-us--columns {
-	//font-size: $h5-font-size;
-	font-size: $h4-font-size;
+	font-size: $h5-font-size;
 
 	figure {
 		margin: 0;
@@ -37,12 +36,19 @@
 		}
 	}
 	.button {
+		cursor: default;
 		padding-top: rem-calc(10);
 		padding-bottom: rem-calc(10);
 		text-transform: uppercase;
 	}
 	p {
 		font-size: inherit;
+	}
+	
+	> .columns.medium-6:nth-child(2n+1) {
+		@media #{$medium-only} {
+			clear: both;
+		}
 	}
 }
 
