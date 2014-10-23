@@ -33,6 +33,11 @@ page = Page {
 			templatePath = ${template}
 			sectionName = 'stylesheets'
 		}
+
+		newRelicCode = TypoScript:Template {
+			templatePath = 'resource://M12.Site/Private/Templates/Page/NewRelic.html'
+			@position = 'after titleTag'
+		}
 	}
 
 	body {

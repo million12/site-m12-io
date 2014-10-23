@@ -17,6 +17,16 @@
 </head>
 <body>
 <f:section name="body">
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NB8GHG"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NB8GHG');</script>
+	<!-- End Google Tag Manager -->
+
 	<f:if condition="{hasTeaser}">
 		{content.teaser -> f:format.raw()}
 	</f:if>
@@ -44,15 +54,6 @@
 	<footer>{footer -> f:format.raw()}</footer>
 </f:section>
 <f:section name="bodyScripts">
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-5427883-1', 'm12.io');
-		ga('send', 'pageview');
-	</script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.6/js/foundation.min.js"></script>
 	<script src="{f:uri.resource(path: 'Scripts/App.js', package: 'M12.Site')}"></script>
