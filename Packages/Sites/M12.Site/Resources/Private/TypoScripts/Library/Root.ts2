@@ -27,22 +27,19 @@ page = Page {
 		javascripts = TypoScript:Template {
 			templatePath = ${template}
 			sectionName = 'javascripts'
+			isDEV = ${isDEV}
 		}
 
 		stylesheets = TypoScript:Template {
 			templatePath = ${template}
 			sectionName = 'stylesheets'
 		}
-
-		newRelicCode = TypoScript:Template {
-			templatePath = 'resource://M12.Site/Private/Templates/Page/NewRelic.html'
-			@position = 'after titleTag'
-		}
 	}
 
 	body {
 		templatePath = ${template}
 		sectionName = 'body'
+		isDEV = ${isDEV}
 
 		layout          = ${q(node).property('layout')}
 		isLandingPage   = ${this.layout == 'landingPage'}

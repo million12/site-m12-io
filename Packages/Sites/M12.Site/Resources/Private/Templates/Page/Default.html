@@ -13,19 +13,38 @@
 	</f:section>
 
 	<f:section name="javascripts">
+		<f:if condition="{isDEV}">
+		<f:else>
+			<script>
+				var _prum = [['id', '544b8c2aabe53dc733440eb5'],
+					['mark', 'firstbyte', (new Date()).getTime()]];
+				(function() {
+					var s = document.getElementsByTagName('script')[0]
+						, p = document.createElement('script');
+					p.async = 'async';
+					p.src = '//rum-static.pingdom.net/prum.min.js';
+					s.parentNode.insertBefore(p, s);
+				})();
+			</script>
+		</f:else>
+		</f:if>
 	</f:section>
 </head>
 <body>
 <f:section name="body">
-	<!-- Google Tag Manager -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NB8GHG"
-					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-NB8GHG');</script>
-	<!-- End Google Tag Manager -->
+	<f:if condition="{isDEV}">
+	<f:else>
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NB8GHG"
+						  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NB8GHG');</script>
+		<!-- End Google Tag Manager -->
+	</f:else>
+	</f:if>
 
 	<f:if condition="{hasTeaser}">
 		{content.teaser -> f:format.raw()}
