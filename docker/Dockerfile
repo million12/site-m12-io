@@ -5,7 +5,7 @@ MAINTAINER Marcin Ryzycki marcin@m12.io
 ENV TYPO3_NEOS_REPO_URL git@github.com:million12/site-m12-io.git
 
 # Add key needed to access private repository million12/site-typostrap-io
-ADD docker-files /
+ADD container-files /
 
 # Pre-install TYPO3 Neos into /tmp/typo3-neos.tgz
 RUN \
