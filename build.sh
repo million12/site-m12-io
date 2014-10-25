@@ -2,9 +2,8 @@
 #
 # Site build script
 #
-# This file should contain all necessary step to build up&running website.
-# Include here all necessary build steps (e.g. scripts minification,
-# styles compilation etc).
+# This file should contain all necessary steps to build the website. Include here 
+# all necessary build steps (e.g. scripts minification, styles compilation etc).
 #
 
 case $@ in
