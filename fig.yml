@@ -31,7 +31,7 @@ web:
     - /run/user/site-m12-io:/run/user
   environment:
     NEOS_APP_NAME: 'm12'
-    NEOS_APP_VHOST_NAMES: 'm12.io dev.m12.io test.m12.io'
+    NEOS_APP_VHOST_NAMES: 'm12.io dev.m12.io stage.m12.io test.m12.io'
     NEOS_APP_DB_NAME: 't3n_m12_io'
     NEOS_APP_USER_NAME: 'admin'
     NEOS_APP_USER_PASS: 'password'
