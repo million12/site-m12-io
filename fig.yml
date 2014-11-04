@@ -47,6 +47,7 @@ ssh:
     - '5678:22'
   links:
     - db:db
+    - web:web
   volumes_from:
     - webdata
   environment:
