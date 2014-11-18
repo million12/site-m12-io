@@ -31,7 +31,7 @@ By default, there's also SSH container launched in case you'd like to proceed wi
 ssh -p 5678 www@your-docker-host
 ```
 
-#### Manual setup (not-recommended)
+#### Manual setup (not-recommended ;)
 
 Just clone it and run it on your web server. You'll need:
 * web server with Nginx/PHP-FPM/MySQL
@@ -56,7 +56,7 @@ You'll need to have the following items installed before continuing:
 
 All build steps are in `./build.sh` script. Simply run it when necessary.
 
-During development, use `gulp build` or `gulp watch` 
+During development, use `gulp build` or `gulp watch` **from Build/ directory.
 
  
 ## Content import/export
