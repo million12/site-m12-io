@@ -7,7 +7,9 @@ TYPO3:
         dbname: t3n_m12_io
         user: admin
         password: super-secret-db-password-123
-        host: 172.17.1.68
+        host: localhost
+        port: 3306
+
   Neos:
     userInterface:
       loadMinifiedJavascript: TRUE
