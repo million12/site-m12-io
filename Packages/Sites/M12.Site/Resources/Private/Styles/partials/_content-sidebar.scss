@@ -9,10 +9,17 @@
 		&:after {
 			margin-top: 3px;
 		}
+		a {
+			color: inherit;
+		}
 	}
 	h2 {
 		font-size: $sidebar-h2-font-size;
 		font-weight: 400;
+	}
+	h3 { // for now only used for 'Our products' section
+		margin-bottom: 0.2rem;
+		font-weight: $font-weight-bold;
 	}
 	p, ul {
 		font-size: $sidebar-paragraph-font-size;

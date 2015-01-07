@@ -26,6 +26,11 @@
 	// Menu Styles
 	.top-bar-section {
 		padding: 0;
+		
+		ul > li.active-trail a {
+			color: $primary-color;
+		}
+		
 		.has-dropdown {
 			> a {
 				padding-right: 20px !important; // override Foundations padding-right which is too big (40px)

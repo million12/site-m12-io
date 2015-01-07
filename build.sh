@@ -29,6 +29,14 @@ case $@ in
   #
   *)
     echo "M12.IO build script"
+    
+    # WORKAROUND to sometimes faulty `./flow site:import`
+    # For fresh install or when T3APP_NEOS_SITE_PACKAGE_FORCE_REIMPORT is set, reimport db/resources
+    if [[ $RUNTIME_EXECUTED_MIGRATIONS == 0 ]] || [ "${T3APP_NEOS_SITE_PACKAGE_FORCE_REIMPORT^^}" = TRUE ]; then
+      ./flow db:import --package-key M12.Site
+      cp -f Packages/Sites/M12.Site/Resources/Private/Content/Resources/* Data/Persistent/Resources/.
+    fi
+    
     cd Build/
     bower install
     npm install

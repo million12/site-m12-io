@@ -2,10 +2,10 @@ dbdata:
   image: busybox:latest
   command: echo dbdata
   volumes:
-    - /data/site-m12-io/var/lib/mysql:/var/lib/mysql
+    - /var/lib/mysql
 
 db:
-  image: tutum/mariadb:latest
+  image: million12/mariadb:latest
   ports:
     - 3306
   volumes_from:
@@ -20,7 +20,7 @@ webdata:
     - /data
 
 web:
-  image: million12/site-m12-io
+  image: million12/site-m12-io:latest
   ports:
     - '8080:80'
   links:
@@ -30,16 +30,16 @@ web:
   volumes:
     - /run/user/site-m12-io:/run/user
   environment:
-    NEOS_APP_NAME: 'm12'
-    NEOS_APP_VHOST_NAMES: 'm12.io dev.m12.io stage.m12.io test.m12.io'
-    NEOS_APP_DB_NAME: 't3n_m12_io'
-    NEOS_APP_USER_NAME: 'admin'
-    NEOS_APP_USER_PASS: 'password'
-    NEOS_APP_USER_FNAME: 'M12'
-    NEOS_APP_USER_LNAME: 'IO'
-    NEOS_APP_SITE_PACKAGE: 'M12.Site'
-    NEOS_APP_FORCE_SITE_REIMPORT: false
-    NEOS_APP_FORCE_PULL: false
+    T3APP_NAME: 'm12'
+    T3APP_VHOST_NAMES: 'm12.io dev.m12.io stage.m12.io test.m12.io'
+    T3APP_DB_NAME: 't3n_m12_io'
+    T3APP_USER_NAME: 'admin'
+    T3APP_USER_PASS: 'password'
+    T3APP_USER_FNAME: 'M12'
+    T3APP_USER_LNAME: 'IO'
+    T3APP_NEOS_SITE_PACKAGE: 'M12.Site'
+    T3APP_NEOS_SITE_PACKAGE_FORCE_REIMPORT: false
+    T3APP_ALWAYS_DO_PULL: true
 
 ssh:
   image: million12/php-app-ssh
