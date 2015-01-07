@@ -26,7 +26,10 @@
 
 	figure {
 		margin: 0;
-		img { width: 100% }
+		img {
+			width: 100%;
+			border: 0 none;
+		}
 	}
 
 	h3 {
@@ -35,7 +38,7 @@
 			font-size: $h3-font-size;
 		}
 	}
-	.button {
+	button {
 		cursor: default;
 		padding-top: rem-calc(10);
 		padding-bottom: rem-calc(10);

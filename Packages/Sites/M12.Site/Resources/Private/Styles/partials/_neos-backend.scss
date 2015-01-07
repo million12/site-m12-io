@@ -4,7 +4,7 @@
 	ul {
 		font-size: inherit !important;
 	}
-	#neos-navigate-panel {
+	#neos-navigate-panel:not(.neos-navigate-panel-context-structure-open) {
 		#neos-node-tree {
 			height: 30%;
 		}

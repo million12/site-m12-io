@@ -1,9 +1,9 @@
 {
     "name": "m12.io",
     "dependencies": {
-        "foundation": "5.4.6",
+        "foundation": "5.5.0",
         "open-sans-fontface": "~1.1",
         "jquery.localScroll": "~1.3",
-        "fontawesome": "~4.2"
+        "Font-Awesome": "~4.2"
     }
 }

@@ -1,20 +1,13 @@
 /* jshint strict: false */
 
 var args = require('yargs').argv;
+var del = require('del');
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({ camelize:true });
 var config = require('./gulpconfig.json');
 
 var isProduction = /prod/i.test(args.env);
 
-// Connect Server
-gulp.task('connect', function() {
-	$.connect.server({
-		root: __dirname,
-		port: 9000,
-		livereload: false
-	});
-});
 
 gulp.task('styles', function() {
 	gulp.src(config.source.styles)
@@ -55,16 +48,12 @@ gulp.task('scripts-hinting', function() {
 		.pipe($.jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('assets', ['clear'], function() {
+gulp.task('assets', function() {
+	del.sync(config.clear, {force:true});
+	
 	// fonts
 	return gulp.src(config.source.fonts)
 		.pipe(gulp.dest(config.dest.fonts))
-	;
-});
-
-gulp.task('clear', function () {
-	return gulp.src(config.clear, { read:false })
-		.pipe($.rimraf({ force:true }))
 	;
 });
 

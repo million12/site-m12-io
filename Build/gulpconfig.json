@@ -2,20 +2,21 @@
     "vendorsDir": "BowerComponents",
     "source": {
         "styles": "../Packages/Sites/M12.Site/Resources/Private/Styles/**/",
-        "vendorScripts": [],
+        "vendorScripts": [
+          "BowerComponents/jquery.scrollTo/jquery.scrollTo.js",
+          "BowerComponents/jquery.localScroll/jquery.localScroll.js"
+        ],
         "scripts": [
-            "BowerComponents/jquery.scrollTo/jquery.scrollTo.js",
-            "BowerComponents/jquery.localScroll/jquery.localScroll.js",
             "../Packages/Sites/M12.Site/Resources/Private/Scripts/App.js"
         ],
         "fonts": [
-            "BowerComponents/fontawesome/fonts/*.*",
+            "BowerComponents/Font-Awesome/fonts/*.*",
             "BowerComponents/open-sans-fontface/fonts/**/*"
         ],
         "includePaths": [
             "BowerComponents",
             "BowerComponents/foundation/scss",
-            "BowerComponents/fontawesome/scss"
+            "BowerComponents/Font-Awesome/scss"
         ]
     },
     "dest": {
