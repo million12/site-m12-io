@@ -16,6 +16,7 @@
 /Packages/Application/M12.*
 /Packages/Framework/TYPO3.*
 /Packages/Libraries/
+/Packages/Plugins/M12.DbExport/
 /Packages/Plugins/M12.Foundation/
 /Packages/Plugins/M12.Plugin.Blog/
 /Packages/Plugins/M12.Utils/
