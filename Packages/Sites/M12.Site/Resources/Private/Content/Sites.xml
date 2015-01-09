@@ -173,7 +173,7 @@
         <classClearfix __type="boolean">0</classClearfix>
        </properties>
       </node>
-      <node identifier="ad5a615a-6be3-29a2-cae7-aff17c0d99e0" type="M12.Foundation:GridRow4Col" nodeName="node53712f478e475">
+      <node identifier="ad5a615a-6be3-29a2-cae7-aff17c0d99e0" type="M12.Foundation:GridRow3Col" nodeName="node53712f478e475">
        <properties>
         <customCssClass>section-meet-us--columns</customCssClass>
         <customTagName>div</customTagName>
