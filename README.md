@@ -1,4 +1,5 @@
 # m12.io: TYPO3 Neos based website
+[![Circle CI](https://circleci.com/gh/million12/site-m12-io.svg?style=svg)](https://circleci.com/gh/million12/site-m12-io)
 
 This is our complete [m12.io](http://m12.io) website and it's an example how you can build a simple website on top of TYPO3 Neos CMS. The website is very simple and contains just a few pages and a blog system. Though, while working on it, we tried to discover and incorporate the best practises for working with TYPO3 Neos. From HTML templates, Sass styling, modern package managers and build tools (bower, gulp, npm) through showing how you can wrap it all and launch using Docker containers.
 
