@@ -42,7 +42,9 @@ test:
     
     # Do some basic front-end tests
     - curl -L --head http://m12.io:8080 && curl -s -L http://m12.io:8080
-    - curl -s --head http://m12.io:8080 | grep "HTTP/1.1 200 OK" && curl -s --head http://m12.io:8080 | grep "X-Flow-Powered"
+    - curl -s --head http://m12.io:8080 | grep "HTTP/1.1 200 OK"
+    - curl -s --head http://m12.io:8080 | grep "X-Flow-Powered"
+    - curl -s --head http://m12.io:8080 | grep "X-Cache:\sHIT"
     - curl -s -L http://m12.io:8080/neos | grep "TYPO3 Neos Login" # Neos login
     - curl -s http://m12.io:8080 | grep "MILLION12 Ltd is registered in England" # footer 
     - curl -s http://m12.io:8080 | grep "If you wish to contact with us, give as a shout" # Contact section
