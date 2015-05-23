@@ -39,7 +39,7 @@ web:
     T3APP_USER_LNAME: 'IO'
     T3APP_NEOS_SITE_PACKAGE: 'M12.Site'
     T3APP_NEOS_SITE_PACKAGE_FORCE_REIMPORT: false
-    T3APP_ALWAYS_DO_PULL: true
+    T3APP_ALWAYS_DO_PULL: false
 
 ssh:
   image: million12/php-app-ssh
