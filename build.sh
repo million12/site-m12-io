@@ -6,26 +6,34 @@
 # all necessary build steps (e.g. scripts minification, styles compilation etc).
 #
 
+#
+# Build site package things (gulp, js/css etc)
+#
+function buildSitePackage() {
+  echo "Building site package..."
+  cd Build/
+  bower install --allow-root # this script might be called as root inside container
+  npm install
+  gulp build --env=Production # build for production by default
+}
+
 case $@ in
   #
-  # This is called when container is being build (and this script is called with --preinstall param)
+  # This is called when container is being build (and this script is called with --post-build param)
   #
-  *--preinstall*)
-    echo "M12.IO build script: PREINSTALL"
+  *--post-build*)
+    echo "M12.IO build script: POST-BUILD"
     
-    # Install required tools globally
+    # Install required tools globally (if not installed)
     npm install -g gulp bower
     
-    # Install site packages
-    set -e # exit with error if any of the following fail
-    cd Build/
-    bower install --allow-root
-    npm install
-    gulp build --env=Production
+    # Build site package
+    set -e # exit if anything fails here, so we know about errors early on
+    buildSitePackage
     ;;
  
   #
-  # This is called when container launches (and script is called without param)
+  # This is called when container launches (and this script is called without any param)
   #
   *)
     echo "M12.IO build script"
@@ -37,10 +45,8 @@ case $@ in
       cp -f Packages/Sites/M12.Site/Resources/Private/Content/Resources/* Data/Persistent/Resources/.
     fi
     
-    cd Build/
-    bower install
-    npm install
-    gulp build --env=Production # build for production by default
+    # Build site package
+    buildSitePackage
     ;;
 esac
 
