@@ -27,7 +27,13 @@
     },
     "watch": {
         "styles": "../Packages/Sites/M12.Site/Resources/Private/Styles/**/*",
-        "scripts": "../Packages/Sites/M12.Site/Resources/Private/Scripts/**/*"
+        "scripts": "../Packages/Sites/M12.Site/Resources/Private/Scripts/**/*",
+        "php": [
+            "Packages/Plugins/M12.Foundation/**/*",
+            "Packages/Sites/M12.Site/Classes/**/*",
+            "Packages/Sites/M12.Site/Configuration/**/*",
+            "Packages/Sites/M12.Site/Resources/Private/**/*"
+        ]
     },
     "clear": [
         "../Packages/Sites/M12.Site/Resources/Public/Styles/*",

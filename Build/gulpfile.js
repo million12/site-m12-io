@@ -1,13 +1,25 @@
 /* jshint strict: false */
+'use strict';
 
 var args = require('yargs').argv;
 var del = require('del');
 var gulp = require('gulp');
+var browserSync = require("browser-sync").create();
 var $ = require('gulp-load-plugins')({ camelize:true });
 var config = require('./gulpconfig.json');
 
 var isProduction = /prod/i.test(args.env);
 
+
+// Start BrowserSync
+gulp.task('browser-sync', function() {
+	browserSync.init({
+		proxy: {
+			target: "https://dev.project:3000"
+		},
+		https: true
+	});
+});
 
 gulp.task('styles', function() {
 	gulp.src(config.source.styles)
@@ -65,11 +77,13 @@ gulp.task('build', [
 ]);
 
 // Watch
-gulp.task('watch', function () {
+gulp.task('watch', ['build', 'browser-sync'], function () {
 	// Watch .scss files
-	gulp.watch(config.watch.styles, ['styles']);
+	gulp.watch(config.watch.styles, ['styles']).on('change', browserSync.reload);
 	// Watch .js files
-	gulp.watch(config.watch.scripts, ['scripts-hinting', 'scripts']);
+	gulp.watch(config.watch.scripts, ['scripts-hinting', 'scripts']).on('change', browserSync.reload);
+	// Watch PHP code
+	gulp.watch(config.watch.php).on('change', browserSync.reload);
 });
 
 // Default Task
