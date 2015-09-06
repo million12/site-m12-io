@@ -26,20 +26,19 @@
         "typo3/neos": "1.2.*",
         "typo3/neos-nodetypes": "1.2.*",
         "typo3/neos-kickstarter": "1.2.*",
-        "doctrine/migrations": "@dev",
+        "doctrine/migrations": "1.0.0-alpha3",
         "typo3/flow": "2.3.*",
         "robertlemke/rss": "dev-master",
-        "m12/neos-foundation": "dev-master",
-        "m12/neos-plugin-blog": "dev-master",
+        "m12/neos-foundation": "0.2.*",
+        "m12/neos-plugin-blog": "0.3.*",
         "m12/neos-nodetype-codesnippet": "dev-master",
-        "m12/neos-plugin-dbexport": "dev-master"
+        "m12/neos-plugin-dbexport": "0.1.*"
     },
     "require-dev": {
         "typo3/buildessentials": "2.3.*",
-        "mikey179/vfsstream": "1.4.*",
-        "phpunit/phpunit": "4.3.*",
-        "flowpack/behat": "dev-master",
-        "typo3-ci/typo3flow": "dev-master"
+        "mikey179/vfsstream": "1.5.*",
+        "phpunit/phpunit": "4.6.*",
+        "flowpack/behat": "dev-master"
     },
     "suggest": {
         "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"

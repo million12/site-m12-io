@@ -6,10 +6,6 @@ machine:
     dev.m12.local: 127.0.0.1
 
 dependencies:
-  pre:
-    - docker pull million12/mariadb:
-        background: true
-
   override:
     - docker build -t million12/site-m12-io docker/
 
