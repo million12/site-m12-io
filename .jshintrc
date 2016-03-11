@@ -21,5 +21,11 @@
 
   "browser": true,
   "jquery": true,
-  "phantom": true
+  "phantom": true,
+
+  "predef": [
+    "Typo3Neos",
+    "Modernizr",
+    "analytics"
+  ]
 }

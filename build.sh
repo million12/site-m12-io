@@ -11,10 +11,9 @@
 #
 function buildSitePackage() {
   echo "Building site package..."
-  cd Build/
   bower install --allow-root # this script might be called as root inside container
   npm install
-  gulp build --env=Production # build for production by default
+  gulp build #--env=Production # build for production by default
 }
 
 case $@ in
@@ -23,10 +22,7 @@ case $@ in
   #
   *--post-build*)
     echo "M12.IO build script: POST-BUILD"
-    
-    # Install required tools globally (if not installed)
-    npm install -g gulp bower
-    
+
     # Build site package
     set -e # exit if anything fails here, so we know about errors early on
     buildSitePackage
@@ -37,16 +33,14 @@ case $@ in
   #
   *)
     echo "M12.IO build script"
-    
-    # WORKAROUND to sometimes faulty `./flow site:import`
-    # For fresh install or when T3APP_NEOS_SITE_PACKAGE_FORCE_REIMPORT is set, reimport db/resources
-    if [[ $RUNTIME_EXECUTED_MIGRATIONS == 0 ]] || [ "${T3APP_NEOS_SITE_PACKAGE_FORCE_REIMPORT^^}" = TRUE ]; then
-      ./flow db:import --package-key M12.Site
-      cp -f Packages/Sites/M12.Site/Resources/Private/Content/Resources/* Data/Persistent/Resources/.
+    git config --global user.email "www@build.user" &&  git config --global user.name "WWW User"
+
+    # Build site package, if needed
+    if [[ "${T3APP_ALWAYS_DO_PULL^^}" = TRUE ]]; then
+      buildSitePackage
     fi
-    
-    # Build site package
-    buildSitePackage
+
+    echo "M12.IO build script: done."
     ;;
 esac
 

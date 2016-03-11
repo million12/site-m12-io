@@ -1,10 +1,7 @@
 /**
  * M12 Namespace
  */
-var M12 = (function() {
-	'use strict';
-	return {};
-})();
+var M12 = {};
 
 /**
  * M12.Site Namespace
@@ -18,10 +15,6 @@ M12.Site = (function() {
 	 * @return {Object.<string, function>}
 	 */
 	var Animation = (function() {
-
-		var init = function() {
-			animateSplashScreen();
-		};
 
 		/**
 		 * Animate the list items so that one item is visible and moves out of view and the next list item is shown.
@@ -52,6 +45,10 @@ M12.Site = (function() {
 			}, 3000);
 		};
 
+		var init = function() {
+			animateSplashScreen();
+		};
+
 		// Public function
 		return {
 			init: init
@@ -63,10 +60,6 @@ M12.Site = (function() {
 	 * @return {object.<string, function>}
 	 */
 	var Scrolling = (function() {
-		var init = function() {
-			initSmoothScrolling();
-		};
-
 		/**
 		 * Use jQuery.localScroll plugin for smooth scrolling. Specify the element contain our local links.
 		 * If element not specified, includes all the local links. Hash settings are passed to jQuery.scrollTo for
@@ -79,6 +72,10 @@ M12.Site = (function() {
 				duration:'150',
 				ease:'swing'
 			});
+		};
+
+		var init = function() {
+			initSmoothScrolling();
 		};
 
 		// Public function
@@ -94,13 +91,18 @@ M12.Site = (function() {
 	};
 })();
 
-// Invoke Zurb Foundation
-$(document).foundation();
 
 $(document).ready(function() {
 	'use strict';
+
+	console.log('ready');
+	// Invoke Zurb Foundation
+	$(document).foundation();
+
 	// Animations
 	M12.Site.Animation.init();
 	// Smooth scrolling
 	M12.Site.Scrolling.init();
 });
+
+console.log('app.js loaded');

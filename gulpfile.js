@@ -15,26 +15,24 @@ var isProduction = /prod/i.test(args.env);
 gulp.task('browser-sync', function() {
 	browserSync.init({
 		proxy: {
-			target: "https://dev.project:3000"
+			target: "http://dev.m12.io:3030"
 		},
-		https: true
+		port: 3030
 	});
 });
 
 gulp.task('styles', function() {
 	gulp.src(config.source.styles)
 		.pipe($.plumber())
+		.pipe($.sourcemaps.init({loadMaps: true}))
 		.pipe($.sass({
 			includePaths: config.source.includePaths,
 			imagePath: config.dest.images,
-			sourceComments: 'map',
-			sourceMap: isProduction === false,
 			errLogToConsole: true
 		}))
-		.pipe($.autoprefixer('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe($.if(isProduction,
-			$.csso() // only minify/compress on Production
-		))
+		.pipe($.autoprefixer('last 3 version'))
+		.pipe($.if(true === isProduction, $.csso())) // only minify/compress on Production
+		.pipe($.if(false === isProduction, $.sourcemaps.write())) // only generate .map files on non-production env
 		.pipe(gulp.dest(config.dest.styles))
 		.pipe($.size({ showFiles:true }))
 		.pipe($.size({ gzip:true }))
@@ -51,22 +49,21 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest(config.dest.scripts))
 		.pipe($.size({ showFiles:true }))
 		.pipe($.size({ gzip:true }))
-	;
+		;
 });
 
 gulp.task('scripts-hinting', function() {
 	return gulp.src(config.source.scripts)
-		.pipe($.jshint('../.jshintrc'))
+		.pipe($.jshint('.jshintrc'))
 		.pipe($.jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('assets', function() {
 	del.sync(config.clear, {force:true});
-	
-	// fonts
+
 	return gulp.src(config.source.fonts)
 		.pipe(gulp.dest(config.dest.fonts))
-	;
+		;
 });
 
 gulp.task('build', [
