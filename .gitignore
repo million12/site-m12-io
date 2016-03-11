@@ -1,33 +1,34 @@
 /Build/Behat/*
+/Build/BowerComponents/
 /Build/BuildEssentials
+/Build/node_modules/
 /Build/Reports
 /Build/Resources
-/Build/create-branch.sh
-/Build/create-changelog.sh
-/Build/set-dependencies.sh
-/Build/tag-release.sh
 /Configuration/**/*.example
 /Configuration/PackageStates.php
 /Configuration/README
-/Configuration/Production/IncludeCachedConfigurations.php
+/Configuration/**/IncludeCachedConfigurations.php
 /Data/
 /Packages/Application/Flowpack.*
 /Packages/Application/TYPO3.*
-/Packages/Application/M12.*
-/Packages/Framework/TYPO3.*
+/Packages/Framework/
 /Packages/Libraries/
-/Packages/Plugins/M12.DbExport/
-/Packages/Plugins/M12.Foundation/
-/Packages/Plugins/M12.Plugin.Blog/
-/Packages/Plugins/M12.Utils/
+/Packages/Neos/
+/Packages/Plugins/M12.*
+/Packages/Plugins/Pb.*
 /Packages/Plugins/RobertLemke.Rss/
 /Packages/Sites/TYPO3.*
 /Web/_Resources/
 /bin/
+/Readme.rst
 /Readme.txt
+/Upgrading.rst
 /Upgrading.txt
 /flow
 /flow.bat
+/BowerComponents
+/node_modules
+beard.lock
 
 # ignore the downloaded selenium server, config and the selenium
 # temporary directory (which starts with a quote, do not ask why...)
@@ -40,5 +41,3 @@ Build/Resources/Java/selenium-server-standalone*
 
 .idea/
 .vagrant/
-node_modules/
-BowerComponents/
