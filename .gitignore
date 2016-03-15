@@ -15,7 +15,7 @@
 /Packages/Libraries/
 /Packages/Neos/
 /Packages/Plugins/M12.*
-/Packages/Plugins/Pb.*
+#/Packages/Plugins/Pb.*
 /Packages/Plugins/RobertLemke.Rss/
 /Packages/Sites/TYPO3.*
 /Web/_Resources/

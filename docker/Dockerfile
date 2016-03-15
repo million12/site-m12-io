@@ -2,7 +2,10 @@ FROM million12/typo3-flow-neos-abstract:latest
 MAINTAINER Marcin Ryzycki marcin@m12.io
 
 # ENV: Repository for installed TYPO3 Neos distribution 
-ENV T3APP_BUILD_REPO_URL git@github.com:million12/site-m12-io.git
+ENV \
+  T3APP_BUILD_BRANCH=master \
+  T3APP_BUILD_REPO_URL=git@github.com:million12/site-m12-io.git \
+  FLOW_CONTEXT=Production
 
 # Add key needed to access repository million12/site-m12-io using SSH key
 ADD gh-repo-key /

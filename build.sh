@@ -27,7 +27,17 @@ case $@ in
     set -e # exit if anything fails here, so we know about errors early on
     buildSitePackage
     ;;
- 
+
+  *--post-init*)
+    ./flow doctrine:migrate
+
+    # Because now FLOW_CONTEXT is by default set to 'Production',
+    # static resources (those from packages) are not published by default,
+    # ie. symlinks in `Web/_Resources/Static/Packages/` are not present
+    # after container launch. Therefore we need to publish them explicitly.
+    ./flow resource:publish
+    ;;
+
   #
   # This is called when container launches (and this script is called without any param)
   #
