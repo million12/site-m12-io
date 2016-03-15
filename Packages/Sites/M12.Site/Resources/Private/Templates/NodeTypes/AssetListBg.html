@@ -14,7 +14,7 @@
 				condition="{i.isFirst}"> style="background-image:url({f:uri.resource(resource: asset.resource)})"</f:if> data-asset-{i.index}="{f:uri.resource(resource: asset.resource)}"</f:for>><!-- assets list --></div><!-- assets list ends here -->
 	</f:then>
 	<f:else>
-		<f:security.ifAccess resource="TYPO3_Neos_Backend_GeneralAccess">
+		<f:security.ifAccess privilegeTarget="TYPO3.Neos:Backend.GeneralAccess">
 			<f:if condition="{node.context.workspace.name} != 'live'">
 				<ul{attributes -> f:format.raw()}>
 					<li>Empty asset list</li>

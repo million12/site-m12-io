@@ -9,7 +9,9 @@
     'layout':
       ui:
         inspector:
-          editorOptions:
+          group: layout
+          position: 10
+          editorOptions: &pagePropertyLayoutEditorOptions
             values:
               'default':
                 label: 'Default'
@@ -18,18 +20,17 @@
     'subpageLayout':
       ui:
         inspector:
-          editorOptions:
-            values:
-              'default':
-                label: 'Default'
-              'landingPage':
-                label: 'Landing Page'
+          group: layout
+          position: 11
+          editorOptions: *pagePropertyLayoutEditorOptions
+
 
 #
 # Landing Page with teaser
 #
 'TYPO3.Neos.NodeTypes:PageTeaser':
-  superTypes: ['TYPO3.Neos.NodeTypes:Page']
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Page': TRUE
   ui:
     label: 'Landing Page'
   childNodes:
@@ -42,7 +43,8 @@
 # Page with sidebar
 #
 'TYPO3.Neos.NodeTypes:PageSidebar':
-  superTypes: ['TYPO3.Neos.NodeTypes:Page']
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Page': TRUE
   ui:
     label: 'Page with Sidebar'
     icon: 'icon-columns'

@@ -42,11 +42,11 @@ page = Page {
 		isDEV = ${isDEV}
 
 		layout          = ${q(node).property('layout')}
-		isLandingPage   = ${this.layout == 'landingPage'}
-		isBlogPage      = ${q(node).is('[instanceof M12.Blog:Post]')}
+		isLandingPage   = ${this.layout == 'landingPage' ? true : false}
+		isBlogPage      = ${q(node).is('[instanceof M12.Blog:Post]') ? true : false}
 		hasGridWrapper  = ${this.isLandingPage ? false : true}
-		hasTeaser       = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageTeaser]')}
-		hasSidebar      = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageSidebar]')}
+		hasTeaser       = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageTeaser]') ? true : false}
+		hasSidebar      = ${q(node).is('[instanceof TYPO3.Neos.NodeTypes:PageSidebar]') ? true: false }
 
 		parts {
 			menu = M12.Foundation:TopBar {
@@ -57,37 +57,23 @@ page = Page {
 				# Sticky have to be OFF when magellan is ON
 #				extraAttributes.class.sticky = 'sticky'
 			}
-			breadcrumb = Breadcrumb
 		}
 
 		// Content areas: you can define as many as you want, just name them and the nodePath.
 		content {
 			teaser = ContentCollection {
 				nodePath = 'teaser'
-				@cache {
-					mode = 'cached'
-				}
+				@cache.entryIdentifier.documentNode = ${documentNode}
 			}
 			main = PrimaryContent {
 				nodePath = 'main'
 			}
 			sidebar = ContentCollection {
-				# Colect all sidebar children from current and parent pages, so in case sidebar
-				# is empty for current page, we render the 1st available sidear from parent page(s).
-				sidebarNode = ${q(node).add(q(node).parents()).children('[_path $= sidebar]').children().first()}
-				nodePath = ${this.sidebarNode ? this.sidebarNode.property('_parentPath') : 'sidebar'}
-				@cache {
-					mode = 'cached'
-				}
-			}
-		}
-
-		// A shared footer which can be edited from all pages
-		// Note: needs to be created manually (eg. during initial import of Sites.xml)
-		footer = TYPO3.Neos:ContentCollection {
-			nodePath = ${q(site).children('footer').property('_path')}
-			@cache {
-				mode = 'cached'
+				# Collect all sidebar children from current and parent pages, so in case sidebar
+				# is empty for current page, we render the 1st available sidebar from parent page(s).
+				sidebarNode = ${q(node).add(q(node).parents().get()).has('sidebar[_numberOfChildNodes != 0]').get(0)}
+				nodePath = ${this.sidebarNode ? q(this.sidebarNode).property('_path') + '/sidebar' : 'sidebar'}
+				@cache.entryIdentifier.documentNode = ${documentNode}
 			}
 		}
 

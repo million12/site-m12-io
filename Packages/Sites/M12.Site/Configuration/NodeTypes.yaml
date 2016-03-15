@@ -3,7 +3,8 @@
 # and data-asset-X attributes.
 #
 'M12.Site:AssetListBg':
-  superTypes: ['TYPO3.Neos.NodeTypes:AssetList']
+  superTypes:
+    'TYPO3.Neos.NodeTypes:AssetList': TRUE
   ui:
     label: 'Asset list (bg)'
     icon: 'icon-folder-open-alt'
@@ -29,3 +30,5 @@
                 label: 'bg-darker'
               bg-dark:
                 label: 'bg-dark'
+              author-box:
+                label: 'author-box'

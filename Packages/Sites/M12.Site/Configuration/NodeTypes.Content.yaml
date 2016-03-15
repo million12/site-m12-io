@@ -1,0 +1,38 @@
+# Text mixin
+'TYPO3.Neos.NodeTypes:TextMixin':
+  properties:
+    text:
+      ui:
+        aloha:
+          autoparagraph: TRUE
+          'format':
+            'u': TRUE
+            'sub': TRUE
+            'sup': TRUE
+            'del': TRUE
+    customLook:
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              footnote:
+                label: 'footnote'
+
+
+'TYPO3.Neos.NodeTypes:TitleMixin':
+  abstract: TRUE
+  properties:
+    title:
+      type: string
+      defaultValue: '<h1>Enter headline here</h1>'
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'format':
+            'strong': TRUE
+            'em': TRUE
+            'u': TRUE
+            'sub': TRUE
+            'sup': TRUE
+            'del': TRUE
+            'p': TRUE

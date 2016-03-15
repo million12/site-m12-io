@@ -1,22 +1,2 @@
 prototype(TYPO3.Neos:Page) {
-	# Make default HTML tag less verbose, strip off default xmlns* crap
-	htmlTag >
-	htmlTag = TYPO3.TypoScript:Tag {
-		@position = 'start'
-		tagName = 'html'
-		omitClosingTag = TRUE
-
-		attributes {
-			version >
-			xmlns >
-			xmlns:typo3 >
-			xmlns:xsd >
-			class = 'no-js'
-			lang = 'en'
-			dir = 'ltr'
-		}
-	}
-
-	# Remove Font Awesome added by M12.Foundation plugin
-	head.stylesheets.@process.fontAwesome >
 }
