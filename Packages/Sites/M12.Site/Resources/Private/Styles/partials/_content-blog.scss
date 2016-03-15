@@ -5,187 +5,233 @@
 // 04. BLOG POST COMMENTS
 // 05. BLOG POST SIDEBAR
 
-
 // 01. --------------------------- BLOG POST HOMEPAGE ---------------------------
 .blog-index-page {
-	.hide-on-blog-index-page, .blog-posts-latest {
-		display: none;
-	}
+    .hide-on-blog-index-page, .blog-posts-latest {
+        display: none;
+    }
 }
+
 .main-column {
-	padding-right: 3rem;
+    padding-right: 3rem;
 }
+
 // 02. --------------------------- BLOG POST ITEM ---------------------------
 
 .blog-post-item {
-	position: relative;
-	margin-bottom: 5rem;
-	//&:first-child { margin-top: 0;}
-	@include divider($width: 200px, $skip-last-child: false);
-	&:after {
-		// put the divider vertically centered between the posts
-		margin-top: 2rem;
-	}
+    position: relative;
+    margin-bottom: 5rem;
+    //&:first-child { margin-top: 0;}
+    @include divider($width: 200px, $skip-last-child: false);
+    &:after {
+        // put the divider vertically centered between the posts
+        margin-top: 2rem;
+    }
 }
 
 .blog-post-meta {
-	margin-bottom: 1rem;
-	@include clearfix;
-	h1+& {
-		margin-top: -1rem;
-	}
+    margin-bottom: 1rem;
+    @include clearfix;
+    h1 + & {
+        margin-top: -1rem;
+    }
 }
+
 // byline and tags are floated next to each other width 40%, 59%
 .byline {
-	float: left;
-	width: 40%;
-	margin-top: 0;
-	margin-bottom: 0;
-	color: lighten($header-font-color, 30%);
+    float: left;
+    width: 40%;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: lighten($header-font-color, 30%);
 
-	@media #{$small-only} {
-		float: none;
-		width: 100%;
-		margin-top: -10px;
-	}
-	@media #{$medium-only} {
-		.author {
-			display: block; // display the by line on a separate line to the date to prevent text wrapping around part way
-		}
-	}
+    @media #{$small-only} {
+        float: none;
+        width: 100%;
+        margin-top: -10px;
+    }
+    @media #{$medium-only} {
+        .author {
+            display: block; // display the by line on a separate line to the date to prevent text wrapping around part way
+        }
+    }
 }
 
 .tags {
-	float: right;
-	width: 59%;
-	text-align: right;
-	margin-top: -5px;
-	margin-bottom: 0;
-	white-space: nowrap;
-	@media #{$small-only} {
-		float: none;
-		width: 100%;
-		text-align: left;
-		margin-top: 10px;
-	}
-	@media #{$medium-only} {
-		margin-top: 5px
-	}
+    float: right;
+    width: 59%;
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    @media #{$small-only} {
+        float: none;
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+    @media #{$medium-only} {
+        margin-top: 5px
+    }
 
-	.tag {
-		background: $tag-bg-color-dark;
-		color: #fff;
-		padding: 3px 8px;
-		font-size: 10px;
-		text-transform: uppercase;
-	}
+    .tag {
+        background: $tag-bg-color-dark;
+        color: #fff;
+        padding: 3px 8px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
 }
 
 .blog-post-synopsis {
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 // put a FontAwesome angle-right arrow next to "Read more >", animate the arrow
 .read-more {
-	position: relative;
-	font-size: $h5-font-size;
-	width: 80px; // give a width and display inline-block to allow overflow to be set to hidden
-	display: inline-block;
-	overflow: hidden;
+    position: relative;
+    font-size: $h5-font-size;
+    width: 80px; // give a width and display inline-block to allow overflow to be set to hidden
+    display: inline-block;
+    overflow: hidden;
 
-	&:before, &:after {
-		position: absolute;
-		top: 1px;
-		left: 88%;
-		content: $fa-var-angle-right;
-		font-family: FontAwesome;
-		overflow: hidden;
-		opacity: 1;
-		transition: all 0.2s ease-in-out; // animates left and opacity
-	}
-	&:before {
-		left: 60%;
-		opacity: 0; // need need to do this as the arrow is not in its own container
-	}
-	&:hover {
-		&:before {
-			left: 88%;
-			opacity: 1;
-		}
-		&:after {
-			left: 120%;
-			opacity: 0;
-		}
-	}
+    &:before, &:after {
+        position: absolute;
+        top: 1px;
+        left: 88%;
+        content: $fa-var-angle-right;
+        font-family: FontAwesome;
+        overflow: hidden;
+        opacity: 1;
+        transition: all 0.2s ease-in-out; // animates left and opacity
+    }
+    &:before {
+        left: 60%;
+        opacity: 0; // need need to do this as the arrow is not in its own container
+    }
+    &:hover {
+        &:before {
+            left: 88%;
+            opacity: 1;
+        }
+        &:after {
+            left: 120%;
+            opacity: 0;
+        }
+    }
 }
 
 // 03. --------------------------- BLOG POST ARTICLE ---------------------------
 .blog-post {
-	header {
-		text-align: left;
-		h1 {
-			line-height: 1.1;
-			display: block;
-			&:after {
-				display: none;
-			}
-		}
-	}
-	.blog-post-synopsis {
-		font-weight: normal;
-	}
+    header {
+        text-align: left;
+        h1 {
+            line-height: 1.1;
+            display: block;
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    h2 {
+        margin-top: 2.2rem;
+    }
+
+    u {
+        padding: 0 .2rem;
+        font-family: $code-font-family;
+        text-decoration: none;
+        background-color: #fff;
+    }
+
+    .blog-post-synopsis {
+        font-weight: normal;
+    }
+}
+
+// .author-box can be only used with grid row
+// Over-specificity to override Foundation's `.row .row` selector
+.row.author-box {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid $iron;
+    border-bottom: 1px solid $iron;
+    background-color: #f9f9f9;
+
+    h5 {
+        margin-top: .3rem;
+        margin-bottom: .5rem;
+        font-weight: $font-weight-bold;
+        font-size: 1rem;
+    }
+    figure {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    img {
+        border-radius: 50%;
+    }
+    p {
+        font-size: .9rem;
+    }
+
+    &--description {
+        padding-bottom: .8rem;
+    }
 }
 
 // 04. --------------------------- BLOG POST COMMENTS ---------------------------
 .disqusWrapper {
-	margin: 3rem 0 0 0;
+    margin: 3rem 0 0 0;
 }
 
 // 05. --------------------------- BLOG POST SIDEBAR ---------------------------
 .sidebar {
-	margin: 2rem 0 0 0;
-	background-color: $bg-color-white;
+    margin: 2rem 0 0 0;
+    background-color: $bg-color-white;
 
-	// RSS link
-	.rss-button {
-		position: absolute; // positioned relative to the sidebar
-		right: 16px;
-		top:2px;
-		margin-top: 1.25rem;
-		padding: 0; // take the default padding out that are usually set for buttons
-		background-color: transparent; // show the icon without background
-		opacity: 0.5; // reduce opacity so the rss icon is not so prominent over rest of content
-		z-index: 10;  //
-		&:hover {
-			opacity: 1;
-		}
-		.fa {
-			margin-left: 4px;
-			font-size: 1.5rem;
-		}
-	}
+    // RSS link
+    .rss-button {
+        position: absolute; // positioned relative to the sidebar
+        right: 16px;
+        top: 2px;
+        margin-top: 1.25rem;
+        padding: 0; // take the default padding out that are usually set for buttons
+        background-color: transparent; // show the icon without background
+        opacity: 0.5; // reduce opacity so the rss icon is not so prominent over rest of content
+        z-index: 10; //
+        &:hover {
+            opacity: 1;
+        }
+        .fa {
+            margin-left: 4px;
+            font-size: 1.5rem;
+        }
+    }
 
-	.blog-post-item {
-		margin: 0; // don't need the margins for sidebar blog-post-item, margins are set on heading and blog-post-meta (tag)
-		h2 {
-			margin-bottom: 0.5rem; // reduce space between the heading and tag
-		}
-		.byline, .blog-post-synopsis, .read-more, &:after { // only display title and tags
-			display: none;
-		}
-		// tags, don't need to float to right, increase width, left align, lighten background color
-		.tags {
-			float: none;
-			width: 100%;
-			margin-top: -2px; // adjust margin-top to give enough space between article heading and tag
-			text-align: left;
-			.tag { // add a margin bottom for the tags (display, inline-block), reduce padding right
-				display: inline-block;
-				margin-bottom: 2px;
-				padding: 3px 5px;
-				background: $tag-bg-color-light;
-				color: $body-font-color;
-			}
-		}
-	}
+    .blog-post-item {
+        margin: 0; // don't need the margins for sidebar blog-post-item, margins are set on heading and blog-post-meta (tag)
+        h2 {
+            margin-bottom: 0.5rem; // reduce space between the heading and tag
+        }
+        .byline, .blog-post-synopsis, .read-more, &:after { // only display title and tags
+            display: none;
+        }
+        // tags, don't need to float to right, increase width, left align, lighten background color
+        .tags {
+            float: none;
+            width: 100%;
+            margin-top: -2px; // adjust margin-top to give enough space between article heading and tag
+            text-align: left;
+            .tag { // add a margin bottom for the tags (display, inline-block), reduce padding right
+                display: inline-block;
+                margin-bottom: 2px;
+                padding: 3px 5px;
+                background: $tag-bg-color-light;
+                color: $body-font-color;
+            }
+        }
+    }
 }

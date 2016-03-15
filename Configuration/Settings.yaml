@@ -27,5 +27,5 @@ M12:
         uri: '/blog.rss.xml'
         postsLimit: 20
         title: 'M12.io blog'
-        description: 'Blog about TYPO3 Neos, Drupal, dev ops and other things that matter'
+        description: 'MILLION12 DevOps and Neos CMS blog - m12.io'
         defaultAuthor: 'Marcin Ryzycki'

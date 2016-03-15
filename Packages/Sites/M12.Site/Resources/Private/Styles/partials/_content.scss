@@ -56,6 +56,13 @@ b {
 	font-weight: 600;
 }
 
+.footnote {
+    > p, li {
+        font-size: 0.9rem;
+    }
+}
+
+
 // 03. --------------------------- COLORS ---------------------------
 .bg-white {
 	background-color: $bg-color-white;
@@ -78,6 +85,10 @@ b {
 }
 
 // 04. --------------------------- CODE SNIPPET ---------------------------
+code, pre, kbd, samp {
+    font-family: $code-font-family;
+}
+
 .m12-neos-nodetype-codesnippet-codesnippet {
 	margin: 15px 0;
 	border: 1px solid $border-color;
@@ -127,8 +138,13 @@ figure {
 
 // 07. --------------------------- IMAGE ---------------------------
 img {
-	border: thin solid $border-color;
 }
+// Used for thumbnail images. Foundation comes with a.th class, but we also
+// add this class if there's no href attribute for <a> element.
+.th--no-href {
+    &:hover { cursor: default; }
+}
+
 
 // 08. --------------------------- PAGINATION ---------------------------
 ul.pagination {
@@ -138,4 +154,15 @@ ul.pagination {
 		float: none;
 		display: inline-block;
 	}
+}
+
+.pb-neos-codeembed-code {
+    margin-bottom: 1rem;
+    .gist .gist-meta {
+        opacity: .3;
+        font-family: $body-font-family !important;
+        a:nth-child(2) {
+            display: none;
+        }
+    }
 }

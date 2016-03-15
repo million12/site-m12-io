@@ -2,26 +2,40 @@
 
 // O1. ---------------------------  TYPOGRAPHY ---------------------------
 .sidebar {
-	h1 {
-		font-size: $sidebar-h1-font-size;
-		position: relative;
-		@include divider(100%, $line-color, false);
-		&:after {
-			margin-top: 3px;
-		}
-		a {
-			color: inherit;
-		}
-	}
-	h2 {
-		font-size: $sidebar-h2-font-size;
-		font-weight: 400;
-	}
-	h3 { // for now only used for 'Our products' section
-		margin-bottom: 0.2rem;
-		font-weight: $font-weight-bold;
-	}
-	p, ul {
-		font-size: $sidebar-paragraph-font-size;
-	}
+    padding-bottom: 1rem;
+
+    h1 {
+        font-size: $sidebar-h1-font-size;
+        position: relative;
+        @include divider(100%, $line-color, false);
+        &:after {
+            margin-top: 3px;
+        }
+        a {
+            color: inherit;
+        }
+    }
+    h2 {
+        font-size: $sidebar-h2-font-size;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: $sidebar-h1-font-size;
+        a {
+            color: inherit;
+        }
+    }
+    p, ul {
+        font-size: $sidebar-paragraph-font-size;
+    }
+
+    // TODO: default border should be removed from images
+    // and instead .th class should be used, where necessary.
+    img {
+        border: 0 none;
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
 }

@@ -1,0 +1,10 @@
+///
+/// image-url()
+///
+/// Compass-like function for generating background-image url()
+/// for static images from M12.Site package.
+///
+@function image-url($imagePath) {
+    // TODO: move to some variable?
+    @return url('/_Resources/Static/Packages/M12.Site/Images/#{$imagePath}');
+}

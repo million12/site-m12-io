@@ -6,6 +6,7 @@
 	<f:section name="metadata">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="dns-prefetch" href="http://cdnjs.cloudflare.com">
+		<link rel="alternate" type="application/rss+xml" href="/blog.rss.xml" title="MILLION12 DevOps and Neos CMS blog" />
 	</f:section>
 	
 	<f:section name="stylesheets">
@@ -56,8 +57,12 @@
 			<main class="row">
 				<f:if condition="{hasSidebar} OR {isBlogPage}">
 					<f:then>
-						<div class="small-12 medium-8 large-9 columns main-column">{content.main -> f:format.raw()}</div>
-						<div class="small-12 medium-4 large-3 columns sidebar">{content.sidebar -> f:format.raw()}</div>
+						<div class="small-12 medium-8 large-9 columns main-column">
+							{content.main -> f:format.raw()}
+						</div>
+						<div class="small-12 medium-4 large-3 columns sidebar">
+							{content.sidebar -> f:format.raw()}
+						</div>
 					</f:then>
 					<f:else>
 						<div class="small-12 columns">{content.main -> f:format.raw()}</div>
@@ -70,11 +75,23 @@
 		</f:else>
 	</f:if>
 
-	<footer>{footer -> f:format.raw()}</footer>
+	<footer>
+		<div class="m12-foundation-gridrow2col row">
+			<div class="m12-foundation-column columns small-6">
+				<p>©2014-{f:format.date(date:'now', format:'Y')}
+					by MILLION12 Ltd. All rights reserved.
+				</p>
+			</div>
+			<div class="m12-foundation-column columns small-6 text-right">
+				<p>MILLION12 Ltd is registered in England, number 7654321.<br></p>
+			</div>
+		</div>
+	</footer>
 </f:section>
 <f:section name="bodyScripts">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.6/js/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
 	<script src="{f:uri.resource(path: 'Scripts/App.js', package: 'M12.Site')}"></script>
 </f:section>
 </body>
