@@ -1,0 +1,27 @@
+'Pb.Neos.CodeEmbed:Code':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  ui:
+    label: 'Embed Code'
+    help:
+      message: |
+        Allows embedding code from code hosting services,
+        e.g. GitHub gists.
+    icon: 'icon-code'
+    inspector:
+      groups:
+        options:
+          label: 'Embed Code options'
+          position: 10
+  properties:
+    gistId:
+      type: string
+      ui:
+        label: 'Gist ID'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'options'
+          position: 10
+      validation:
+        regularExpression:
+          regularExpression: '/^[-a-z0-9]+$/i'

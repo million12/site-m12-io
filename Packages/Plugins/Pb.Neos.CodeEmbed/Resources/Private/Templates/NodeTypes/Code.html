@@ -1,0 +1,16 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+<div{attributes -> f:format.raw()}>
+	<f:if condition="{gistId}">
+		<f:then>
+			<f:if condition="{neos:rendering.inEditMode()}">
+				<h6 class="text-center"><code>Rendering GIST {gistId}...</code></h6>
+			</f:if>
+			<script src="https://gist.github.com/ryzy/{gistId}.js"></script>
+		</f:then>
+		<f:else>
+			<f:if condition="{neos:rendering.inEditMode()}">
+				<p class="text-center"><code>Code: provide Gist ID.</code></p>
+			</f:if>
+		</f:else>
+	</f:if>
+</div>

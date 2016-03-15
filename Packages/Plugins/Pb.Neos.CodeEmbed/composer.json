@@ -1,0 +1,22 @@
+{
+    "name": "pb/neos-code-embed",
+    "type": "typo3-flow-plugin",
+    "description": "Code embedding (e.g. from GitHub) inside Neos CMS",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Marcin Ryzycki",
+            "email": "marcin@m12.io",
+            "homepage": "http://m12.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/neos": "~2.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Pb\\Neos\\CodeEmbed": "Classes"
+        }
+    }
+}
