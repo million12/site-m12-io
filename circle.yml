@@ -6,16 +6,23 @@ machine:
     dev.m12.local: 127.0.0.1
 
 dependencies:
-  override:
-    - docker build -t million12/site-m12-io docker/
-
-# Run tests
-test:
   pre:
+    - docker pull million12/typo3-flow-neos-abstract
+    - docker pull million12/mariadb:
+        background: true
+
+  override:
+    - sed -i -e "s#T3APP_BUILD_BRANCH=master#T3APP_BUILD_BRANCH=${CIRCLE_BRANCH}#g" docker/Dockerfile
+    - docker build -t million12/site-m12-io docker/
+    - docker tag million12/site-m12-io million12/site-m12-io:$CIRCLE_BRANCH
+
+  post:
     - docker run -d --name=db --env="MARIADB_PASS=my-pass" million12/mariadb
     - docker logs -f db > ${CIRCLE_ARTIFACTS}/docker-db.log 2>&1:
         background: true
 
+# Run tests
+test:
   override:
     - docker run -d --name web -p 8080:80 --link db:db --env "T3APP_VHOST_NAMES=m12.local dev.m12.local" --env="T3APP_NEOS_SITE_PACKAGE=M12.Site" million12/site-m12-io
     - docker logs -f web > ${CIRCLE_ARTIFACTS}/docker-web.log 2>&1:
@@ -27,21 +34,25 @@ test:
     - curl -s --head http://m12.local:8080 | grep "HTTP/1.1 200 OK"
     - curl -s --head http://m12.local:8080 | grep "X-Flow-Powered"
     - curl -s --head http://m12.local:8080 | grep "X-Cache:\sHIT"
-    - curl -s -L http://m12.local:8080/neos | grep "TYPO3 Neos Login" # Neos login
-    - curl -s http://m12.local:8080 | grep "MILLION12 Ltd is registered in England" # footer 
+    - curl -s -L http://m12.local:8080/neos | grep "neos-login-box" # Neos login
+    - curl -s http://m12.local:8080 | grep "MILLION12 Ltd is registered" # footer
     - curl -s http://m12.local:8080 | grep "If you wish to contact with us, give as a shout" # Contact section
     - curl -s http://m12.local:8080 | grep "From our blog" # Blog section
-    
+    - curl -s http://m12.local:8080 | grep "blog.rss.xml" # RSS link in <meta>
+
     # Test blog
     - curl -s --head http://m12.local:8080/blog | grep "HTTP/1.1 200 OK"
     - curl -s --head http://m12.local:8080 | grep "X-Cache:\sHIT"
     - curl -s http://m12.local:8080/blog | grep "blog.rss.xml" # Link to RSS feed
     - curl -s http://m12.local:8080/blog | grep "Latest posts" # sidebar
-    - curl -s http://m12.local:8080/blog | grep "TYPO3 Neos resources" # sidebar
+    - curl -s http://m12.local:8080/blog | grep "See all posts" # sidebar
 
 
 deployment:
-  rebuild_image_on_docker_hub:
-    branch: master
+  push_to_docker_hub:
+    branch: /.*/
     commands:
-      - curl --data "build=true" -X POST https://registry.hub.docker.com/u/million12/site-m12-io/trigger/8217e572-9b3c-11e4-ba54-0242ac110063/
+      - docker login --username=$DOCKER_HUB_USERNAME --email=$DOCKER_HUB_EMAIL --password=$DOCKER_HUB_PASSWORD
+      - docker push million12/site-m12-io
+      - docker push million12/site-m12-io:$CIRCLE_BRANCH
+      - 'curl -X POST --data-urlencode "payload={\"channel\": \"#dev-docker-builds\", \"username\": \"CircleCI\", \"text\": \"*million12/site-m12-io:$CIRCLE_BRANCH* (<https://circleci.com/gh/million12/site-m12-io/$CIRCLE_BUILD_NUM|#$CIRCLE_BUILD_NUM>) successfully pushed to <https://hub.docker.com/r/million12/site-m12-io/tags/|Docker Hub>\", \"icon_emoji\": \":whale2:\"}" https://hooks.slack.com/services/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'
