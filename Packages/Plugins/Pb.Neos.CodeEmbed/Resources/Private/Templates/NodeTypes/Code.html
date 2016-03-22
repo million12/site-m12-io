@@ -3,9 +3,9 @@
 	<f:if condition="{gistId}">
 		<f:then>
 			<f:if condition="{neos:rendering.inEditMode()}">
-				<h6 class="text-center"><code>Rendering GIST {gistId}...</code></h6>
+				<h6 class="text-center"><code>GIST {gistId}</code></h6>
 			</f:if>
-			<script src="https://gist.github.com/ryzy/{gistId}.js"></script>
+			<script src="{gistId}.js"></script>
 		</f:then>
 		<f:else>
 			<f:if condition="{neos:rendering.inEditMode()}">

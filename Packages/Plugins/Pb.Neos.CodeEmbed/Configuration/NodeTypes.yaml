@@ -17,11 +17,14 @@
     gistId:
       type: string
       ui:
-        label: 'Gist ID'
+        label: 'Gist URL'
         reloadIfChanged: TRUE
         inspector:
           group: 'options'
           position: 10
+        help:
+          message: |
+            Paste full gist URI, e.g. _https://gist.github.com/user/d8e05dbd5c04bd71ff6c_
       validation:
         regularExpression:
-          regularExpression: '/^[-a-z0-9]+$/i'
+          regularExpression: '/^https:'
