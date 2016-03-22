@@ -13,6 +13,9 @@ TYPO3:
   Neos:
     userInterface:
       loadMinifiedJavascript: TRUE
+    # Enable eventLog (History), which is by default disabled
+    eventLog:
+      enabled: TRUE
 
 #
 # M12 blog settings
