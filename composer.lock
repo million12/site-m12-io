@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6dfd21db192587c5772f44a8f4e9a911",
-    "content-hash": "608fee475cccc1cfdbafa3c08d15308e",
+    "hash": "88c913bdd5e95ebc85f0b9227efb7ed3",
+    "content-hash": "030558b353d91572cffb6a3820b6bc7c",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -920,7 +920,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/million12/Neos.NodeType.CodeSnippet.git",
-                "reference": "99fc1a039de41b543e43279966533b9cf223ed47"
+                "reference": "f66b5b05581e3cf2d89d898ce45c20146e0f0235"
             },
             "require": {
                 "typo3/neos-nodetypes": "*"
@@ -932,7 +932,7 @@
                 }
             },
             "description": "A node type for adding code snippets",
-            "time": "2014-06-01 14:41:34"
+            "time": "2016-03-25 13:13:41"
         },
         {
             "name": "m12/neos-plugin-blog",
@@ -1094,12 +1094,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/flow-development-collection.git",
-                "reference": "cbffd36443796a92a9c261324c958ef519a3958f"
+                "reference": "f7e1a4a766ba2169fd1ead885c4988b1530c9f86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/flow-development-collection/zipball/cbffd36443796a92a9c261324c958ef519a3958f",
-                "reference": "cbffd36443796a92a9c261324c958ef519a3958f",
+                "url": "https://api.github.com/repos/neos/flow-development-collection/zipball/f7e1a4a766ba2169fd1ead885c4988b1530c9f86",
+                "reference": "f7e1a4a766ba2169fd1ead885c4988b1530c9f86",
                 "shasum": ""
             },
             "require": {
@@ -1151,20 +1151,20 @@
                 "MIT"
             ],
             "description": "Flow packages in a joined repository for pull requests.",
-            "time": "2016-03-11 14:54:34"
+            "time": "2016-03-25 11:17:34"
         },
         {
             "name": "neos/neos-development-collection",
-            "version": "2.1.3",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-development-collection.git",
-                "reference": "b6162439619e2e9a96fbcd957f275052665052c5"
+                "reference": "6112f3bf640b65e8736076fb79198a9b6a7c5bf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-development-collection/zipball/b6162439619e2e9a96fbcd957f275052665052c5",
-                "reference": "b6162439619e2e9a96fbcd957f275052665052c5",
+                "url": "https://api.github.com/repos/neos/neos-development-collection/zipball/6112f3bf640b65e8736076fb79198a9b6a7c5bf4",
+                "reference": "6112f3bf640b65e8736076fb79198a9b6a7c5bf4",
                 "shasum": ""
             },
             "require": {
@@ -1223,7 +1223,7 @@
                 "GPL-3.0+"
             ],
             "description": "Neos packages in a joined repository for pull requests.",
-            "time": "2016-01-14 18:36:16"
+            "time": "2016-03-18 12:02:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -1338,16 +1338,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v1.2.2",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430"
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b3313b618f4edd76523572531d5d7e22fe747430",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/c7e26a21ba357863de030f0b9e701c7d04593774",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774",
                 "shasum": ""
             },
             "require": {
@@ -1382,23 +1382,24 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-11 19:54:08"
+            "time": "2016-03-18 20:34:03"
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "adee1ba4a6885ed800021a98dd69ae2394d695ec"
+                "reference": "f44f53e5ceb7474a83b6e11e6623ff9d6f6da598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/adee1ba4a6885ed800021a98dd69ae2394d695ec",
-                "reference": "adee1ba4a6885ed800021a98dd69ae2394d695ec",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/f44f53e5ceb7474a83b6e11e6623ff9d6f6da598",
+                "reference": "f44f53e5ceb7474a83b6e11e6623ff9d6f6da598",
                 "shasum": ""
             },
             "require": {
+                "paragonie/random_compat": "^1.0|^2.0",
                 "php": ">=5.4"
             },
             "replace": {
@@ -1408,6 +1409,7 @@
                 "apigen/apigen": "^4.1",
                 "ircmaxell/random-lib": "^1.1",
                 "jakub-onderka/php-parallel-lint": "^0.9.0",
+                "mockery/mockery": "^0.9.4",
                 "moontoast/math": "^1.1",
                 "phpunit/phpunit": "^4.7|^5.0",
                 "satooshi/php-coveralls": "^0.6.1",
@@ -1422,6 +1424,11 @@
                 "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Ramsey\\Uuid\\": "src/"
@@ -1453,7 +1460,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2016-02-17 23:32:34"
+            "time": "2016-03-22 18:40:53"
         },
         {
             "name": "robertlemke/rss",
@@ -2635,16 +2642,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.0.6",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "49bc700750196c04dd6bc2c4c99cb632b893836b"
+                "reference": "7c34c9bdde4131b824086457a3145e27dba10ca1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/49bc700750196c04dd6bc2c4c99cb632b893836b",
-                "reference": "49bc700750196c04dd6bc2c4c99cb632b893836b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/7c34c9bdde4131b824086457a3145e27dba10ca1",
+                "reference": "7c34c9bdde4131b824086457a3145e27dba10ca1",
                 "shasum": ""
             },
             "require": {
@@ -2662,7 +2669,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "3.1.x-dev"
                 }
             },
             "autoload": {
@@ -2687,7 +2694,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-12-08 08:47:06"
+            "time": "2016-03-24 05:58:25"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

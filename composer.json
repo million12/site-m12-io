@@ -24,7 +24,7 @@
     ],
     "require": {
         "neos/flow-development-collection": "3.1.x-dev",
-        "neos/neos-development-collection": "2.1.3",
+        "neos/neos-development-collection": "2.1.5",
         "typo3/neos-seo": "dev-master",
 
         "m12/neos-utils": "0.2.*",
