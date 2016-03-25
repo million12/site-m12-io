@@ -89,26 +89,39 @@ code, pre, kbd, samp {
     font-family: $code-font-family;
 }
 
-.m12-neos-nodetype-codesnippet-codesnippet {
+.m12-codesnippet {
 	margin: 15px 0;
 	border: 1px solid $border-color;
 	border-radius: 3px;
 	font-weight: normal;
 	color: #555;
 
-	h5 {
-		margin: 0;
-		padding: 7px 10px;
-		border-bottom:thin solid $border-color;
-		background: $bg-color-darker;
-		text-shadow: 1px 1px 0 #fff;
-		font-size: rem-calc(12px);
-		font-weight: 600;
-	}
 	pre {
 		padding: 7px 10px;
 		background: $bg-color-white;
 	}
+
+    &__bar {
+        @include clearfix;
+        border-bottom: thin solid #ddd;
+        background: #eee;
+    }
+
+    h5 {
+        margin: 0;
+        padding: 7px 10px;
+        text-shadow: 1px 1px 0 #fff;
+        font-size: rem-calc(12px);
+        font-weight: 600;
+        color: #969896;
+    }
+    &__title {
+        float: left;
+    }
+    &__language {
+        float: right;
+    }
+
 }
 
 // 05. --------------------------- TABLE ---------------------------
