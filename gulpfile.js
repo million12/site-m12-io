@@ -6,7 +6,7 @@ var del = require('del');
 var gulp = require('gulp');
 var browserSync = require("browser-sync").create();
 var $ = require('gulp-load-plugins')({ camelize:true });
-var config = require('./gulpconfig.json');
+var config = require('./gulpconfig.js');
 
 var isProduction = /prod/i.test(args.env);
 
