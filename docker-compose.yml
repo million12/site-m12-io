@@ -38,6 +38,7 @@ web:
     - T3APP_NEOS_SITE_PACKAGE_FORCE_REIMPORT=false
     - T3APP_ALWAYS_DO_PULL=false
     - SET_INTERNAL_PROXY_ON_PORT=3030
+    - FLOW_CONTEXT=Development
 
 ssh:
   image: million12/php-app-ssh
