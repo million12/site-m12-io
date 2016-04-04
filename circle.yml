@@ -3,7 +3,7 @@ machine:
     - docker
   hosts:
     m12.local: 127.0.0.1
-    dev.m12.local: 127.0.0.1
+    dev.m12.io: 127.0.0.1
 
 dependencies:
   pre:
@@ -24,7 +24,7 @@ dependencies:
 # Run tests
 test:
   override:
-    - docker run -d --name web -p 8080:80 --link db:db --env "T3APP_VHOST_NAMES=m12.local dev.m12.local" --env="T3APP_NEOS_SITE_PACKAGE=M12.Site" million12/site-m12-io
+    - docker run -d --name web -p 8080:80 --link db:db --env "T3APP_VHOST_NAMES=m12.local dev.m12.io" --env="T3APP_NEOS_SITE_PACKAGE=M12.Site" million12/site-m12-io
     - docker logs -f web > ${CIRCLE_ARTIFACTS}/docker-web.log 2>&1:
         background: true    # Wait till container is fully configured
     - while true; do if grep "nginx entered RUNNING state" ${CIRCLE_ARTIFACTS}/docker-web.log; then break; else sleep 1; fi done
@@ -32,6 +32,7 @@ test:
     # Do some basic front-end tests
     - curl -L --head http://m12.local:8080 && curl -s -L http://m12.local:8080
     - curl -s --head http://m12.local:8080 | grep "HTTP/1.1 200 OK"
+    - curl -s --head http://dev.m12.io:8080 | grep "HTTP/1.1 200 OK" # dev mode
     - curl -s --head http://m12.local:8080 | grep "X-Flow-Powered"
     - curl -s --head http://m12.local:8080 | grep "X-Cache:\sHIT"
     - curl -s -L http://m12.local:8080/neos | grep "neos-login-box" # Neos login
@@ -46,6 +47,8 @@ test:
     - curl -s http://m12.local:8080/blog | grep "blog.rss.xml" # Link to RSS feed
     - curl -s http://m12.local:8080/blog | grep "Latest posts" # sidebar
     - curl -s http://m12.local:8080/blog | grep "See all posts" # sidebar
+    - curl -sSLi http://m12.local:8080/blog/http-2-with-haproxy-and-nginx-guide | grep -i 'benefits of HTTP/2'
+#    - curl -sSLi http://m12.local:8080/blog/we-launched-angular-2-project | grep -i 'After six months of development'
 
 
 deployment:
