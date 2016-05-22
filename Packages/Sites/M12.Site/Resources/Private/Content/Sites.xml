@@ -302,7 +302,7 @@
             <lastModificationDateTime __type="object" __classname="DateTime">2016-03-14T00:50:05+00:00</lastModificationDateTime>
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-03-14T00:50:05+00:00</lastPublicationDateTime>
             <properties>
-             <image __type="object" __identifier="0f9c6fb8-9a56-4a01-90e0-2a32dfb0d547" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;0f9c6fb8-9a56-4a01-90e0-2a32dfb0d547&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;899df84b-159e-4d53-8d29-32a2a62d5039&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-05-selfie.jpg&quot;,&quot;hash&quot;:&quot;144552aa627a2c65ac1453ed5875dae9bf7d67dd&quot;,&quot;__identity&quot;:&quot;410a4971-f766-4bba-afb0-0d8da5577be5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1991,&quot;position&quot;:10,&quot;width&quot;:2448,&quot;x&quot;:0,&quot;y&quot;:522,&quot;__identity&quot;:&quot;14c5f7c3-b750-4cc4-9035-3f87205e7395&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:366,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:450,&quot;__identity&quot;:&quot;a907d956-16f8-43e1-bc58-558378bc4504&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+             <image __type="object" __identifier="0f9c6fb8-9a56-4a01-90e0-2a32dfb0d547" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;0f9c6fb8-9a56-4a01-90e0-2a32dfb0d547&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;899df84b-159e-4d53-8d29-32a2a62d5039&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;2015-05-selfie.jpg&quot;,&quot;hash&quot;:&quot;144552aa627a2c65ac1453ed5875dae9bf7d67dd&quot;,&quot;__identity&quot;:&quot;410a4971-f766-4bba-afb0-0d8da5577be5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1991,&quot;position&quot;:10,&quot;width&quot;:2448,&quot;x&quot;:0,&quot;y&quot;:522,&quot;__identity&quot;:&quot;31a4dbda-bc56-4991-9f53-2c70462b75cb&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:366,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:450,&quot;__identity&quot;:&quot;40792ca9-a59c-4a61-b673-ab4b991f6877&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             </properties>
            </variant>
           </node>
@@ -384,7 +384,7 @@
             <lastModificationDateTime __type="object" __classname="DateTime">2016-03-14T00:06:01+00:00</lastModificationDateTime>
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-03-14T00:06:01+00:00</lastPublicationDateTime>
             <properties>
-             <image __type="object" __identifier="07318b80-0db2-46cc-a0b2-71efc75fdbdf" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;07318b80-0db2-46cc-a0b2-71efc75fdbdf&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;fe5e3bed-25c0-4980-8ff8-9d3584d455f3&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;sam1.jpg&quot;,&quot;hash&quot;:&quot;e34fb474f62dd244ccbf1021c23a4d3c1dfaa5e6&quot;,&quot;__identity&quot;:&quot;fbff3075-e4e5-4e2e-9814-05a45b893892&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:586,&quot;position&quot;:10,&quot;width&quot;:720,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;64fea10f-2cda-4f9c-97c1-946d2d5280c2&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:366,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:450,&quot;__identity&quot;:&quot;ea0101f0-f436-4c16-ba9a-8a4d18b8d2fd&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+             <image __type="object" __identifier="07318b80-0db2-46cc-a0b2-71efc75fdbdf" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;07318b80-0db2-46cc-a0b2-71efc75fdbdf&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;fe5e3bed-25c0-4980-8ff8-9d3584d455f3&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;sam1.jpg&quot;,&quot;hash&quot;:&quot;e34fb474f62dd244ccbf1021c23a4d3c1dfaa5e6&quot;,&quot;__identity&quot;:&quot;fbff3075-e4e5-4e2e-9814-05a45b893892&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:586,&quot;position&quot;:10,&quot;width&quot;:720,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;401379ea-9b0c-43b8-afdc-ec2c10bb5bd2&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:366,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:450,&quot;__identity&quot;:&quot;b884a7a1-a52c-491e-8c22-d1e5b3cbd5de&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             </properties>
            </variant>
           </node>
@@ -463,7 +463,7 @@
             <lastModificationDateTime __type="object" __classname="DateTime">2016-03-15T21:23:42+00:00</lastModificationDateTime>
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-03-15T21:23:42+00:00</lastPublicationDateTime>
             <properties>
-             <image __type="object" __identifier="6267bbce-c8cc-4edb-8794-f03db1960545" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;6267bbce-c8cc-4edb-8794-f03db1960545&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;c8957160-56f9-48a3-bbd7-447b26d2d6fe&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Przemek.jpg&quot;,&quot;hash&quot;:&quot;28907cae0a7793d3f6e653d11728edb0a3622104&quot;,&quot;__identity&quot;:&quot;a9e760b2-38be-4c9a-b93b-932d5d882681&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1991,&quot;position&quot;:10,&quot;width&quot;:2448,&quot;x&quot;:0,&quot;y&quot;:76,&quot;__identity&quot;:&quot;bb3d926a-5a9e-4c65-9faa-605a71c4a711&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:366,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:450,&quot;__identity&quot;:&quot;c51b1ab4-990d-40fc-b280-5a805e842a5e&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+             <image __type="object" __identifier="6267bbce-c8cc-4edb-8794-f03db1960545" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;6267bbce-c8cc-4edb-8794-f03db1960545&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;c8957160-56f9-48a3-bbd7-447b26d2d6fe&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Przemek.jpg&quot;,&quot;hash&quot;:&quot;28907cae0a7793d3f6e653d11728edb0a3622104&quot;,&quot;__identity&quot;:&quot;a9e760b2-38be-4c9a-b93b-932d5d882681&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1991,&quot;position&quot;:10,&quot;width&quot;:2448,&quot;x&quot;:0,&quot;y&quot;:76,&quot;__identity&quot;:&quot;c5c8cf7b-af6b-499d-9856-c0e3979c590c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:366,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:450,&quot;__identity&quot;:&quot;a40294b9-b424-4010-9fb7-a1a6df6527d0&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             </properties>
            </variant>
           </node>
@@ -860,24 +860,6 @@
         <author __type="string">Marcin Ryzycki</author>
         <datePublished __type="object" __classname="DateTime">2014-01-11T23:48:09+00:00</datePublished>
         <tags __type="string">devops, typo3, neos-cms</tags>
-        <titleOverride __type="string"></titleOverride>
-        <metaDescription __type="string"></metaDescription>
-        <metaKeywords __type="string"></metaKeywords>
-        <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
-        <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
-        <twitterCardType __type="string"></twitterCardType>
-        <twitterCardCreator __type="string"></twitterCardCreator>
-        <twitterCardTitle __type="string"></twitterCardTitle>
-        <twitterCardDescription __type="string"></twitterCardDescription>
-        <twitterCardImage __type="string"></twitterCardImage>
-        <canonicalLink __type="string"></canonicalLink>
-        <openGraphType __type="string"></openGraphType>
-        <openGraphTitle __type="string"></openGraphTitle>
-        <openGraphDescription __type="string"></openGraphDescription>
-        <openGraphImage __type="string"></openGraphImage>
-        <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
-        <xmlSitemapPriority __type="string"></xmlSitemapPriority>
-        <fragmentId __type="string"></fragmentId>
        </properties>
       </variant>
       <node identifier="f3ad9387-544a-60df-f26a-13373069181c" nodeName="main">
@@ -898,35 +880,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:36:08+00:00</lastPublicationDateTime>
          <properties>
           <text __type="string">&lt;p&gt;&lt;strong&gt;UPDATE 2014'09&lt;/strong&gt;: After playing more with &lt;a href=&quot;http://www.opscode.com/chef/&quot;&gt;Chef&lt;/a&gt; and &lt;a href=&quot;https://docker.com/&quot;&gt;Docker&lt;/a&gt;, ultimately I have moved to Docker as it's far more suitable for application encapsulation and isolation. &lt;strong&gt;See &lt;a href=&quot;https://github.com/million12/docker-typo3-flow-neos-abstract&quot;&gt;million12/typo3-flow-neos-abstract&lt;/a&gt; Docker image&lt;/strong&gt;. It doesn't mean Chef is not useful, it still has its place in server/VM provisioning (which can host your Docker services).&lt;/p&gt;&lt;p&gt;&lt;del&gt;I know that plenty of you guys are using Vagrant for web development. My intention was to have TYPO3 Flow/Neos setup, up &amp;amp; running in no time, even for 1st-timers with Flow/Neos and/or Vagrant.&lt;/del&gt;&lt;/p&gt;&lt;p&gt;&lt;del&gt;It has Nginx / PHP-FPM / MySQL / phpMyAdmin plus all necessary tuning (e.g. memory_limit for PHP, client_max_body_size for Nginx, Opcode for PHP, MySQL optimisation including correct character-set and collaton settings, etc etc) - so Flow/Neos can run smoothly and fast.&lt;/del&gt;&lt;/p&gt;&lt;p&gt;&lt;del&gt;I plan to maintain it as I'm extremely excited about Neos and I'm starting my first serious project(s) based on it.&lt;/del&gt;&lt;/p&gt;&lt;p&gt;&lt;del&gt;Have a try - any suggestions are welcomed: &lt;a href=&quot;https://github.com/ryzy/vc-typo3-neos&quot;&gt;https://github.com/ryzy/vc-typo3-neos&lt;/a&gt;. There's a nice README, so just follow the instructions from there.&lt;/del&gt;&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
          </properties>
         </variant>
        </node>
@@ -938,27 +891,6 @@
          <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:07:59+00:00</lastModificationDateTime>
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:07:59+00:00</lastPublicationDateTime>
          <properties>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <title __type="string"></title>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
           <references __type="array">
            <entry0 __type="string">f9e7cc80-94ba-4301-bb39-46deed1285e7</entry0>
           </references>
@@ -1211,27 +1143,6 @@
           <references __type="array">
            <entry0 __type="string">f9e7cc80-94ba-4301-bb39-46deed1285e7</entry0>
           </references>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <title __type="string"></title>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
          </properties>
         </variant>
        </node>
@@ -1283,13 +1194,6 @@
         <author __type="string">Marcin Ryzycki</author>
         <datePublished __type="object" __classname="DateTime">2016-03-14T01:46:20+00:00</datePublished>
         <tags __type="string">devops</tags>
-        <titleOverride __type="string"></titleOverride>
-        <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
-        <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
-        <canonicalLink __type="string"></canonicalLink>
-        <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
-        <xmlSitemapPriority __type="string"></xmlSitemapPriority>
-        <fragmentId __type="string"></fragmentId>
        </properties>
       </variant>
       <node identifier="b172e60e-b0a7-1632-b51d-081a72934526" nodeName="main">
@@ -1371,21 +1275,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
          <properties>
           <gistId __type="string">https://gist.github.com/ryzy/46f250ba9586b8a46a88</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1411,21 +1300,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
          <properties>
           <gistId __type="string">https://gist.github.com/ryzy/63b3b7ca47545435c597</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1462,21 +1336,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
          <properties>
           <gistId __type="string">https://gist.github.com/ryzy/80f60db68a63fbbba39c</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1502,20 +1361,6 @@
          <properties>
           <marginBottom __type="string">2rem</marginBottom>
           <gistId __type="string">https://gist.github.com/ryzy/1d22a3de8798732c2541</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1568,20 +1413,6 @@
          <properties>
           <marginBottom __type="string">2rem</marginBottom>
           <gistId __type="string">https://gist.github.com/ryzy/e58564a91a046b127cbe</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1606,21 +1437,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
          <properties>
           <gistId __type="string">https://gist.github.com/ryzy/a9f0de502d520a84850b</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1645,21 +1461,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
          <properties>
           <gistId __type="string">https://gist.github.com/ryzy/80f60db68a63fbbba39c</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1685,24 +1486,7 @@
          <properties>
           <title __type="string">Code:</title>
           <source __type="string">haproxy -f /etc/haproxy/haproxy.cfg</source>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <showTitle __type="boolean"></showTitle>
           <language __type="string">shell</language>
-          <showLanguage __type="boolean"></showLanguage>
          </properties>
         </variant>
        </node>
@@ -1739,21 +1523,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
          <properties>
           <gistId __type="string">https://gist.github.com/ryzy/d8e05dbd5c04bd71ff6c</gistId>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
          </properties>
         </variant>
        </node>
@@ -1831,7 +1600,7 @@
           <lastModificationDateTime __type="object" __classname="DateTime">2016-03-14T22:17:06+00:00</lastModificationDateTime>
           <lastPublicationDateTime __type="object" __classname="DateTime">2016-03-14T22:17:06+00:00</lastPublicationDateTime>
           <properties>
-           <image __type="object" __identifier="a0974a41-46d7-45f1-a393-2d1a3d358ec6" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a0974a41-46d7-45f1-a393-2d1a3d358ec6&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;24d9d07a-6ff8-4f72-a28b-8b93ec3bf2f7&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;haproxy-screen1.png&quot;,&quot;hash&quot;:&quot;5f51b07210ea036a05c2f089580623554e92e225&quot;,&quot;__identity&quot;:&quot;f90bf757-2d91-43f0-93d0-ce719de52a2c&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:950,&quot;position&quot;:10,&quot;width&quot;:1604,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;b2851335-b506-48f0-b529-c44321e32043&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+           <image __type="object" __identifier="a0974a41-46d7-45f1-a393-2d1a3d358ec6" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a0974a41-46d7-45f1-a393-2d1a3d358ec6&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;24d9d07a-6ff8-4f72-a28b-8b93ec3bf2f7&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;haproxy-screen1.png&quot;,&quot;hash&quot;:&quot;5f51b07210ea036a05c2f089580623554e92e225&quot;,&quot;__identity&quot;:&quot;f90bf757-2d91-43f0-93d0-ce719de52a2c&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:950,&quot;position&quot;:10,&quot;width&quot;:1604,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;02fe11f3-c7c1-48fd-bb3a-fc3857ee7e6c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
           </properties>
          </variant>
         </node>
@@ -1871,27 +1640,6 @@
           <references __type="array">
            <entry0 __type="string">f9e7cc80-94ba-4301-bb39-46deed1285e7</entry0>
           </references>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <title __type="string"></title>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
          </properties>
         </variant>
        </node>
@@ -1944,24 +1692,6 @@
         <author __type="string">Przemysław Ożgo</author>
         <tags __type="string">devops, docker, vagrant</tags>
         <datePublished __type="object" __classname="DateTime">2016-03-23T16:56:56+00:00</datePublished>
-        <titleOverride __type="string"></titleOverride>
-        <metaDescription __type="string"></metaDescription>
-        <metaKeywords __type="string"></metaKeywords>
-        <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
-        <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
-        <twitterCardType __type="string"></twitterCardType>
-        <twitterCardCreator __type="string"></twitterCardCreator>
-        <twitterCardTitle __type="string"></twitterCardTitle>
-        <twitterCardDescription __type="string"></twitterCardDescription>
-        <twitterCardImage __type="string"></twitterCardImage>
-        <canonicalLink __type="string"></canonicalLink>
-        <openGraphType __type="string"></openGraphType>
-        <openGraphTitle __type="string"></openGraphTitle>
-        <openGraphDescription __type="string"></openGraphDescription>
-        <openGraphImage __type="string"></openGraphImage>
-        <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
-        <xmlSitemapPriority __type="string"></xmlSitemapPriority>
-        <fragmentId __type="string"></fragmentId>
        </properties>
       </variant>
       <node identifier="431daa91-fd35-697c-21e5-9599b31d4305" nodeName="main">
@@ -2004,10 +1734,6 @@
             </classGridSize>
            </properties>
           </variant>
-          <!--Skipped node with identifier "b0398755-6a23-4379-8e16-4347bf4763e2" and path "/sites/site/node-56e5ed3710c13/node-56eed605c4da0/main/node-56ef02d4b3321/node-56ef02e280f2f/node-56ef02e2853e9/node-56e6132b8d334/node-56e6132b8fdd3" because of a missing parent path. This is caused by a broken rootline and needs to be fixed with the "node:repair" command.-->
-          <!--Skipped node with identifier "c4ca0305-11b2-481d-ba62-8371a0f2f15b" and path "/sites/site/node-56e5ed3710c13/node-56eed605c4da0/main/node-56ef02d4b3321/node-56ef02e280f2f/node-56ef02e2853e9/node-56e6132b8d334/node-56e6132b8fdd3/node-56e61384150fc" because of a missing parent path. This is caused by a broken rootline and needs to be fixed with the "node:repair" command.-->
-          <!--Skipped node with identifier "2265b212-2cf0-4b66-b94a-caf8f6b4a449" and path "/sites/site/node-56e5ed3710c13/node-56eed605c4da0/main/node-56ef02d4b3321/node-56ef02e280f2f/node-56ef02e2853e9/node-56e6132b8d334/node-56e6132b965f3" because of a missing parent path. This is caused by a broken rootline and needs to be fixed with the "node:repair" command.-->
-          <!--Skipped node with identifier "ca710358-a372-4850-9694-c0cedc91d958" and path "/sites/site/node-56e5ed3710c13/node-56eed605c4da0/main/node-56ef02d4b3321/node-56ef02e280f2f/node-56ef02e2853e9/node-56e6132b8d334/node-56e6132b965f3/node-56e6132b9922d" because of a missing parent path. This is caused by a broken rootline and needs to be fixed with the "node:repair" command.-->
           <node identifier="a318e039-273d-405e-85d7-774cb8d3d746" nodeName="node-56ef02e28a000">
            <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="13" removed="" hidden="" hiddenInIndex="">
             <dimensions/>
@@ -2030,35 +1756,6 @@
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
             <properties>
              <text __type="string">&lt;h2&gt;2. Docker Cloud API Key (environmental variables)&lt;/h2&gt;&lt;p&gt;Docker Cloud needs to have active API Key available on users account. To be able to do that we need to log in into Docker Cloud user panel and add it. &lt;/p&gt;&lt;p&gt;First log in into &lt;a href=&quot;https://cloud.docker.com/accounts/login/?next=/&quot;&gt;user panel&lt;/a&gt;. And select &quot;Account Info&quot; then &quot;API keys&quot; and &quot;Create API Key&quot; &lt;/p&gt;</text>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <customTagName __type="string"></customTagName>
-             <faName __type="string"></faName>
-             <faCustomCss __type="string"></faCustomCss>
-             <title __type="string"></title>
-             <sectionId __type="string"></sectionId>
-             <magellanSupport __type="boolean"></magellanSupport>
-             <htmlTitle __type="string"></htmlTitle>
-             <tooltip __type="boolean"></tooltip>
-             <classTooltipPosition __type="string"></classTooltipPosition>
-             <backgroundImageExternal __type="string"></backgroundImageExternal>
-             <backgroundImage __type="string"></backgroundImage>
-             <backgroundSize __type="string"></backgroundSize>
-             <backgroundPosition __type="string"></backgroundPosition>
-             <backgroundRepeat __type="string"></backgroundRepeat>
             </properties>
            </variant>
           </node>
@@ -2104,7 +1801,7 @@
               <lastModificationDateTime __type="object" __classname="DateTime">2016-03-24T08:39:27+00:00</lastModificationDateTime>
               <lastPublicationDateTime __type="object" __classname="DateTime">2016-03-24T08:39:27+00:00</lastPublicationDateTime>
               <properties>
-               <image __type="object" __identifier="d5ffd99e-01d3-4893-8903-3072d0f36f29" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;d5ffd99e-01d3-4893-8903-3072d0f36f29&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;aa5a9c4c-3434-47fc-871e-d9acc1ec0481&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;API Keys.jpg&quot;,&quot;hash&quot;:&quot;a713293835fa564dab045de4723e8a37fe03bf15&quot;,&quot;__identity&quot;:&quot;7db2ecee-6c8b-4b0f-8c49-dfa770d68f71&quot;}},&quot;adjustments&quot;:[{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1789,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2354,&quot;__identity&quot;:&quot;7f442aa2-4452-430c-8b0f-cf7787b6d285&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+               <image __type="object" __identifier="d5ffd99e-01d3-4893-8903-3072d0f36f29" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;d5ffd99e-01d3-4893-8903-3072d0f36f29&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;aa5a9c4c-3434-47fc-871e-d9acc1ec0481&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;API Keys.jpg&quot;,&quot;hash&quot;:&quot;a713293835fa564dab045de4723e8a37fe03bf15&quot;,&quot;__identity&quot;:&quot;7db2ecee-6c8b-4b0f-8c49-dfa770d68f71&quot;}},&quot;adjustments&quot;:[{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1789,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2354,&quot;__identity&quot;:&quot;951df5a4-dd24-49bb-b267-8919ee06645f&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
               </properties>
              </variant>
             </node>
@@ -2315,25 +2012,7 @@
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
             <properties>
              <title __type="string">Code:</title>
-             <showTitle __type="boolean"></showTitle>
              <source __type="string">git clone git@github.com:pozgo/vagrant-docker-cloud.git</source>
-             <showLanguage __type="boolean"></showLanguage>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <language __type="string"></language>
             </properties>
            </variant>
           </node>
@@ -2346,7 +2025,6 @@
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
             <properties>
              <title __type="string">Code:</title>
-             <showTitle __type="boolean"></showTitle>
              <source __type="string">.
 ├── LICENSE
 ├── README.md
@@ -2361,23 +2039,6 @@
         └── templates
             └── environment.j2
 </source>
-             <showLanguage __type="boolean"></showLanguage>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <language __type="string"></language>
             </properties>
            </variant>
           </node>
@@ -2395,23 +2056,6 @@
 v.cpus = 1			# set number of CPU's
 ip = &quot;192.168.1.30&quot;		# set VM IP address
 bridge: 'en0: Ethernet'	# set to match your OS NIC interface for bridge should work on</source>
-             <showLanguage __type="boolean"></showLanguage>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <language __type="string"></language>
             </properties>
            </variant>
           </node>
@@ -2424,26 +2068,8 @@ bridge: 'en0: Ethernet'	# set to match your OS NIC interface for bridge should w
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
             <properties>
              <title __type="string">Code:</title>
-             <showTitle __type="boolean"></showTitle>
              <source __type="string">├── group_vars
 │   └── all</source>
-             <showLanguage __type="boolean"></showLanguage>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <language __type="string"></language>
             </properties>
            </variant>
           </node>
@@ -2456,27 +2082,9 @@ bridge: 'en0: Ethernet'	# set to match your OS NIC interface for bridge should w
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
             <properties>
              <title __type="string">Code:</title>
-             <showTitle __type="boolean"></showTitle>
              <source __type="string">---
 docker_cloud_username: polinux
 docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
-             <showLanguage __type="boolean"></showLanguage>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <language __type="string"></language>
             </properties>
            </variant>
           </node>
@@ -2489,25 +2097,7 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:41:43+00:00</lastPublicationDateTime>
             <properties>
              <title __type="string">Code:</title>
-             <showTitle __type="boolean"></showTitle>
              <source __type="string">vagrant up</source>
-             <showLanguage __type="boolean"></showLanguage>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <language __type="string"></language>
             </properties>
            </variant>
           </node>
@@ -2519,21 +2109,6 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
             <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T20:42:50+00:00</lastModificationDateTime>
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:42:50+00:00</lastPublicationDateTime>
             <properties>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
              <gistId __type="string">https://gist.github.com/pozgo/1a37e8ad403e3bee8a4f</gistId>
             </properties>
            </variant>
@@ -2546,27 +2121,6 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
             <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:09:01+00:00</lastModificationDateTime>
             <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:09:01+00:00</lastPublicationDateTime>
             <properties>
-             <classHide __type="boolean"></classHide>
-             <classFloat __type="string"></classFloat>
-             <classClearfix __type="boolean"></classClearfix>
-             <classShowByScreenSize __type="string"></classShowByScreenSize>
-             <classHideByScreenSize __type="string"></classHideByScreenSize>
-             <classOrientationDetection __type="string"></classOrientationDetection>
-             <classTouchDetection __type="string"></classTouchDetection>
-             <marginTop __type="string"></marginTop>
-             <marginBottom __type="string"></marginBottom>
-             <marginLeft __type="string"></marginLeft>
-             <marginRight __type="string"></marginRight>
-             <customCssClass __type="string"></customCssClass>
-             <customHtmlId __type="string"></customHtmlId>
-             <customCssCode __type="string"></customCssCode>
-             <customUserAttributes __type="string"></customUserAttributes>
-             <title __type="string"></title>
-             <backgroundImageExternal __type="string"></backgroundImageExternal>
-             <backgroundImage __type="string"></backgroundImage>
-             <backgroundSize __type="string"></backgroundSize>
-             <backgroundPosition __type="string"></backgroundPosition>
-             <backgroundRepeat __type="string"></backgroundRepeat>
              <references __type="array">
               <entry0 __type="string">01d9da67-e4b0-4850-b39f-7e99afd7c33b</entry0>
              </references>
@@ -2602,33 +2156,26 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
       </node>
      </node>
      <node identifier="e83b217e-ae7e-4552-9123-d524ff114756" nodeName="node-5702d20dbb72a">
-      <variant sortingIndex="207" workspace="live" nodeType="M12.Plugin.Blog:Post" version="12" removed="" hidden="1" hiddenInIndex="1">
+      <variant sortingIndex="207" workspace="live" nodeType="M12.Plugin.Blog:Post" version="16" removed="" hidden="" hiddenInIndex="1">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:43:57+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T22:11:34+00:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T22:11:34+00:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2016-05-22T16:47:32+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2016-05-22T16:47:31+00:00</lastPublicationDateTime>
        <properties>
         <uriPathSegment __type="string">we-launched-angular-2-project</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
         <title __type="string">After six months of development we launched project based on Angular 2</title>
-        <titleOverride __type="string"></titleOverride>
         <metaDescription __type="string">After six months of development, we have just launched a medium-size project built using Angular 2. Why and how and how did it go.</metaDescription>
         <metaKeywords __type="string">angular 2, javascript, front-end, production, live, npm, TypeScript, WebPack, SPA</metaKeywords>
-        <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
-        <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
         <twitterCardType __type="string">summary_large_image</twitterCardType>
         <twitterCardCreator __type="string">@ryzmen</twitterCardCreator>
         <twitterCardTitle __type="string">After six months of development we launched project based on Angular 2</twitterCardTitle>
         <twitterCardDescription __type="string">After six months of development, we have just launched a medium-size project built using Angular 2. Why and how and how did it go.</twitterCardDescription>
-        <twitterCardImage __type="object" __identifier="20380135-c355-4654-ab9d-26cbdda691d3" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;20380135-c355-4654-ab9d-26cbdda691d3&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bag-and-hands.jpg&quot;,&quot;hash&quot;:&quot;f64453bdbcf6d9968c1eac687565ae2f6407e9b5&quot;,&quot;__identity&quot;:&quot;a58572f5-7f82-4620-bcfa-118bd78a07de&quot;}}</twitterCardImage>
+        <twitterCardImage __type="object" __identifier="3e295bf9-8f03-4092-98bd-bb2dcd2e3f4d" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;3e295bf9-8f03-4092-98bd-bb2dcd2e3f4d&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bag-and-hands.jpg&quot;,&quot;hash&quot;:&quot;2f7d604cda0cfa0fd88ca64b4bf9eda192465972&quot;,&quot;__identity&quot;:&quot;9a29974f-c286-41d8-911b-41c43638fc8b&quot;}}</twitterCardImage>
         <openGraphType __type="string">article</openGraphType>
         <openGraphTitle __type="string">Six months of dev, we launched project on top of Angular 2</openGraphTitle>
         <openGraphDescription __type="string">After six months of development, we have just launched a medium-size project built using Angular 2. Why and how and how did it go.</openGraphDescription>
-        <openGraphImage __type="object" __identifier="20380135-c355-4654-ab9d-26cbdda691d3" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;20380135-c355-4654-ab9d-26cbdda691d3&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bag-and-hands.jpg&quot;,&quot;hash&quot;:&quot;f64453bdbcf6d9968c1eac687565ae2f6407e9b5&quot;,&quot;__identity&quot;:&quot;a58572f5-7f82-4620-bcfa-118bd78a07de&quot;}}</openGraphImage>
-        <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
-        <xmlSitemapPriority __type="string"></xmlSitemapPriority>
-        <fragmentId __type="string"></fragmentId>
+        <openGraphImage __type="object" __identifier="3e295bf9-8f03-4092-98bd-bb2dcd2e3f4d" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;3e295bf9-8f03-4092-98bd-bb2dcd2e3f4d&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bag-and-hands.jpg&quot;,&quot;hash&quot;:&quot;2f7d604cda0cfa0fd88ca64b4bf9eda192465972&quot;,&quot;__identity&quot;:&quot;9a29974f-c286-41d8-911b-41c43638fc8b&quot;}}</openGraphImage>
         <author __type="string">Marcin Ryzycki</author>
         <tags __type="string">javascript, angular2</tags>
         <datePublished __type="object" __classname="DateTime">2016-04-05T20:54:56+00:00</datePublished>
@@ -2644,207 +2191,62 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
         <properties/>
        </variant>
        <node identifier="7e80c504-68e5-4b04-ab36-53c1855efd11" nodeName="node-5702d2a6a6141">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="10" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="12" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:46:30+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T21:20:17+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T21:20:16+00:00</lastPublicationDateTime>
          <properties>
-          <text __type="string">&lt;p&gt;It is late September 2015. The autumn weather in England is still bearable, Google's guys are finishing preparing &lt;a href=&quot;http://angularconnect.com/&quot;&gt;AngularConnect&lt;/a&gt; in London. I am sitting in a cosy board meeting room, with a reasonable guy named Guy: the company CTO. The subject of our discussion is pretty tough, though. I am pushing the idea of using Angular 2 as a foundation for a major rewrite of our current web platform and everyone is a bit sceptical about this idea. Our current web platform has been developed for the last four years, is already bit dated, hard to maintain and we decided for complete re-design and re-development.&lt;/p&gt;&lt;p&gt;Picking a new framework which nobody really knows, still in early alpha version, when the public API might be changing a lot, with scarce documentation, with plenty of unknown yet bugs and issues, sounds like a pretty risky move. And we already have a major deadline for the next public release which is in a couple of months. Our team of four has just been put together, including the CTO, we do not know each other well, neither we know the business. I have been with the company for a while now, currently playing full-stack developer tune, but I am leaving soon to pursue my own project and we are actively seeking for a new talent for a broad front-end engineer role. Moreover, the project is complex and ambitious on its own. We are moving away from Drupal and Symfony2 based platform, that have been under active development for the last four years, to Java tier. We need to add e-commerce functionality and integration with a payment gateway. We also need to choose or build our own, little CMS. We can see plenty of data migrations and integrations with the old platform coming.&lt;/p&gt;&lt;p&gt;All that seems like more than enough risky factors to add another rather big one: compose and render a whole application on the client-side (also called SPA: Single Page Application approach) on top of the new, possibly great but unknown, Angular 2 framework.&lt;/p&gt;&lt;p&gt;We decided we want to give ourselves a week to sleep over the subject. In meantime I was playing furiously, day and night, with Angular 2, setting up the development environment with &lt;u&gt;npm&lt;/u&gt;, &lt;u&gt;TypeScript&lt;/u&gt; and &lt;u&gt;WebPack&lt;/u&gt;, building first components and services, setting up first routes and began testing with &lt;u&gt;Jasmine&lt;/u&gt;, &lt;u&gt;Karma&lt;/u&gt; and &lt;u&gt;Protractor&lt;/u&gt;. All that, so I can get a solid grasp of what state Angular 2 is currently in so the team can hit the ground running, once we have made the decision.&lt;/p&gt;&lt;p&gt;To cut the story short, after a week of thinking, researching, playing and discussing with the rest of the team who were not particularly keen on the idea, we decided to go for it. &lt;strong&gt;We are re-building our web platform, completely from scratch, using Angular 2&lt;/strong&gt;. &lt;em&gt;&quot;Under one condition.&quot;&lt;/em&gt; says my CTO. &lt;em&gt;&quot;You will regularly bump the version of Angular 2 and adjust our application until Angular 2 (currently in alpha) reaches beta version. And you do this outside of work hours, at your free time&quot;.&lt;/em&gt; We shook hands on this.&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
+          <text __type="string">&lt;p&gt;It is late September 2015. The autumn weather in England is still bearable, Google's guys are finishing preparing &lt;a href=&quot;http://angularconnect.com/&quot;&gt;AngularConnect&lt;/a&gt; in London. I am sitting in a cosy board meeting room, with a reasonable guy named Guy: the company CTO. The subject of our discussion is pretty tough, though. I am &lt;strong&gt;pushing the idea of using Angular 2 as a foundation for a major rewrite of our current web platform&lt;/strong&gt; and everyone is a bit sceptical about this idea. Our current web platform has been developed for the last four years, is already bit dated, hard to maintain and we decided for complete re-design and re-development.&lt;/p&gt;&lt;p&gt;Picking a new framework which nobody really knows, still in early alpha version, when the public API might be changing a lot, with scarce documentation, with plenty of unknown yet bugs and issues, sounds like a pretty risky move. And we already have a major deadline for the next public release which is in a couple of months. Our team of four has just been put together, including the CTO, we do not know each other well, neither we know the business. I have been with the company for a while now, currently playing full-stack developer tune, but I am leaving soon to pursue &lt;a href=&quot;https://prototypebrewery.io/&quot;&gt;my own project&lt;/a&gt; and we are actively seeking for a rockstar front-end developer. Moreover, the project is complexand ambitious on its own. We are moving away from Drupal and Symfony2 based platform, that have been under active development for the last four years, to Java tier. We need to add e-commerce functionality and integration with a payment gateway. We also need to choose or build our own, little CMS. We can see plenty of data migrations and integrations with the old platform coming.&lt;/p&gt;&lt;p&gt;All that seems like more than enough risky factors to add another rather big one: compose and render a whole application on the client-side, using a new, possibly great but unknown yet, Angular 2 framework.&lt;/p&gt;&lt;p&gt;We decided we want to give ourselves a week to sleep over the subject. In meantime I was playing furiously, day and night, with Angular 2, setting up the development environment with &lt;u&gt;npm&lt;/u&gt;, &lt;u&gt;TypeScript&lt;/u&gt; and &lt;u&gt;WebPack&lt;/u&gt;, building first components and services, setting up first routes and began testing with &lt;u&gt;Jasmine&lt;/u&gt;, &lt;u&gt;Karma&lt;/u&gt; and &lt;u&gt;Protractor&lt;/u&gt;. All that, so I can get a solid grasp of what state Angular 2 is currently in so the team can hit the ground running, once we have made the decision.&lt;/p&gt;&lt;p&gt;To cut the story short, after a week of thinking, researching, playing and discussing with the rest of the team who were not particularly keen on the idea, we decided to go for it. &lt;strong&gt;We are re-building our web platform, completely from scratch, using Angular 2&lt;/strong&gt;. &lt;em&gt;&quot;Under one condition.&quot;&lt;/em&gt; says my CTO. &lt;em&gt;&quot;You will regularly bump the version of Angular 2 and adjust our application until Angular 2 (currently in alpha) reaches beta version. And you do this outside of work hours, at your free time&quot;.&lt;/em&gt; We shook hands on this.&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
        <node identifier="9a8083c5-c112-4405-ae22-548499c3a173" nodeName="node-5702d2d6a1812">
-        <variant sortingIndex="150" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="14" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="150" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="15" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:47:18+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T20:17:39+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T20:17:39+00:00</lastPublicationDateTime>
          <properties>
-          <text __type="string">&lt;h2&gt;Considerations&lt;/h2&gt;&lt;p&gt;Front-end world has changed tremendously in the past year or two. We might say that &lt;strong&gt;the front-end is a new back-end&lt;/strong&gt;. More and more complex business logic and computation are moving to the browser. There are Web Workers, Service Workers, localStorage, IndexedDB, WebGL and many other cool &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5&quot;&gt;HTML5 APIs&lt;/a&gt; out there right now, which allow us to build more and more advanced apps, composed and rendered entirely in the browser. With this approach, our websites and applications can be fast and responsive, presumably faster than the native desktop apps (yes, Gmail can give you search results quicker than your good old Outlook). The back-end, more and more often, is just for storing and supplying data and making sure that data is secure and protected. The rest can be built in the browser, using JavaScript. Sometimes this approach is called SPA - Single Page Application. And yes,&lt;a href=&quot;http://www.johnpapa.net/pageinspa/&quot;&gt; I do agree it is a terrible name&lt;/a&gt;: it is not a single and it does not have to be a page.&lt;/p&gt;&lt;p&gt;Our website is one of those that can benefit a lot from this approach. We are a financial research company. We produce plenty of content and financial metrics for our M&amp;amp;A and PE customers. We assemble our data with financial metrics from other data providers. We present this rich content and data to our clients in various ways. They want to filter and aggregate it in a flexible and fast manner. If you have such a case and want to achieve the best user experience on your web platform, you probably need to build it in the browser (and be clever about how you interact with back-end services). And you want to pick up a good, ahead-of-the-time and thus, hopefully, future-proof framework for that. We picked Angular 2. After six months of development and the project now being live, in production, we believe it was a good choice.&lt;/p&gt;&lt;p&gt;Our project is one of those long-term projects. Once the technology stack is picked, the team probably will stick with it for the next 3 to 5 years. Therefore setting up a foundation right is essential. Knowing that you will be developing and maintaining that project in 2020, would you pick something that is already outdated (I am talking about you, Angular 1)?&lt;/p&gt;&lt;p&gt;These were our key considerations when making this decision. Of course, we had shivers in our backs from excitement while reading about Angular2 and about Shadow DOM, Web Components, server rendering, new routes and Dependency Injection, Reflection API and decorators, WebPack loaders, time-ticking asynchronous tests, fast performance, awesome types from TypeScript. Of course we were excited. However, it did not affect our cold logic and focus on our priority: &lt;strong&gt;shifting and doing more in the browser to achieve better responsiveness of our web and picking some new, cutting-edge, ahead-of-the-time framework, which we will be happy to develop in the next couple of years.&lt;/strong&gt;&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
+          <text __type="string">&lt;h2&gt;Considerations&lt;/h2&gt;&lt;p&gt;Front-end world has changed tremendously in the past year or two. We might say that &lt;strong&gt;the front-end is a new back-end&lt;/strong&gt;. More and more complex business logic and computation are moving to the browser. There are Web Workers, Service Workers, localStorage, IndexedDB, WebGL and many other cool &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5&quot;&gt;HTML5 APIs&lt;/a&gt; out there right now, which allow us to build more and more advanced apps, composed and rendered entirely in the browser. With this approach, our websites and applications can be fast and responsive, presumably faster than the native desktop apps (yes, Gmail can give you search results quicker than your good old Outlook). The back-end, more and more often, is just for storing and supplying data and making sure that data is secure and protected. The rest can be built in the browser, using JavaScript. Sometimes this approach is called SPA - Single Page Application. And yes,&lt;a href=&quot;http://www.johnpapa.net/pageinspa/&quot;&gt; I do agree it is a terrible name&lt;/a&gt;: it is not a single and it does not have to be a page.&lt;/p&gt;&lt;p&gt;Our website is one of those that can benefit a lot from this approach. We are a financial research company. We produce plenty of content and financial metrics for our M&amp;amp;A and PE customers. We assemble our data with financial metrics from other data providers. We present this rich content and data to our clients in various ways. They want to filter and aggregate it in a flexible and fast manner. If you have such a case and want to achieve the best user experience on your web platform, you probably need to build it in the browser (and be clever about how you interact with back-end services). And you want to pick up a good, ahead-of-the-time and thus, hopefully, future-proof framework for that. We picked Angular 2. After six months of development and &lt;strong&gt;the project now being live, in production&lt;/strong&gt;, we believe it was a good choice.&lt;/p&gt;&lt;p&gt;Our project is one of those long-term projects. Once the technology stack is picked, the team probably will stick with it for the next 3 to 5 years. Therefore setting up a foundation right is essential. Knowing that you will be developing and maintaining that project in 2020, would you pick something that is already outdated (I am talking about you, Angular 1)?&lt;/p&gt;&lt;p&gt;These were our key considerations when making this decision. Of course, we had shivers in our backs from excitement while reading about Angular2 and about Shadow DOM, Web Components, server rendering, new routes and Dependency Injection, Reflection API and decorators, WebPack loaders, time-ticking asynchronous tests, fast performance, awesome types from TypeScript. Of course we were excited. However, it did not affect our cold logic and focus on our priority: &lt;strong&gt;shifting and doing more in the browser to achieve better responsiveness of our web and picking some new, cutting-edge, ahead-of-the-time framework, which we will be happy to develop in the next couple of years.&lt;/strong&gt;&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
        <node identifier="c378bce1-83ab-40ee-96ec-7aab4989269f" nodeName="node-5702d3218752a">
-        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="11" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="13" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:48:33+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T20:29:43+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T20:29:43+00:00</lastPublicationDateTime>
          <properties>
-          <text __type="string">&lt;h2&gt;How did it go?&lt;/h2&gt;&lt;p&gt;In short: it went well! &lt;strong&gt;We went live with our project mid-March&lt;/strong&gt;, six months after we started the project. It was a successful launch and everyone likes the new experience on our site.&lt;/p&gt;&lt;p&gt;Developing with Angular 2 is a breeze. Angular 2 advocates a componentized way of building your website or web app. You write components which are regular JavaScript ES2015 classes with attached component template (and, optionally, CSS) and defined inputs (data) and outputs (events) of your components. You put your model in elegant JavaScript classes. You code your complex logic in services, which can be injectable using the new and improved Dependency Injection system. With that clear separation of concerns, your code is testable - both unit and functional testing in Angular 2 is easy. Also, we chose to write everything in &lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt;, which is statically typed superset of JavaScript, which fe feel was a good choice.&lt;/p&gt;&lt;p&gt;&lt;span&gt;Funny enough, as most of our time is now spent on the front-end development, all our three Java developers quickly switched to front-end programming, despite the fact that two of them were completely new to JavaScript. I believe it is thanks to TypeScript and its typed syntax. Java developers (and anyone coming from object-oriented languages) will quickly feel at home with all these things: class, private, public, protected, static, extend, interface keywords and decorators for classes and properties. TypeScript is developed by Microsoft and Google and I believe it soon will be the .NET for the front-end side of things. Worth jumping in.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Of course, we hit issues and bugs. Some of those bugs have been quickly resolved in the following alpha or beta releases. Others stayed unresolved till today and we had to find workarounds for them. Also, the component ecosystem is not so well developed yet: we had to write even most elementary components, like a modal window component.&lt;/p&gt;&lt;p&gt;Even though every week brings changes for better there were times on Saturday nights when I was cursing my deal of keeping our project up-to-date with the newest release of the framework. Updating to next alpha releases was pretty painless. But for the price of working today with the technology of tomorrow and knowing how beneficial it is for our project, the price seemed to be a cheap deal. On December the 15th 2015, &lt;a href=&quot;http://angularjs.blogspot.co.uk/2015/12/angular-2-beta.html&quot;&gt;Angular 2 beta.0 had been released&lt;/a&gt;. With the next beta releases the API should not change that much, so you are on a rather safe side. Later this year we will all hopefully see Angular 2 stable release.&lt;/p&gt;&lt;p&gt;There is a plethora of excellent resources to learn Angular 2 as of today. Official angular.io website offers good tutorials and developer guides including testing plus solid API reference. There are also a couple of good books, e.g. &lt;a href=&quot;https://www.ng-book.com/2/&quot;&gt;ng-book 2&lt;/a&gt;, &lt;a href=&quot;https://leanpub.com/angular2-book&quot;&gt;Angular 2 book&lt;/a&gt; or &lt;a href=&quot;https://www.packtpub.com/web-development/switching-angular-2/&quot;&gt;Switching to Angular 2&lt;/a&gt;.&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
+          <text __type="string">&lt;h2&gt;How did it go?&lt;/h2&gt;&lt;p&gt;In short: it went well! &lt;strong&gt;We went live with our project mid-March&lt;/strong&gt;, six months after we started the project. It was a successful launch and everyone likes the new experience on our site.&lt;/p&gt;&lt;p&gt;Developing with Angular 2 is a breeze. Angular 2 advocates a componentized way of building your website or web app. You write components which are regular JavaScript ES2015 classes with attached component template (and, optionally, CSS) and defined inputs (data) and outputs (events) of your components. You put your model in elegant JavaScript classes. You code your complex logic in services, which can be injectable using the new and improved Dependency Injection system. With that clear separation of concerns, your code is testable - both unit and functional testing in Angular 2 is easy. Also, we chose to write everything in &lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt;, which is statically typed superset of JavaScript, which we feel was a good choice.&lt;/p&gt;&lt;p&gt;&lt;span&gt;Funny enough, as most of our time is now spent on the front-end development, all our three Java developers quickly switched to front-end programming, despite the fact that two of them were completely new to JavaScript. I believe it is thanks to TypeScript and its typed syntax. Java developers (and anyone coming from object-oriented languages) will quickly feel at home with all these things: class, private, public, protected, static, extend, interface keywords and decorators for classes and properties. TypeScript is developed by Microsoft and Google and I believe it soon will be the .NET for the front-end side of things. Worth jumping in.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Of course, we hit issues and bugs. Some of those bugs have been quickly resolved in the following alpha or beta releases. Others stayed unresolved till today and we had to find workarounds for them.  Also, the component ecosystem is not so well developed yet: we had to write even most elementary components, like a modal window component.&lt;/p&gt;&lt;p&gt;Even though every week brings changes for better there were times on Saturday nights when I was cursing my deal of keeping our project up-to-date with the newest release of the framework. Updating to next alpha releases was pretty painless. But for the price of working today with the technology of tomorrow and knowing how beneficial it is for our project, the price seemed to be a cheap deal. On December the 15th 2015, &lt;a href=&quot;http://angularjs.blogspot.co.uk/2015/12/angular-2-beta.html&quot;&gt;Angular 2 beta.0 had been released&lt;/a&gt;. With the next beta releases the API should not change that much, so you are on a rather safe side. Later this year we will all hopefully see Angular 2 stable release.&lt;/p&gt;&lt;p&gt;There is a plethora of excellent resources to learn Angular 2 as of today. Official angular.io website offers good tutorials and developer guides including testing plus solid API reference. There are also a couple of good books, e.g. &lt;a href=&quot;https://www.ng-book.com/2/&quot;&gt;ng-book 2&lt;/a&gt;, &lt;a href=&quot;https://leanpub.com/angular2-book&quot;&gt;Angular 2 book&lt;/a&gt; or &lt;a href=&quot;https://www.packtpub.com/web-development/switching-angular-2/&quot;&gt;Switching to Angular 2&lt;/a&gt;.&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
        <node identifier="70290746-2102-4bb7-a0f8-7c89b116c17a" nodeName="node-5702d343f12a5">
-        <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="7" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="8" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:49:07+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T20:17:39+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T20:17:39+00:00</lastPublicationDateTime>
          <properties>
-          <text __type="string">&lt;h2&gt;Get on board with Angular 2&lt;/h2&gt;&lt;p&gt;Are you starting a green-field project or adding a substantial new functionality to an existing one? You should really consider doing it with Angular 2. Even if you are a small team with tight deadlines and budget, as we are.&lt;/p&gt;&lt;p&gt;Note that I do not compare Angular 2 with other excellent frameworks out there (e.g. React). The point I am making is that Angular 2 is a great modern framework and you should consider starting developing with it today, even if you have production-grade application to deliver.&lt;/p&gt;&lt;p&gt;If you had not have a chance to catch up with the recent development of events in the front-end world, you will need to study a little. To develop with Angular 2 you need to get familiar with &lt;a href=&quot;https://hacks.mozilla.org/category/es6-in-depth/&quot;&gt;ES6&lt;/a&gt;, &lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt;, &lt;a href=&quot;http://reactivex.io/&quot;&gt;RxJS&lt;/a&gt; and &lt;a href=&quot;https://webpack.github.io/&quot;&gt;Webpack&lt;/a&gt; build and packaging tool. You do not need to master all these, just get familiar with them, prepare your environment and you will learn the rest on the way.&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
+          <text __type="string">&lt;h2&gt;Get on board with Angular 2&lt;/h2&gt;&lt;p&gt;Are you starting a green-field project or adding a substantial new functionality to an existing one? You should really consider doing it with Angular 2. Even if you are a small team with tight deadlines and budget, as we are.&lt;/p&gt;&lt;p&gt;Note that I do not compare Angular 2 with other excellent frameworks and libraries out there (e.g. React). The point I am making is that &lt;strong&gt;Angular 2 is a great modern framework and you should consider starting developing with it today&lt;/strong&gt;, even if you have production-grade application to deliver.&lt;/p&gt;&lt;p&gt;If you had not have a chance to catch up with the recent development of events in the front-end world, you will need to study a little. To develop with Angular 2 you need to get familiar with &lt;a href=&quot;https://hacks.mozilla.org/category/es6-in-depth/&quot;&gt;ES6&lt;/a&gt;, &lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt;, &lt;a href=&quot;http://reactivex.io/&quot;&gt;RxJS&lt;/a&gt; and &lt;a href=&quot;https://webpack.github.io/&quot;&gt;Webpack&lt;/a&gt; build and packaging tool. You do not need to master all these, just get familiar with them, prepare your environment and you will learn the rest on the way.&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
        <node identifier="035dc3d0-895d-4b34-9ecb-29a367a185b4" nodeName="node-5702d35b46828">
-        <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="6" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="8" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:49:31+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:50:13+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T21:20:44+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T21:20:43+00:00</lastPublicationDateTime>
          <properties>
-          <text __type="string">&lt;p&gt;&lt;span&gt;I&lt;/span&gt;f you want to &lt;strong&gt;check out our working project&lt;/strong&gt;, you can do it here: &lt;a href=&quot;https://www.megabuyte.com/reports&quot;&gt;&lt;strong&gt;megabuyte.com/reports&lt;/strong&gt;&lt;/a&gt;. Only reports and e-commerce sections are built with Angular 2, for now.&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
+          <text __type="string">&lt;p&gt;&lt;span&gt;I&lt;/span&gt;f you want to &lt;strong&gt;check out our working project&lt;/strong&gt;, you can do it here: &lt;a href=&quot;https://www.megabuyte.com/reports&quot;&gt;&lt;strong&gt;megabuyte.com/reports&lt;/strong&gt;&lt;/a&gt;. Only reports and e-commerce sections are built with Angular 2, for now. We took hybrid migration approach to avoid the big bang and have to rewrite the entire site at once.&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
@@ -2857,30 +2259,6 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:52:53+00:00</lastPublicationDateTime>
          <properties>
           <source __type="string">&lt;hr /&gt;</source>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <customTagName __type="string"></customTagName>
-          <title __type="string"></title>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
          </properties>
         </variant>
        </node>
@@ -2892,27 +2270,6 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
          <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:08:21+00:00</lastModificationDateTime>
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:08:21+00:00</lastPublicationDateTime>
          <properties>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <title __type="string"></title>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
           <references __type="array">
            <entry0 __type="string">f9e7cc80-94ba-4301-bb39-46deed1285e7</entry0>
           </references>
@@ -2920,83 +2277,34 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
         </variant>
        </node>
        <node identifier="534a4276-ec5d-4b22-9783-9e714486cd14" nodeName="node-5702d3e0852c5">
-        <variant sortingIndex="325" workspace="live" nodeType="M12.Neos.NodeType.CodeSnippet:CodeSnippet" version="7" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="325" workspace="live" nodeType="M12.Neos.NodeType.CodeSnippet:CodeSnippet" version="8" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:51:44+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T20:54:45+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:54:45+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T07:36:29+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T07:36:28+00:00</lastPublicationDateTime>
          <properties>
-          <title __type="string">Quick facts about the project</title>
+          <title __type="string">Quick facts about the project:</title>
           <showTitle __type="boolean">1</showTitle>
           <source __type="string">* lines of code (only JS/TypeScript): &lt;b&gt;8324&lt;/b&gt;
 * lines of code (incl. HTML, CSS): &lt;b&gt;18339&lt;/b&gt;
 * number of components: &lt;b&gt;62&lt;/b&gt;
-* number of developers: &lt;b&gt;4&lt;/b&gt;
-* number of developers working with front-end code: between &lt;b&gt;2,5&lt;/b&gt; and &lt;b&gt;4&lt;/b&gt;.
+* number of developers in the team: &lt;b&gt;4&lt;/b&gt;
+* number of developers working on front-end code: between &lt;b&gt;2&lt;/b&gt; and &lt;b&gt;4&lt;/b&gt;.
 * tech stack: &lt;b&gt;Java with Spring and Grails, Angular 2, Webpack&lt;/b&gt;.</source>
-          <showLanguage __type="boolean"></showLanguage>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <language __type="string"></language>
          </properties>
         </variant>
        </node>
        <node identifier="936b2d0d-40e6-4e90-88f1-9b510e203721" nodeName="node-5702d8664955d">
-        <variant sortingIndex="50" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="9" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="50" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="12" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T21:11:02+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T21:18:20+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:18:20+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-05-22T16:47:32+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-05-22T16:47:31+00:00</lastPublicationDateTime>
          <properties>
           <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-          <clickToZoom __type="boolean"></clickToZoom>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <classRadiusAndRounded __type="string"></classRadiusAndRounded>
-          <image __type="object" __identifier="20380135-c355-4654-ab9d-26cbdda691d3" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;20380135-c355-4654-ab9d-26cbdda691d3&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bag-and-hands.jpg&quot;,&quot;hash&quot;:&quot;f64453bdbcf6d9968c1eac687565ae2f6407e9b5&quot;,&quot;__identity&quot;:&quot;a58572f5-7f82-4620-bcfa-118bd78a07de&quot;}}</image>
-          <alternativeText __type="string"></alternativeText>
-          <title __type="string"></title>
-          <link __type="string"></link>
-          <linkTarget __type="string"></linkTarget>
-          <hasCaption __type="boolean"></hasCaption>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
-          <classThumbnail __type="boolean"></classThumbnail>
-          <clickToZoomImage __type="string"></clickToZoomImage>
-          <clickToZoomCaption __type="string"></clickToZoomCaption>
+          <image __type="object" __identifier="3e295bf9-8f03-4092-98bd-bb2dcd2e3f4d" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;3e295bf9-8f03-4092-98bd-bb2dcd2e3f4d&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bag-and-hands.jpg&quot;,&quot;hash&quot;:&quot;2f7d604cda0cfa0fd88ca64b4bf9eda192465972&quot;,&quot;__identity&quot;:&quot;9a29974f-c286-41d8-911b-41c43638fc8b&quot;}}</image>
          </properties>
         </variant>
        </node>
@@ -3009,35 +2317,8 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
          <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:32:31+00:00</lastPublicationDateTime>
          <properties>
           <text __type="string">&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/alejandroescamilla&quot;&gt;Alejandro Escamilla&lt;/a&gt;, &lt;a href=&quot;https://unsplash.com/&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
           <marginTop __type="string">-1rem</marginTop>
           <marginBottom __type="string">1.5rem</marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
           <customLook __type="array">
            <entry0 __type="string">text-small</entry0>
           </customLook>
@@ -3045,6 +2326,56 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
            <entry0 __type="string">small-text-center</entry0>
            <entry1 __type="string">medium-text-right</entry1>
           </classTextAlign>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="680baabc-747a-420c-9e21-d24ce37dd6de" nodeName="node-570368800ca4d">
+        <variant sortingIndex="338" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="27" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-04-05T07:25:52+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T07:36:29+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T07:36:28+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;Special credits go to my colleagues from &lt;a href=&quot;https://www.megabuyte.com/&quot;&gt;Megabuyte&lt;/a&gt;, &lt;a href=&quot;https://github.com/pcroc&quot;&gt;Paul&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/knifir&quot;&gt;Joel&lt;/a&gt;, who wrote most of the front-end code and they simply rock.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="c5fadc27-3a86-452a-b6c6-a3514c1d0bb8" nodeName="node-57041d015ffb2">
+        <variant sortingIndex="263" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="22" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-04-05T20:16:01+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T20:29:43+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T20:29:43+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;You can also watch this great video from &lt;a href=&quot;http://ng-nl.org/&quot;&gt;NG-NL 2016&lt;/a&gt; conference which will gives some overview of what you are getting into:&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="9c7d3601-23aa-47d6-90cc-d7899557d4f0" nodeName="node-57041d296a046">
+        <variant sortingIndex="269" workspace="live" nodeType="M12.Foundation:Video" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-04-05T20:16:41+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-05T20:17:39+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-05T20:17:39+00:00</lastPublicationDateTime>
+         <properties>
+          <width __type="integer">400</width>
+          <height __type="integer">300</height>
+          <videoId __type="string">WfRmhYgwIho</videoId>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="ba337c72-dd17-4e53-ba83-c253acedcf9a" nodeName="node-5704215205e56">
+        <variant sortingIndex="344" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="34" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-04-05T20:34:26+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-11T23:49:56+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-11T23:49:56+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;Any feedback, opinions or questions? I'll be delighted to see and answer them in the comments below.&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
@@ -3059,43 +2390,14 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
         <properties/>
        </variant>
        <node identifier="b337d4b3-3a53-4e35-957d-eb4ffab8240a" nodeName="node-5702d29bd9184">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="5" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="9" removed="" hidden="" hiddenInIndex="">
          <dimensions/>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2016-04-04T20:46:19+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2016-04-04T20:59:58+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T20:59:58+00:00</lastPublicationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-05-22T16:52:20+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-05-22T16:52:20+00:00</lastPublicationDateTime>
          <properties>
-          <text __type="string">&lt;p&gt;After six months of development, &lt;strong&gt;we have just launched a medium-size project built using &lt;a href=&quot;https://angular.io/&quot;&gt;Angular 2&lt;/a&gt;&lt;/strong&gt;. This article is about &lt;em&gt;why&lt;/em&gt; and &lt;em&gt;how&lt;/em&gt; we came up with the idea of using Angular 2 as a foundation for our web project and how did it go. Hopefully, for some of us, it will serve as an encouragement for doing the same, despite the fact that Angular 2 is not fully production ready yet.&lt;/p&gt;</text>
-          <classHide __type="boolean"></classHide>
-          <classFloat __type="string"></classFloat>
-          <classClearfix __type="boolean"></classClearfix>
-          <classShowByScreenSize __type="string"></classShowByScreenSize>
-          <classHideByScreenSize __type="string"></classHideByScreenSize>
-          <classOrientationDetection __type="string"></classOrientationDetection>
-          <classTouchDetection __type="string"></classTouchDetection>
-          <marginTop __type="string"></marginTop>
-          <marginBottom __type="string"></marginBottom>
-          <marginLeft __type="string"></marginLeft>
-          <marginRight __type="string"></marginRight>
-          <customCssClass __type="string"></customCssClass>
-          <customHtmlId __type="string"></customHtmlId>
-          <customCssCode __type="string"></customCssCode>
-          <customUserAttributes __type="string"></customUserAttributes>
-          <customTagName __type="string"></customTagName>
-          <faName __type="string"></faName>
-          <faCustomCss __type="string"></faCustomCss>
-          <title __type="string"></title>
-          <sectionId __type="string"></sectionId>
-          <magellanSupport __type="boolean"></magellanSupport>
-          <htmlTitle __type="string"></htmlTitle>
-          <tooltip __type="boolean"></tooltip>
-          <classTooltipPosition __type="string"></classTooltipPosition>
-          <backgroundImageExternal __type="string"></backgroundImageExternal>
-          <backgroundImage __type="string"></backgroundImage>
-          <backgroundSize __type="string"></backgroundSize>
-          <backgroundPosition __type="string"></backgroundPosition>
-          <backgroundRepeat __type="string"></backgroundRepeat>
+          <text __type="string">&lt;p&gt;&lt;strong&gt;We have just launched a medium-size project built using newest &lt;a href=&quot;https://angular.io/&quot;&gt;Angular 2&lt;/a&gt;&lt;/strong&gt;. This article is about &lt;em&gt;why&lt;/em&gt; and &lt;em&gt;how&lt;/em&gt; we came up with the idea of using Angular 2 as a foundation for our web project and &lt;em&gt;how did it go&lt;/em&gt;. Hopefully, for some of us, it will serve as an encouragement for doing the same, despite the fact that Angular 2 is not fully production ready yet.&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
@@ -3242,32 +2544,7 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
       <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:04:10+00:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">bin</uriPathSegment>
-       <canonicalLink __type="string"></canonicalLink>
        <title __type="string">Bin</title>
-       <titleOverride __type="string"></titleOverride>
-       <metaDescription __type="string"></metaDescription>
-       <metaKeywords __type="string"></metaKeywords>
-       <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
-       <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
-       <twitterCardType __type="string"></twitterCardType>
-       <twitterCardCreator __type="string"></twitterCardCreator>
-       <twitterCardTitle __type="string"></twitterCardTitle>
-       <twitterCardDescription __type="string"></twitterCardDescription>
-       <twitterCardImage __type="string"></twitterCardImage>
-       <openGraphType __type="string"></openGraphType>
-       <openGraphTitle __type="string"></openGraphTitle>
-       <openGraphDescription __type="string"></openGraphDescription>
-       <openGraphImage __type="string"></openGraphImage>
-       <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
-       <xmlSitemapPriority __type="string"></xmlSitemapPriority>
-       <fragmentId __type="string"></fragmentId>
-       <customCssClass __type="string"></customCssClass>
-       <customHtmlId __type="string"></customHtmlId>
-       <customCssCode __type="string"></customCssCode>
-       <customUserAttributes __type="string"></customUserAttributes>
-       <layout __type="string"></layout>
-       <subpageLayout __type="string"></subpageLayout>
-       <customJsCode __type="string"></customJsCode>
       </properties>
      </variant>
      <node identifier="7d78fce9-344e-9e6b-bba6-0eb9e3a13603" nodeName="main">
@@ -3344,35 +2621,6 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
           <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:07:56+00:00</lastPublicationDateTime>
           <properties>
            <text __type="string">&lt;h5&gt;About the author&lt;/h5&gt;&lt;p&gt;Marcin Ryzycki (&lt;a href=&quot;https://twitter.com/ryzmen&quot;&gt;@ryzmen&lt;/a&gt;) is co-founder at &lt;a href=&quot;https://prototypebrewery.io/&quot;&gt;&lt;strong&gt;Prototype Brewery&lt;/strong&gt;&lt;/a&gt;. He dreams of building successful startups, likes martial arts and has spent the last 15 years creating more or less awesome websites and web applications.&lt;/p&gt;</text>
-           <classHide __type="boolean"></classHide>
-           <classFloat __type="string"></classFloat>
-           <classClearfix __type="boolean"></classClearfix>
-           <classShowByScreenSize __type="string"></classShowByScreenSize>
-           <classHideByScreenSize __type="string"></classHideByScreenSize>
-           <classOrientationDetection __type="string"></classOrientationDetection>
-           <classTouchDetection __type="string"></classTouchDetection>
-           <marginTop __type="string"></marginTop>
-           <marginBottom __type="string"></marginBottom>
-           <marginLeft __type="string"></marginLeft>
-           <marginRight __type="string"></marginRight>
-           <customCssClass __type="string"></customCssClass>
-           <customHtmlId __type="string"></customHtmlId>
-           <customCssCode __type="string"></customCssCode>
-           <customUserAttributes __type="string"></customUserAttributes>
-           <customTagName __type="string"></customTagName>
-           <faName __type="string"></faName>
-           <faCustomCss __type="string"></faCustomCss>
-           <title __type="string"></title>
-           <sectionId __type="string"></sectionId>
-           <magellanSupport __type="boolean"></magellanSupport>
-           <htmlTitle __type="string"></htmlTitle>
-           <tooltip __type="boolean"></tooltip>
-           <classTooltipPosition __type="string"></classTooltipPosition>
-           <backgroundImageExternal __type="string"></backgroundImageExternal>
-           <backgroundImage __type="string"></backgroundImage>
-           <backgroundSize __type="string"></backgroundSize>
-           <backgroundPosition __type="string"></backgroundPosition>
-           <backgroundRepeat __type="string"></backgroundRepeat>
           </properties>
          </variant>
         </node>
@@ -3387,34 +2635,6 @@ docker_cloud_api_key: c0bbb178-c4e5-46b8-8391-e85145735e94</source>
         <lastPublicationDateTime __type="object" __classname="DateTime">2016-04-04T21:03:14+00:00</lastPublicationDateTime>
         <properties>
          <title __type="string">&lt;h1&gt;Misc content to re-use via Content Reference component&lt;/h1&gt;</title>
-         <classHide __type="boolean"></classHide>
-         <classFloat __type="string"></classFloat>
-         <classClearfix __type="boolean"></classClearfix>
-         <classShowByScreenSize __type="string"></classShowByScreenSize>
-         <classHideByScreenSize __type="string"></classHideByScreenSize>
-         <classOrientationDetection __type="string"></classOrientationDetection>
-         <classTouchDetection __type="string"></classTouchDetection>
-         <marginTop __type="string"></marginTop>
-         <marginBottom __type="string"></marginBottom>
-         <marginLeft __type="string"></marginLeft>
-         <marginRight __type="string"></marginRight>
-         <customCssClass __type="string"></customCssClass>
-         <customHtmlId __type="string"></customHtmlId>
-         <customCssCode __type="string"></customCssCode>
-         <customUserAttributes __type="string"></customUserAttributes>
-         <sectionId __type="string"></sectionId>
-         <magellanSupport __type="boolean"></magellanSupport>
-         <customTagName __type="string"></customTagName>
-         <faName __type="string"></faName>
-         <faCustomCss __type="string"></faCustomCss>
-         <htmlTitle __type="string"></htmlTitle>
-         <tooltip __type="boolean"></tooltip>
-         <classTooltipPosition __type="string"></classTooltipPosition>
-         <backgroundImageExternal __type="string"></backgroundImageExternal>
-         <backgroundImage __type="string"></backgroundImage>
-         <backgroundSize __type="string"></backgroundSize>
-         <backgroundPosition __type="string"></backgroundPosition>
-         <backgroundRepeat __type="string"></backgroundRepeat>
         </properties>
        </variant>
       </node>
