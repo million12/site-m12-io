@@ -87,14 +87,12 @@ Import the content:
 ```
 ./flow site:prune --confirmation TRUE
 ./flow site:import --package-key M12.Site
-./flow db:import --package-key M12.Site
 ./flow flow:cache:flush --force && ./flow cache:warmup
 ```
 
 Export the content:  
 ```
 ./flow site:export --package-key M12.Site --tidy
-./flow db:export --package-key M12.Site
 ```
 
 
